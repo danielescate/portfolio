@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('fonts/Gilroy-ExtraBold.otf')
+}
+
+body {
+    background-color: #1A1A1A;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    color: #ffffff;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 2.5em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.logo img {
+    width: 18%;
+}
+
+section {
+    height: 100vh;
+}
+
+#intro img {
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+#intro h1 {
+    font-size: 4em;
+    text-align: right;
+}
+
+#intro p{
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#about h2 {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 7em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.info img {
+    width: 12%;
+}
+
+.info {
+    display: grid;
+    grid-gap: 2.5em;
+    grid-template-columns: auto;
+}
+
+.item {
+    text-align: center;
+}
