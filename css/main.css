@@ -7,14 +7,14 @@
 
 body {
     background-color: #1A1A1A;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: 0.1em;
     line-height: 1.2em;
     color: #ffffff;
