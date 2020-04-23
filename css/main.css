@@ -242,7 +242,7 @@ button p {
 
 
 
-@media screen and (max-width: 374px) {
+@media screen and (min-width: 374px) {
 
     p {
         font-size: 1em;
