@@ -26,63 +26,86 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    color: #F9F7ED;
+    margin: 0;
+}
+
+.current p {
+    color: #87C13F;
+}
+
 .logo img {
     width: 18%;
 }
 
 .logo {
     position: fixed;
-    margin-top: 2em;
+    margin-top: 0.5em;
 }
 
 section {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
+}
+
+#intro {
+    height: 100%;
 }
 
 #intro img {
     width: 100%;
     margin-bottom: 4em;
+    margin-top: 2em;
 }
 
 #intro h1 {
-    font-size: 2.69em;
+    font-size: em;
     text-align: right;
 }
 
 #intro p{
-    font-size: 1.5em;
+    font-size: em;
     text-align: right;
 }
 
-#about h2 {
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.content h2 {
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 7em;
     color: #F9F7ED;
-    margin: 0;
+    line-height: 1em;
+}
+
+.info {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: auto;
+    padding: 2.5em 0 0 0;
 }
 
 .info img {
     width: 100%;
 }
 
-.info {
-    display: grid;
-    grid-gap: 2.5em;
-    grid-template-columns: auto;
-    padding: 2.5em 0 0 0
-}
-
 .textbox p {
     color: #1A1A1A;
-    font-size: 0.85em;
+    font-size: 1em;
 }
  
 .item {
     background-color: #F9F7ED;
     border-radius: 1em;
-    padding: 1.2em 0.8em 1.2em 0.8em;
+    padding: 1.5em 0.8em 1.5em 0.8em;
 }
 
 .imagebox {
@@ -93,4 +116,188 @@ section {
 .textbox {
     float: right;
     width: 70%;
+}
+
+.sort {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto auto;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.project {
+    background-color: #F9F7ED;
+    border-radius: 1em;
+    padding: 1.2em 0.8em 1.2em 0.8em;
+    margin-bottom: 1em;
+    height: 6em;
+}
+
+.connect {
+    margin-bottom: 3em;
+}
+
+
+.email {
+    margin-bottom: 3em;
+}
+
+button {
+    background-color: #87C13F;
+    border-radius: 5em;
+    padding: 1em 1em 1em 1em;
+}
+
+button p {
+    font-size: 1.5em;
+}
+
+
+.copyright p {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 375px) {
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
+
+    #intro h1 {
+        font-size: 3.18em;
+    }
+    
+    #intro p{
+        font-size: 1.7em;
+    }
+
+    .content h2 {
+        font-size: 12em;
+    }
+
+    .textbox p {
+        font-size: 1em;
+    }
+
+    .connect {
+        margin: 1em 0 3em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 2em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    p {
+        font-size: 1em;
+    }
+    
+    h1 {
+        font-size: 3.3em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    #intro h1 {
+        font-size: 2.69em;
+    }
+    
+    #intro p{
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 7em;
+    }
+
+    .textbox p {
+        font-size: 0.85em;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    button {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    button p {
+        font-size: 1.2em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.7em;
+    }
 }
