@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-
-@font-face {
-    font-family: 'Gilroy-ExtraBold';
-    src: url('fonts/Gilroy-ExtraBold.otf');
-    src: 
-    url('fonts/Gilroy-ExtraBold.otf') format("opentype");
-}
+@import url("https://use.typekit.net/ddd8vkh.css");
 
 body {
     background-color: #1A1A1A;
@@ -16,7 +10,7 @@ body {
 p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 1em;
     letter-spacing: 0.1em;
     line-height: 1.2em;
     color: #ffffff;
@@ -24,7 +18,9 @@ p {
 }
 
 h1 {
-    font-family: 'Gilroy-ExtraBold';
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 2em;
     color: #ffffff;
     margin: 0;
@@ -32,6 +28,10 @@ h1 {
 
 .logo img {
     width: 18%;
+}
+
+.logo {
+    position: fixed;
 }
 
 section {
@@ -54,8 +54,10 @@ section {
 }
 
 #about h2 {
-    font-family: 'Gilroy-ExtraBold';
-    font-size: 7em;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4em;
     color: #ffffff;
     margin: 0;
 }
