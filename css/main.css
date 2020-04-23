@@ -49,11 +49,11 @@ h2 {
 }
 
 section {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 #intro {
-    height: 100%;
+    margin: 0 0 10em 0;
 }
 
 #intro img {
@@ -135,7 +135,7 @@ section {
 }
 
 .connect {
-    margin-bottom: 3em;
+    margin: 2em 0 3em 0;
 }
 
 
@@ -157,11 +157,11 @@ button p {
 .copyright p {
     font-size: 0.7em;
     text-align: center;
-    padding: 0 0 1.3em 0;
+    padding: 2em 0 1.3em 0;
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 400px) {
     p {
         font-size: 1.3em;
     }
@@ -192,12 +192,16 @@ button p {
     }
 
     .connect {
-        margin: 1em 0 3em 0;
+        margin: 0.5em 0 2em 0;
     }
 
     .connect p {
         font-size: 1.5em;
         padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
     }
 
     .email h2 {
@@ -209,7 +213,7 @@ button p {
     }
 
     .resume {
-        margin: 0 0 2em 0;
+        margin: 0 0 1em 0;
     }
 
     button {
@@ -236,13 +240,100 @@ button p {
 
     .copyright p {
         font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
     }
 }
 
 
+@media screen and (max-width: 376px) {
+    p {
+        font-size: 1.15em;
+    }
+    
+    h1 {
+        font-size: 3.7em;
+    }
+    
+    h2 {
+        font-size: 2.15em;
+    }
+
+    #intro {
+        margin: 0 0 10em 0;
+    }
+
+    #intro h1 {
+        font-size: 2.96em;
+    }
+    
+    #intro p{
+        font-size: 1.6em;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+    .textbox p {
+        font-size: 0.94em;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
+    }
+}
 
 
-@media screen and (min-width: 374px) {
+@media screen and (max-width: 350px) {
 
     p {
         font-size: 1em;
@@ -254,6 +345,10 @@ button p {
     
     h2 {
         font-size: 2em;
+    }
+
+    #intro {
+        margin: 0 0 10em 0;
     }
 
     #intro h1 {
@@ -290,6 +385,10 @@ button p {
 
     button p {
         font-size: 1.2em;
+    }
+
+    .resume {
+        margin: 0 0 2em 0;
     }
 
     .social h2 {
