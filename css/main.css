@@ -157,10 +157,11 @@ button p {
 .copyright p {
     font-size: 0.7em;
     text-align: center;
+    padding: 0 0 1.3em 0;
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     p {
         font-size: 1.3em;
     }
@@ -182,7 +183,8 @@ button p {
     }
 
     .content h2 {
-        font-size: 12em;
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
     }
 
     .textbox p {
@@ -240,7 +242,7 @@ button p {
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 374px) {
 
     p {
         font-size: 1em;
@@ -264,6 +266,7 @@ button p {
 
     .content h2 {
         font-size: 7em;
+        padding: 0 0 0.2em 0;
     }
 
     .textbox p {
@@ -280,6 +283,9 @@ button p {
 
     button {
         padding: 0.5em 1em 0.5em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     button p {
