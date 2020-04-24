@@ -2,7 +2,7 @@
 @import url("https://use.typekit.net/ddd8vkh.css");
 
 body {
-    background-color: #1A1A1A;
+    background-color: #131313;
     padding-left: 5%;
     padding-right: 5%;
     margin: 0;
@@ -37,14 +37,14 @@ h2 {
 }
 
 .header {
-    background-color: #1A1A1A;
+    background-color: #131313;
     position: sticky;
     top: 5em;
     z-index: 0;
 }
 
 .top {
-    background-color: #1A1A1A;
+    background-color: #131313;
     overflow: auto;
     position: sticky;
     top: 0;
@@ -511,7 +511,7 @@ button p {
     }
 
     #intro img {
-        width: 100%;
+        width: 70%;
         margin-bottom: 4em;
         margin-top: 2em;
     }
@@ -627,12 +627,18 @@ button p {
         width: 15%;
     }
 
+    #intro img {
+        width: 80%;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
     #intro h1 {
-        font-size: 3.1em;
+        font-size: 2.7em;
     }
     
     #intro p{
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
 
     .content h2 {
@@ -728,11 +734,11 @@ button p {
     }
 
     #intro h1 {
-        font-size: 2.96em;
+        font-size: 2.5em;
     }
     
     #intro p{
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
 
     .content h2 {
@@ -829,11 +835,11 @@ button p {
     }
 
     #intro h1 {
-        font-size: 2.69em;
+        font-size: 2.5em;
     }
     
     #intro p{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .content h2 {
