@@ -161,21 +161,118 @@ button p {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 770px) {
     p {
         font-size: 1.3em;
     }
     
     h1 {
-        font-size: 4em;
+        font-size: 4.5em;
     }
     
     h2 {
         font-size: 2.3em;
     }
 
+    .logo img {
+        width: 12%;
+    }
+
+    #intro img {
+        width: 70%;
+        margin-bottom: 4em;
+        margin-top: 2em;
+    }
+
     #intro h1 {
-        font-size: 3.18em;
+        font-size: 3.6em;
+    }
+    
+    #intro p{
+        font-size: 1.9em;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+    .textbox p {
+        font-size: 1em;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
+        font-size: 4.2em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+
+    #intro h1 {
+        font-size: 3.4em;
     }
     
     #intro p{
@@ -244,8 +341,94 @@ button p {
     }
 }
 
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
 
-@media screen and (max-width: 376px) {
+    .logo img {
+        width: 15%;
+    }
+
+    #intro h1 {
+        font-size: 3.1em;
+    }
+    
+    #intro p{
+        font-size: 1.7em;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+    .textbox p {
+        font-size: 1em;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
+    }
+}
+
+@media screen and (max-width: 374px) {
     p {
         font-size: 1.15em;
     }
@@ -256,6 +439,10 @@ button p {
     
     h2 {
         font-size: 2.15em;
+    }
+
+    .logo img {
+        width: 15%;
     }
 
     #intro {
@@ -345,6 +532,10 @@ button p {
     
     h2 {
         font-size: 2em;
+    }
+
+    .logo img {
+        width: 15%;
     }
 
     #intro {
