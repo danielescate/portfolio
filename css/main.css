@@ -206,7 +206,7 @@ button p {
     }
     
     h1 {
-        font-size: 4em;
+        font-size: 2.7em;
     }
     
     h2 {
@@ -230,20 +230,20 @@ button p {
     }
 
     #intro img {
-        width: 70%;
-        margin-bottom: 4em;
-        margin-top: 2em;
+        width: 60%;
+        margin-bottom: 3em;
+        margin-top: 4em;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
     #intro h1 {
-        font-size: 5em;
+        font-size: 3em;
     }
     
     #intro p{
-        font-size: 2.3em;
+        font-size: 1.5em;
     }
 
     .content h2 {
@@ -343,21 +343,21 @@ button p {
     }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 550px) {
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     
     h1 {
-        font-size: 3.3em;
+        font-size: 2.5em;
     }
     
     h2 {
-        font-size: 2.3em;
+        font-size: 2.1em;
     }
 
     .header {
-        top: 4em;
+        top: 3.5em;
     }
     
     .top {
@@ -365,24 +365,24 @@ button p {
     }
 
     .logo img {
-        width: 15%;
+        width: 13%;
     }
 
     #intro img {
-        width: 70%;
-        margin-bottom: 4em;
-        margin-top: 2em;
+        width: 65%;
+        margin-bottom: 3em;
+        margin-top: 4em;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
     #intro h1 {
-        font-size: 4em;
+        font-size: 2.7em;
     }
     
     #intro p{
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .content h2 {
@@ -418,7 +418,7 @@ button p {
     }
 
     .textbox p {
-        font-size: 1.4em;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -491,11 +491,11 @@ button p {
     }
     
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     
     h2 {
-        font-size: 2.3em;
+        font-size: 2.1em;
     }
 
     .header {
@@ -507,21 +507,21 @@ button p {
     }
 
     .logo img {
-        width: 15%;
+        width: 13%;
     }
 
     #intro img {
         width: 70%;
-        margin-bottom: 4em;
-        margin-top: 2em;
+        margin-bottom: 3em;
+        margin-top: 4em;
     }
 
     #intro h1 {
-        font-size: 3.4em;
+        font-size: 2.7em;
     }
     
     #intro p{
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
 
     .content h2 {
@@ -530,7 +530,7 @@ button p {
     }
 
     .info img {
-        width: 100%;
+        width: 80%;
     }
 
     .imagebox {
@@ -538,11 +538,11 @@ button p {
     }
     
     .textbox {
-        width: 70%;
+        width: 75%;
     }
 
     .textbox p {
-        font-size: 1.09em;
+        font-size: 1.2em;
     }
 
     .project {
@@ -604,15 +604,15 @@ button p {
 
 @media screen and (max-width: 399px) {
     p {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     
     h1 {
-        font-size: 2.7em;
+        font-size: 2.3em;
     }
     
     h2 {
-        font-size: 2.3em;
+        font-size: 2em;
     }
 
     .header {
@@ -624,21 +624,21 @@ button p {
     }
 
     .logo img {
-        width: 15%;
+        width: 13%;
     }
 
     #intro img {
-        width: 80%;
-        margin-bottom: 2em;
-        margin-top: 2em;
+        width: 75%;
+        margin-bottom: 3em;
+        margin-top: 3.5em;
     }
 
     #intro h1 {
-        font-size: 2.7em;
+        font-size: 2.6em;
     }
     
     #intro p{
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .content h2 {
@@ -710,7 +710,7 @@ button p {
     }
     
     h1 {
-        font-size: 2.7em;
+        font-size: 2em;
     }
     
     h2 {
@@ -718,7 +718,7 @@ button p {
     }
 
     .header {
-        top: 3em;
+        top: 2.8em;
     }
     
     .top {
@@ -726,7 +726,7 @@ button p {
     }
 
     .logo img {
-        width: 15%;
+        width: 13%;
     }
 
     #intro {
@@ -804,88 +804,3 @@ button p {
 }
 
 
-@media screen and (max-width: 350px) {
-
-    p {
-        font-size: 1em;
-    }
-    
-    h1 {
-        font-size: 2.5em;
-    }
-    
-    h2 {
-        font-size: 2em;
-    }
-
-    .header {
-        top: 3em;
-    }
-    
-    .top {
-        padding: 0.5em 0 0 0;
-    }
-
-    .logo img {
-        width: 15%;
-    }
-
-    #intro {
-        margin: 0 0 10em 0;
-    }
-
-    #intro h1 {
-        font-size: 2.5em;
-    }
-    
-    #intro p{
-        font-size: 1.3em;
-    }
-
-    .content h2 {
-        font-size: 7em;
-        padding: 0 0 0.2em 0;
-    }
-
-    .textbox p {
-        font-size: 0.85em;
-    }
-
-    .connect p {
-        font-size: 1.5em;
-    }
-
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    button {
-        padding: 0.5em 1em 0.5em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.2em;
-    }
-
-    .resume {
-        margin: 0 0 2em 0;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
-    }
-
-    .follow {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        justify-content: center;
-    }
-
-    .copyright p {
-        font-size: 0.7em;
-    }
-}
