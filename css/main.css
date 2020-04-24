@@ -5,6 +5,7 @@ body {
     background-color: #1A1A1A;
     padding-left: 5%;
     padding-right: 5%;
+    margin: 0;
 }
 
 p {
@@ -18,11 +19,11 @@ p {
 }
 
 h1 {
+    color: #F9F7ED;
     font-family: 'sofia-pro', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3.3em;
-    color: #F9F7ED;
     margin: 0;
 }
 
@@ -35,17 +36,56 @@ h2 {
     margin: 0;
 }
 
+.header {
+    background-color: #1A1A1A;
+    position: sticky;
+    top: 5em;
+    z-index: 0;
+}
+
+.top {
+    background-color: #1A1A1A;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #F9F7ED;
+    text-align: center;
+    padding: 2em 0 0 5em;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    float: right;
+
+}
+
 .current p {
     color: #87C13F;
 }
 
-.logo img {
-    width: 18%;
+.logo {
+    margin: 0;
 }
 
-.logo {
-    position: fixed;
-    margin-top: 0.5em;
+.logo img {
+    float: left;
 }
 
 section {
@@ -121,7 +161,7 @@ section {
 .sort {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     margin-bottom: 1em;
     margin-top: 0.5em;
 }
@@ -160,18 +200,29 @@ button p {
     padding: 2em 0 1.3em 0;
 }
 
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 900px) {
     p {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     
     h1 {
-        font-size: 4.5em;
+        font-size: 4em;
     }
     
     h2 {
         font-size: 2.3em;
+    }
+
+    .header {
+        top: 4em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
+    }
+
+    .navbar {
+        display: none;
     }
 
     .logo img {
@@ -182,14 +233,17 @@ button p {
         width: 70%;
         margin-bottom: 4em;
         margin-top: 2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #intro h1 {
-        font-size: 3.6em;
+        font-size: 5em;
     }
     
     #intro p{
-        font-size: 1.9em;
+        font-size: 2.3em;
     }
 
     .content h2 {
@@ -197,8 +251,43 @@ button p {
         padding: 0 0 0.2em 0;
     }
 
+    .item {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .imagebox {
+        width: 25%;
+    }
+
+    .info {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+    }
+
+    .info img {
+        width: 80%;
+    }
+    
+    .textbox {
+        width: 75%;
+    }
+
     .textbox p {
         font-size: 1em;
+    }
+
+    .project {
+        height: 10em;
+    }
+
+    .sort {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
     }
 
     .connect {
@@ -254,21 +343,177 @@ button p {
     }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 590px) {
     p {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     
     h1 {
-        font-size: 4.2em;
+        font-size: 3.3em;
     }
     
     h2 {
         font-size: 2.3em;
     }
 
+    .header {
+        top: 4em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
+    }
+
     .logo img {
         width: 15%;
+    }
+
+    #intro img {
+        width: 70%;
+        margin-bottom: 4em;
+        margin-top: 2em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro h1 {
+        font-size: 4em;
+    }
+    
+    #intro p{
+        font-size: 2em;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+    .item {
+        width: 91%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagebox {
+        width: 25%;
+    }
+
+    .info {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto;
+        margin-bottom: 2em;
+        margin-top: 0em;
+    }
+
+    .info img {
+        width: 80%;
+    }
+    
+    .textbox {
+        width: 75%;
+    }
+
+    .textbox p {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .project {
+        height: 10em;
+    }
+
+    .sort {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .header {
+        top: 3.3em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
+    }
+
+    .logo img {
+        width: 15%;
+    }
+
+    #intro img {
+        width: 100%;
+        margin-bottom: 4em;
+        margin-top: 2em;
     }
 
     #intro h1 {
@@ -284,8 +529,24 @@ button p {
         padding: 0 0 0.2em 0;
     }
 
+    .info img {
+        width: 100%;
+    }
+
+    .imagebox {
+        width: 25%;
+    }
+    
+    .textbox {
+        width: 70%;
+    }
+
     .textbox p {
-        font-size: 1em;
+        font-size: 1.09em;
+    }
+
+    .project {
+        height: 6em;
     }
 
     .connect {
@@ -341,17 +602,25 @@ button p {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 399px) {
     p {
         font-size: 1.3em;
     }
     
     h1 {
-        font-size: 4em;
+        font-size: 2.7em;
     }
     
     h2 {
         font-size: 2.3em;
+    }
+
+    .header {
+        top: 3em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
     }
 
     .logo img {
@@ -370,6 +639,7 @@ button p {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
+    
 
     .textbox p {
         font-size: 1em;
@@ -434,11 +704,19 @@ button p {
     }
     
     h1 {
-        font-size: 3.7em;
+        font-size: 2.7em;
     }
     
     h2 {
         font-size: 2.15em;
+    }
+
+    .header {
+        top: 3em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
     }
 
     .logo img {
@@ -527,11 +805,19 @@ button p {
     }
     
     h1 {
-        font-size: 3.3em;
+        font-size: 2.5em;
     }
     
     h2 {
         font-size: 2em;
+    }
+
+    .header {
+        top: 3em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
     }
 
     .logo img {
