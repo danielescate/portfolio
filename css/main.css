@@ -252,7 +252,7 @@ button p {
     }
 
     .bio img {
-        width: 100%;
+        width: 90%;
         margin: auto;
         display: block;
     }
@@ -281,13 +281,10 @@ button p {
 
     .sort {
         display: grid;
-        grid-gap: 7em;
+        grid-gap: 5em;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
-    }
-
-    .design {
-        margin-bottom: 2em;
+        margin: 2em 0 2em 0;
     }
 
     .mywork {
@@ -687,11 +684,11 @@ button p {
         font-size: 1.5em;
     }
 
-    .content img {
+    .bio img {
         width: 80%;
     }
 
-    .content h2 {
+    .bio h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
@@ -807,11 +804,6 @@ button p {
     
     #intro p{
         font-size: 1.4em;
-    }
-
-    .content h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
     }
 
     .item {
@@ -968,6 +960,11 @@ button p {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: auto auto;
+        margin: 2em 0 2em 0;
+    }
+
+    .design {
+        margin-bottom: 0em;
     }
 
     .project {
