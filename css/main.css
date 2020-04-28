@@ -887,6 +887,10 @@ button p {
         height: 9em;
     }
 
+    .sort {
+        justify-content: left;
+    }
+
     .design p{
         font-size: 1em;
     }
@@ -1033,7 +1037,7 @@ button p {
     }
 
     #contact {
-        margin-bottom: 4em;
+        margin-bottom: 0em;
     }
 
     .connect {
@@ -1143,7 +1147,7 @@ button p {
 
     .info {
         display: grid;
-        grid-gap: 4em;
+        grid-gap: 5em;
         grid-template-columns: auto;
         margin-bottom: 0em;
         margin-top: 0em;
@@ -1156,14 +1160,14 @@ button p {
     }
 
     #work {
-        height: 60em;
+        height: 75em;
         margin-bottom: 0em;
     }
 
     .sort {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         margin: 2em 0 2em 0;
     }
 
@@ -1172,11 +1176,12 @@ button p {
     }
 
     .design p {
-        font-size: 1.2em;
+        font-size: 0.8em;
+        text-align: left;
     }
 
     .project {
-        height: 10em;
+        height: 15em;
     }
 
     .mywork {
@@ -1302,6 +1307,8 @@ button p {
     #intro p{
         font-size: 1.3em;
     }
+
+    #about {
+        height: 95em;
+    }
 }
-
-
