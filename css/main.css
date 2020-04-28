@@ -201,7 +201,7 @@ button p {
     }
     
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
     
     h2 {
@@ -210,6 +210,7 @@ button p {
 
     .header {
         margin-bottom: 5em;
+        top: 4em;
     }
     
     .top {
@@ -376,18 +377,6 @@ button p {
         margin: 0;
     }
 
-    p {
-        font-size: 1.5em;
-    }
-    
-    h1 {
-        font-size: 4em;
-    }
-    
-    h2 {
-        font-size: 2.3em;
-    }
-
     /* .header {
         bottom: 0;
         writing-mode: tb-rl;
@@ -409,7 +398,12 @@ button p {
     }
 
     #intro img {
-        width: 50%;
+        width: 100%;
+    }
+
+    .photo {
+        float: left;
+        width: 90%;    
     }
 
     .name h1 {
@@ -446,7 +440,7 @@ button p {
     .info {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 30% auto auto;
         margin-bottom: 2em;
         margin-top: 0.5em;
     }
@@ -699,6 +693,12 @@ button p {
 
     #intro {
         margin-bottom: 10em;
+    }
+
+    .start {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto;
     }
 
     #intro img {
@@ -970,6 +970,10 @@ button p {
         width: 10%;
     }
 
+    .photo {
+        display: block;  
+    }
+
     #intro img {
         width: 65%;
         margin-bottom: 3em;
@@ -977,6 +981,10 @@ button p {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .name {
+        display: block;
     }
 
     #intro h1 {
