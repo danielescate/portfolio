@@ -12,7 +12,7 @@ p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     line-height: 1.2em;
     color: #F9F7ED;
     margin: 0;
@@ -133,29 +133,13 @@ section {
     padding: 2.5em 0 0 0;
 }
 
-.info img {
-    width: 100%;
-}
 
-.textbox p {
-    color: #1A1A1A;
-    font-size: 1em;
-}
- 
-.item {
-    background-color: #F9F7ED;
-    border-radius: 1em;
-    padding: 1.5em 0.8em 1.5em 0.8em;
-}
-
-.imagebox {
-    float: left;
-    width: 25%;
-}
-
-.textbox {
-    float: right;
-    width: 70%;
+.textbox h1 {
+    border-bottom-color: #F9F7ED;
+    border-bottom-style: solid;
+    border-width: 0.01em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .sort {
@@ -166,11 +150,14 @@ section {
     margin-top: 0.5em;
 }
 
+.mywork {
+    margin-bottom: 5em;
+}
+
 .project {
     background-color: #F9F7ED;
     border-radius: 1em;
     padding: 1.2em 0.8em 1.2em 0.8em;
-    margin-bottom: 1em;
     height: 6em;
 }
 
@@ -184,13 +171,14 @@ section {
 }
 
 button {
-    background-color: #87C13F;
+    background-color: #F9F7ED;
     border-radius: 5em;
     padding: 1em 1em 1em 1em;
 }
 
 button p {
     font-size: 1.5em;
+    color: #131313;
 }
 
 
@@ -200,13 +188,295 @@ button p {
     padding: 2em 0 1.3em 0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1450px) {
+
+    body {
+        padding-left: 7%;
+        padding-right: 7%;
+        margin: 0;
+    }
+
     p {
         font-size: 1.5em;
     }
     
     h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .header {
+        bottom: 0;
+        writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        margin: -11%;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
+    }
+
+    .logo img {
+        width: 7%;
+    }
+
+    #intro img {
+        width: 50%;
+    }
+
+    .name h1 {
+        font-size: 4.5em;
+    }
+    
+    .name p{
+        font-size: 2.4em;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+
+
+    .info {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+        width: 40%;
+    }
+
+    .project {
+        height: 9em;
+    }
+
+    .sort {
+        display: grid;
+        grid-gap: 7em;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+    }
+
+    .design p{
+        font-size: 0.8em;
+    }
+
+    .mywork {
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: auto auto;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
         font-size: 2.7em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .header {
+        top: 5em;
+        writing-mode: horizontal-tb;
+        margin: 0;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo img {
+        width: 10%;
+    }
+
+    #intro img {
+        width: 50%;
+        margin-bottom: 3em;
+        margin-top: 5em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro h1 {
+        font-size: 4.7em;
+    }
+    
+    #intro p{
+        font-size: 2.3em;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+    .info {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+        width: 100%;
+    }
+
+    .textbox p {
+        font-size: 1em;
+    }
+
+    .project {
+        height: 9em;
+    }
+
+    .sort {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+    }
+
+    .design p{
+        font-size: 1em;
+    }
+
+    .mywork {
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: auto auto;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .copyright p {
+        font-size: 0.8em;
+        padding: 1em 0 1.3em 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
+        font-size: 3em;
     }
     
     h2 {
@@ -226,7 +496,150 @@ button p {
     }
 
     .logo img {
-        width: 12%;
+        width: 10%;
+    }
+
+    #intro img {
+        width: 50%;
+        margin-bottom: 3em;
+        margin-top: 6em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #intro h1 {
+        font-size: 4.5em;
+    }
+    
+    #intro p{
+        font-size: 2.2em;
+    }
+
+    .content img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .content h2 {
+        font-size: 8em;
+        padding: 0 0 0.2em 0;
+    }
+
+    .item {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+    }
+
+    .textbox p {
+        font-size: 1em;
+    }
+
+    .project {
+        height: 9em;
+    }
+
+    .sort {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+    }
+
+    .design p{
+        font-size: 1em;
+    }
+
+    .mywork {
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: auto auto;
+    }
+
+    .connect {
+        margin: 0.5em 0 2em 0;
+    }
+
+    .connect p {
+        font-size: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+
+    .email {
+        margin-bottom: 2em;
+    }
+
+    .email h2 {
+        margin-bottom: 1em;
+    }
+
+    .email p {
+        text-align: center;
+    }
+
+    .resume {
+        margin: 0 0 1em 0;
+    }
+
+    button {
+        padding: 1em 1em 1em 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button p {
+        font-size: 1.5em;
+    }
+
+    .social h2 {
+        margin-bottom: 1em;
+    }
+
+    .follow {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    p {
+        font-size: 1.3em;
+    }
+    
+    h1 {
+        font-size: 2.7em;
+    }
+    
+    h2 {
+        font-size: 2.3em;
+    }
+
+    .header {
+        top: 3.5em;
+    }
+    
+    .top {
+        padding: 0.5em 0 0 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo img {
+        width: 10%;
     }
 
     #intro img {
@@ -246,18 +659,16 @@ button p {
         font-size: 1.5em;
     }
 
+    .content img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .content h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
-    }
-
-    .item {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .imagebox {
-        width: 25%;
     }
 
     .info {
@@ -268,25 +679,23 @@ button p {
         margin-top: 0.5em;
     }
 
-    .info img {
-        width: 80%;
-    }
-    
-    .textbox {
-        width: 75%;
-    }
-
-    .textbox p {
-        font-size: 1em;
-    }
-
     .project {
-        height: 10em;
+        height: 9em;
     }
 
     .sort {
         display: grid;
         grid-gap: 1em;
+        grid-template-columns: auto auto;
+    }
+
+    .design p{
+        font-size: 1em;
+    }
+
+    .mywork {
+        display: grid;
+        grid-gap: 1.5em;
         grid-template-columns: auto auto;
     }
 
@@ -357,7 +766,7 @@ button p {
     }
 
     .header {
-        top: 3.5em;
+        top: 3em;
     }
     
     .top {
@@ -365,7 +774,7 @@ button p {
     }
 
     .logo img {
-        width: 13%;
+        width: 10%;
     }
 
     #intro img {
@@ -391,39 +800,26 @@ button p {
     }
 
     .item {
-        width: 91%;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .imagebox {
-        width: 25%;
-    }
-
     .info {
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         margin-bottom: 2em;
         margin-top: 0em;
     }
 
-    .info img {
-        width: 80%;
-    }
-    
-    .textbox {
-        width: 75%;
-    }
-
-    .textbox p {
-        font-size: 1.2em;
-        text-align: center;
-    }
-
     .project {
-        height: 10em;
+        height: 6em;
+    }
+
+    .design p{
+        font-size: 0.9em;
     }
 
     .sort {
@@ -487,19 +883,19 @@ button p {
 
 @media screen and (max-width: 478px) {
     p {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     
     h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
     
     h2 {
-        font-size: 2.1em;
+        font-size: 2em;
     }
 
     .header {
-        top: 3.3em;
+        top: 3.4em;
     }
     
     .top {
@@ -508,6 +904,10 @@ button p {
 
     .logo img {
         width: 13%;
+    }
+
+    #intro {
+        height: 100%;
     }
 
     #intro img {
@@ -524,33 +924,59 @@ button p {
         font-size: 1.4em;
     }
 
+    #about {
+        margin-bottom: 10em;
+    }
+
+    .content img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+
     .content h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
 
-    .info img {
-        width: 80%;
+    .info {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto;
+        margin-bottom: 2em;
+        margin-top: 0em;
     }
 
-    .imagebox {
-        width: 25%;
-    }
-    
-    .textbox {
-        width: 75%;
+    .textbox h1 {
+        font-size: 1.3em;
+        margin-bottom: 0.5em;
     }
 
-    .textbox p {
-        font-size: 1.2em;
+    #work {
+        margin-bottom: 10em;
     }
 
     .project {
         height: 6em;
     }
 
+    .design p{
+        font-size: 0.9em;
+    }
+
+    .mywork {
+        display: grid;
+        grid-gap: 1.5em;
+        grid-template-columns: auto;
+    }
+
     .connect {
-        margin: 0.5em 0 2em 0;
+        margin-top: 4em;
+    }
+
+    .connect h2 {
+        font-size: 2em;
     }
 
     .connect p {
@@ -575,10 +1001,11 @@ button p {
     }
 
     button {
-        padding: 1em 1em 1em 1em;
+        padding: 0.8em 1em 0.8em 1em;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border: none;
     }
 
     button p {
@@ -598,22 +1025,11 @@ button p {
 
     .copyright p {
         font-size: 0.8em;
-        padding: 1em 0 1.3em 0;
+        padding: 3em 0 1.3em 0;
     }
 }
 
 @media screen and (max-width: 399px) {
-    p {
-        font-size: 1.2em;
-    }
-    
-    h1 {
-        font-size: 2.3em;
-    }
-    
-    h2 {
-        font-size: 2em;
-    }
 
     .header {
         top: 3em;
@@ -645,14 +1061,9 @@ button p {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
-    
 
-    .textbox p {
-        font-size: 1em;
-    }
-
-    .connect {
-        margin: 0.5em 0 2em 0;
+    .design p{
+        font-size: 0.8em;
     }
 
     .connect p {
@@ -676,46 +1087,15 @@ button p {
         margin: 0 0 1em 0;
     }
 
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
-    }
-
     .follow {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
         justify-content: center;
     }
-
-    .copyright p {
-        font-size: 0.8em;
-        padding: 1em 0 1.3em 0;
-    }
 }
 
 @media screen and (max-width: 374px) {
-    p {
-        font-size: 1.15em;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 2.15em;
-    }
 
     .header {
         top: 2.8em;
@@ -746,14 +1126,6 @@ button p {
         padding: 0 0 0.2em 0;
     }
 
-    .textbox p {
-        font-size: 0.94em;
-    }
-
-    .connect {
-        margin: 0.5em 0 2em 0;
-    }
-
     .connect p {
         font-size: 1.5em;
         padding: 0.5em 0 0 0;
@@ -775,31 +1147,11 @@ button p {
         margin: 0 0 1em 0;
     }
 
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
-    }
-
     .follow {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
         justify-content: center;
-    }
-
-    .copyright p {
-        font-size: 0.8em;
-        padding: 1em 0 1.3em 0;
     }
 }
 
