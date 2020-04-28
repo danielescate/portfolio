@@ -89,7 +89,7 @@ li a {
 }
 
 section {
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 #intro {
@@ -725,15 +725,15 @@ button p {
 
     .biobox {
         display: grid;
-        grid-gap: 2em;
+        grid-gap: 0em;
         grid-template-columns: auto;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
         margin-top: 0em;
     }
 
     .bio img {
         width: 50%;
-        margin: 3em auto 3em auto;
+        margin: 2em auto 3em auto;
         display: block;
     }
 
@@ -868,11 +868,6 @@ button p {
 
     .bio img {
         width: 80%;
-    }
-
-    .bio h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
     }
 
     .project {
@@ -1012,10 +1007,6 @@ button p {
         height: 6em;
     }
 
-    .design p{
-        font-size: 0.9em;
-    }
-
     #contact {
         margin-bottom: 4em;
     }
@@ -1079,7 +1070,7 @@ button p {
     }
     
     h1 {
-        font-size: 2.2em;
+        font-size: 2em;
     }
     
     h2 {
@@ -1117,33 +1108,29 @@ button p {
     }
 
     #about {
-        margin-bottom: 10em;
+        margin-bottom: 7em;
     }
 
     .bio img {
         width: 80%;
     }
 
-    .bio h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
-    }
-
     .info {
         display: grid;
-        grid-gap: 2em;
+        grid-gap: 4em;
         grid-template-columns: auto;
-        margin-bottom: 2em;
+        margin-bottom: 0em;
         margin-top: 0em;
     }
 
     .textbox h1 {
         font-size: 1.3em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.7em;
+        padding-bottom: 0.5em;
     }
 
     #work {
-        margin-bottom: 10em;
+        margin-bottom: 0em;
     }
 
     .sort {
@@ -1157,12 +1144,12 @@ button p {
         margin-bottom: 0em;
     }
 
-    .project {
-        height: 6em;
+    .design p {
+        font-size: 1.2em;
     }
 
-    .design p{
-        font-size: 0.9em;
+    .project {
+        height: 6em;
     }
 
     .mywork {
@@ -1176,7 +1163,7 @@ button p {
     }
 
     .connect {
-        margin-top: 4em;
+        margin-top: 10em;
     }
 
     .connect h2 {
