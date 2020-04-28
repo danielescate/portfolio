@@ -221,8 +221,9 @@ button p {
         width: 5%;
     }
 
-    #into {
-        margin-bottom: 20em;
+    #intro {
+        height: 100%;
+        margin-bottom: 0em;
     }
 
     .start {
@@ -255,7 +256,8 @@ button p {
     }
 
     #about {
-        margin-bottom: 20em;
+        height: 100%;
+        margin-bottom: 0em;
     }
 
     .biobox {
@@ -291,7 +293,8 @@ button p {
     }
 
     #work {
-        margin-bottom: 20em;
+        height: 100%;
+        margin-bottom: 0em;
     }
 
     .project {
@@ -393,9 +396,11 @@ button p {
         width: 5%;
     }
 
-    #into {
-        margin-bottom: 20em;
+    #intro {
+        height: 100%;
+        margin-bottom: 0em;
     }
+
 
     #intro img {
         width: 100%;
@@ -693,17 +698,18 @@ button p {
     }
 
     #intro {
-        margin-bottom: 10em;
+        height: 100%;
+        margin-bottom: 0em;
     }
 
     .start {
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
     }
 
     #intro img {
-        width: 50%;
+        width: 100%;
         margin-bottom: 3em;
         margin-top: 6em;
         display: block;
@@ -712,7 +718,7 @@ button p {
     }
 
     #intro h1 {
-        font-size: 4.5em;
+        font-size: 4em;
     }
     
     #intro p{
@@ -720,20 +726,21 @@ button p {
     }
 
     #about {
-        margin-bottom: 15em;
+        height: 70em;
+        margin-bottom: 0em;
     }
 
     .biobox {
         display: grid;
         grid-gap: 0em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         margin-bottom: 3em;
-        margin-top: 0em;
+        margin-top: 5em;
     }
 
     .bio img {
-        width: 50%;
-        margin: 2em auto 3em auto;
+        width: 100%;
+        margin: 1em 2em 0em 0em;
         display: block;
     }
 
@@ -744,9 +751,9 @@ button p {
 
     .info {
         display: grid;
-        grid-gap: 2em;
+        grid-gap: 5em;
         grid-template-columns: auto;
-        margin-bottom: 2em;
+        margin-bottom: 0em;
         margin-top: 0em;
     }
 
@@ -849,6 +856,10 @@ button p {
         width: 10%;
     }
 
+    .start {
+        grid-template-columns: auto;
+    }
+
     #intro img {
         width: 55%;
         margin-bottom: 3em;
@@ -867,7 +878,9 @@ button p {
     }
 
     .bio img {
-        width: 80%;
+        width: 100%;
+        margin: 2em auto 3em auto;
+        display: block;
     }
 
     .project {
@@ -991,6 +1004,18 @@ button p {
         font-size: 1.4em;
     }
 
+    .biobox {
+        display: grid;
+        grid-gap: 0em;
+        grid-template-columns: auto;
+        margin-bottom: 3em;
+        margin-top: 0em;
+    }
+
+    .bio img {
+        width: 80%;
+    }
+
     .item {
         width: 100%;
     }
@@ -1090,7 +1115,7 @@ button p {
     }
 
     #intro {
-        margin-bottom: 15em;
+        margin-bottom: 0em;
     }
 
     #intro img {
@@ -1108,7 +1133,8 @@ button p {
     }
 
     #about {
-        margin-bottom: 7em;
+        height: 90em;
+        margin-bottom: 0em;
     }
 
     .bio img {
