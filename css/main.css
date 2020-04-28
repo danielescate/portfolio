@@ -240,15 +240,12 @@ button p {
         padding: 0 0 0.2em 0;
     }
 
-
-
     .info {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: auto;
         margin-bottom: 2em;
         margin-top: 0.5em;
-        width: 40%;
     }
 
     .project {
@@ -379,6 +376,12 @@ button p {
         font-size: 2.3em;
     }
 
+    .content img {
+        width: 50%;
+        margin: 3em auto 3em auto;
+        display: block;
+    }
+
     .content h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
@@ -386,15 +389,15 @@ button p {
 
     .info {
         display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
+        grid-gap: 2.5em;
+        grid-template-columns: auto auto auto;
         margin-bottom: 2em;
         margin-top: 0.5em;
-        width: 100%;
     }
 
-    .textbox p {
-        font-size: 1em;
+    .textbox h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
     }
 
     .project {
@@ -404,7 +407,7 @@ button p {
     .sort {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto auto;
     }
 
     .design p{
@@ -499,6 +502,10 @@ button p {
         width: 10%;
     }
 
+    #intro {
+        margin-bottom: 10em;
+    }
+
     #intro img {
         width: 50%;
         margin-bottom: 3em;
@@ -516,10 +523,13 @@ button p {
         font-size: 2.2em;
     }
 
+    #about {
+        margin-bottom: 15em;
+    }
+
     .content img {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 50%;
+        margin: 3em auto 3em auto;
         display: block;
     }
 
@@ -528,31 +538,20 @@ button p {
         padding: 0 0 0.2em 0;
     }
 
-    .item {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .info {
         display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
+        grid-gap: 2em;
+        grid-template-columns: auto;
         margin-bottom: 2em;
-        margin-top: 0.5em;
+        margin-top: 0em;
     }
 
-    .textbox p {
-        font-size: 1em;
+    #work {
+        margin-bottom: 15em;
     }
 
     .project {
         height: 9em;
-    }
-
-    .sort {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
     }
 
     .design p{
@@ -563,6 +562,10 @@ button p {
         display: grid;
         grid-gap: 1.5em;
         grid-template-columns: auto auto;
+    }
+
+    #contact {
+        margin-bottom: 3em;
     }
 
     .connect {
@@ -643,7 +646,7 @@ button p {
     }
 
     #intro img {
-        width: 60%;
+        width: 55%;
         margin-bottom: 3em;
         margin-top: 4em;
         display: block;
@@ -661,9 +664,6 @@ button p {
 
     .content img {
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
     }
 
     .content h2 {
@@ -671,22 +671,8 @@ button p {
         padding: 0 0 0.2em 0;
     }
 
-    .info {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
-        margin-bottom: 2em;
-        margin-top: 0.5em;
-    }
-
     .project {
         height: 9em;
-    }
-
-    .sort {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
     }
 
     .design p{
@@ -697,6 +683,10 @@ button p {
         display: grid;
         grid-gap: 1.5em;
         grid-template-columns: auto auto;
+    }
+
+    #contact {
+        margin-bottom: 4em;
     }
 
     .connect {
@@ -801,15 +791,12 @@ button p {
 
     .item {
         width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .info {
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         margin-bottom: 2em;
         margin-top: 0em;
     }
@@ -822,10 +809,8 @@ button p {
         font-size: 0.9em;
     }
 
-    .sort {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
+    #contact {
+        margin-bottom: 4em;
     }
 
     .connect {
@@ -877,7 +862,7 @@ button p {
 
     .copyright p {
         font-size: 0.8em;
-        padding: 1em 0 1.3em 0;
+        padding: 3em 0 1.3em 0;
     }
 }
 
@@ -907,7 +892,7 @@ button p {
     }
 
     #intro {
-        height: 100%;
+        margin-bottom: 10em;
     }
 
     #intro img {
@@ -929,10 +914,7 @@ button p {
     }
 
     .content img {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        display: block;
+        width: 80%;
     }
 
     .content h2 {
@@ -957,6 +939,12 @@ button p {
         margin-bottom: 10em;
     }
 
+    .sort {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+    }
+
     .project {
         height: 6em;
     }
@@ -969,6 +957,10 @@ button p {
         display: grid;
         grid-gap: 1.5em;
         grid-template-columns: auto;
+    }
+
+    #contact {
+        margin-bottom: 5em;
     }
 
     .connect {
@@ -1056,43 +1048,6 @@ button p {
     #intro p{
         font-size: 1.3em;
     }
-
-    .content h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
-    }
-
-    .design p{
-        font-size: 0.8em;
-    }
-
-    .connect p {
-        font-size: 1.5em;
-        padding: 0.5em 0 0 0;
-    }
-
-    .email {
-        margin-bottom: 2em;
-    }
-
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
-    .resume {
-        margin: 0 0 1em 0;
-    }
-
-    .follow {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 374px) {
@@ -1119,39 +1074,6 @@ button p {
     
     #intro p{
         font-size: 1.3em;
-    }
-
-    .content h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
-    }
-
-    .connect p {
-        font-size: 1.5em;
-        padding: 0.5em 0 0 0;
-    }
-
-    .email {
-        margin-bottom: 2em;
-    }
-
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
-    .resume {
-        margin: 0 0 1em 0;
-    }
-
-    .follow {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        justify-content: center;
     }
 }
 
