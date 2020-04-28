@@ -223,6 +223,10 @@ button p {
         width: 7%;
     }
 
+    #into {
+        margin-bottom: 20em;
+    }
+
     #intro img {
         width: 50%;
     }
@@ -235,7 +239,25 @@ button p {
         font-size: 2.4em;
     }
 
-    .content h2 {
+    #about {
+        margin-bottom: 20em;
+    }
+
+    .biobox {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+        margin-bottom: 2em;
+        margin-top: 0em;
+    }
+
+    .bio img {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .bio h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
@@ -243,13 +265,18 @@ button p {
     .info {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto auto;
         margin-bottom: 2em;
         margin-top: 0.5em;
     }
 
+    .textbox h1 {
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+    }
+
     .project {
-        height: 9em;
+        height: 20em;
     }
 
     .sort {
@@ -259,8 +286,8 @@ button p {
         justify-content: center;
     }
 
-    .design p{
-        font-size: 0.8em;
+    .design {
+        margin-bottom: 2em;
     }
 
     .mywork {
@@ -376,13 +403,7 @@ button p {
         font-size: 2.3em;
     }
 
-    .content img {
-        width: 50%;
-        margin: 3em auto 3em auto;
-        display: block;
-    }
-
-    .content h2 {
+    .bio h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
@@ -408,10 +429,6 @@ button p {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: auto auto auto auto;
-    }
-
-    .design p{
-        font-size: 1em;
     }
 
     .mywork {
@@ -527,13 +544,21 @@ button p {
         margin-bottom: 15em;
     }
 
-    .content img {
+    .biobox {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto;
+        margin-bottom: 2em;
+        margin-top: 0em;
+    }
+
+    .bio img {
         width: 50%;
         margin: 3em auto 3em auto;
         display: block;
     }
 
-    .content h2 {
+    .bio h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
@@ -913,11 +938,11 @@ button p {
         margin-bottom: 10em;
     }
 
-    .content img {
+    .bio img {
         width: 80%;
     }
 
-    .content h2 {
+    .bio h2 {
         font-size: 8em;
         padding: 0 0 0.2em 0;
     }
