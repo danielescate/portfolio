@@ -197,7 +197,7 @@ button p {
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     
     h1 {
@@ -209,7 +209,7 @@ button p {
     }
 
     .header {
-        margin-bottom: 5em;
+        margin-bottom: 4em;
         top: 4em;
     }
     
@@ -218,7 +218,7 @@ button p {
     }
 
     .logo img {
-        width: 7%;
+        width: 5%;
     }
 
     #into {
@@ -390,7 +390,7 @@ button p {
     }
 
     .logo img {
-        width: 7%;
+        width: 5%;
     }
 
     #into {
@@ -407,11 +407,11 @@ button p {
     }
 
     .name h1 {
-        font-size: 4.5em;
+        font-size: 7em;
     }
     
     .name p{
-        font-size: 2.4em;
+        font-size: 3.5em;
     }
 
     #about {
@@ -521,7 +521,7 @@ button p {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 
     body {
         padding-left: 5%;
@@ -541,7 +541,7 @@ button p {
     }
 
     .header {
-        top: 5em;
+        top: 4.5em;
         writing-mode: horizontal-tb;
         margin: 0;
     }
@@ -550,12 +550,13 @@ button p {
         padding: 0.5em 0 0 0;
     }
 
-    .navbar {
-        display: none;
+    .logo img {
+        width: 7%;
     }
 
-    .logo img {
-        width: 10%;
+    .photo {
+        float: left;
+        width: 100%
     }
 
     #intro img {
