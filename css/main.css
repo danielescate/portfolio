@@ -139,7 +139,7 @@ section {
     border-bottom-style: solid;
     border-width: 0.01em;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .sort {
@@ -1156,6 +1156,7 @@ button p {
     }
 
     #work {
+        height: 60em;
         margin-bottom: 0em;
     }
 
@@ -1175,7 +1176,7 @@ button p {
     }
 
     .project {
-        height: 6em;
+        height: 10em;
     }
 
     .mywork {
@@ -1185,7 +1186,8 @@ button p {
     }
 
     #contact {
-        margin-bottom: 5em;
+        height: 40em;
+        margin-bottom: 0em;
     }
 
     .connect {
