@@ -209,10 +209,7 @@ button p {
     }
 
     .header {
-        bottom: 0;
-        writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-        margin: -11%;
+        margin-bottom: 5em;
     }
     
     .top {
@@ -227,16 +224,33 @@ button p {
         margin-bottom: 20em;
     }
 
+    .start {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+    }
+
     #intro img {
-        width: 50%;
+        width: 100%;
+    }
+
+    .photo {
+        float: left;
+        width: 90%;    
+    }
+
+    .name {
+        margin-bottom: auto;
+        margin-top: auto;
+        display: block;
     }
 
     .name h1 {
-        font-size: 4.5em;
+        font-size: 7em;
     }
     
     .name p{
-        font-size: 2.4em;
+        font-size: 3.5em;
     }
 
     #about {
@@ -275,6 +289,10 @@ button p {
         margin-bottom: 0.5em;
     }
 
+    #work {
+        margin-bottom: 20em;
+    }
+
     .project {
         height: 15em;
     }
@@ -291,6 +309,10 @@ button p {
         display: grid;
         grid-gap: 1.5em;
         grid-template-columns: auto auto auto;
+    }
+
+    #contact {
+        margin-bottom: 15em;
     }
 
     .connect {
@@ -366,12 +388,13 @@ button p {
         font-size: 2.3em;
     }
 
-    .header {
+    /* .header {
         bottom: 0;
         writing-mode: tb-rl;
         writing-mode: vertical-rl;
         margin: -11%;
     }
+    */
     
     .top {
         padding: 0.5em 0 0 0;
