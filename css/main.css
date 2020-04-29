@@ -257,7 +257,6 @@ section {
     }
 
     .textbox h1 {
-        font-size: 1.6em;
         margin-bottom: 0.5em;
     }
 
@@ -388,7 +387,6 @@ section {
     }
 
     .textbox h1 {
-        font-size: 1.6em;
         margin-bottom: 0.5em;
     }
 
@@ -504,7 +502,6 @@ section {
     }
 
     .textbox h1 {
-        font-size: 1.5em;
         margin-bottom: 0.5em;
     }
 
@@ -560,11 +557,11 @@ section {
     }
     
     h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
     
     h2 {
-        font-size: 2.3em;
+        font-size: 1.5em;
     }
 
     .header {
@@ -612,7 +609,7 @@ section {
     }
 
     #about {
-        height: 70em;
+        height: 90em;
         margin-bottom: 0em;
     }
 
@@ -643,8 +640,16 @@ section {
         margin-top: 0em;
     }
 
+    .textbox h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .textbox p {
+        margin-bottom: 0.5em;
+    }
+
     #work {
-        margin-bottom: 15em;
+        margin-bottom: 0em;
     }
 
     .project {
@@ -697,11 +702,11 @@ section {
     }
     
     h1 {
-        font-size: 2.7em;
+        font-size: 2em;
     }
     
     h2 {
-        font-size: 2.3em;
+        font-size: 1.5em;
     }
 
     .header {
@@ -749,10 +754,6 @@ section {
 
     .project {
         height: 9em;
-    }
-
-    .sort {
-        justify-content: left;
     }
 
     .design p{
@@ -816,11 +817,11 @@ section {
     }
     
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     
     h2 {
-        font-size: 2.1em;
+        font-size: 1.5em;
     }
 
     .header {
