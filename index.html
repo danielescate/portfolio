@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ddd8vkh.css">
     <script src="js/index.js"></script>
@@ -25,10 +26,10 @@
     <main>
         <section id="intro">
             <div class="start">
-                <div class="photo wow fadeInDown">
-                    <img src="img/de-logo.png" alt="logo">
+                <div class="photo">
+                    <img src="img/de-logo.png" alt="logo" data-aos="slide-down">
                 </div>
-                <div class="name wow fadeInRight">
+                <div class="name" data-aos="slide-left">
                     <h1>Daniel Escate</h1>
                     <p>Interaction Designer</p>   
                 </div> 
@@ -36,15 +37,15 @@
         </section> 
         
         <section id="about">
-            <div class="header wow fadeInLeftBig delay-0.5s">
+            <div class="header" data-aos="fade-right">
                 <h1>About Me</h1>
             </div>
             <div class="content">
                 <div class="biobox">
                     <div class="bio">
-                        <img src="img/de.png" alt="Daniel" class="wow fadeInUpBig delay-0.5s">
+                        <img src="img/de.png" alt="Daniel" data-aos="fade-up">
                     </div>
-                    <div class="bio wow fadeInUpBig delay-0.5s"">
+                    <div class="bio" data-aos="fade-up">
                         <p>I have always been a creative individual with a strong interest in understanding how things work and how they can be improved through innovative design.</p>
                         <p>My current goal is to create intuitive designs that lead to seamless user experiences, no matter the medium.</p>
                         <p>I have had the opportunity to work in a variety of different positions which have helped me gain the skills that I confidently possess today and apply in my portfolio work.</p>
@@ -53,25 +54,31 @@
                 <div class="info">
                     <div class="item">
                         <div class="textbox">
-                            <h1 class="wow fadeInLeftBig delay-0.5s">Education 🎓</h1>
-                            <h2 class="wow fadeInUp delay-1s">I went to...</h2>
-                            <p class="wow fadeInUp delay-1s">George Brown College</p> 
-                            <h2 class="wow fadeInUp delay-1s"> And studied...</h2>
-                            <p class="wow fadeInUp delay-1s">Interaction Design and Development</p>
+                            <h1 data-aos="fade-right">Education 🎓</h1>
+                            <div data-aos="fade-down">
+                                <h2>I went to...</h2>
+                                <p>George Brown College</p> 
+                                <h2>And studied...</h2>
+                                <p>Interaction Design and Development</p>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="textbox">
-                            <h1 class="wow fadeInLeftBig delay-0.5s">Computer Skills 🖥</h1>
-                            <h2 class="wow fadeInUp delay-1s">I can use...</h2>
-                            <p class="wow fadeInUp delay-1s">Illustrator, Photoshop, After Effects, InDesign, Unity, Vuforia, Maya, html, css, js.</p>
+                            <h1 data-aos="fade-right">Computer Skills 🖥</h1>
+                            <div data-aos="fade-down">
+                                <h2>I can use...</h2>
+                                <p>Illustrator, Photoshop, After Effects, InDesign, Unity, Vuforia, Maya, html, css, js.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="textbox">
-                            <h1 class="wow fadeInLeftBig delay-0.5s">Design Skills ✏️</h1>
-                            <h2 class="wow fadeInUp delay-1s">I can design...</h2>
-                            <p class="wow fadeInUp delay-1s">User interfaces/user experience, vector graphics, branding, flow charts, wireframes, motion graphics, augmented reality.</p>
+                            <h1 data-aos="fade-right"">Design Skills ✏️</h1>
+                            <div data-aos="fade-down">
+                                <h2>I can design...</h2>
+                                <p>User interfaces/user experience, vector graphics, branding, flow charts, wireframes, motion graphics, augmented reality.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,46 +86,46 @@
         </section>
 
         <section id="work">
-            <div class="header wow fadeInLeftBig delay-0.5s">
+            <div class="header" data-aos="fade-right">
                 <h1>Work</h1>
             </div>
             <div class="sort">
                 <div class="design current">
-                    <p class="wow fadeInUp delay-1s">Branding</p>
+                    <p data-aos="fade-up">Branding</p>
                 </div>
                 <div class="design">
-                    <p class="wow fadeInUp delay-1s">UX/UI Design</p>
+                    <p data-aos="fade-up">UX/UI Design</p>
                 </div>
                 <div class="design">
-                    <p class="wow fadeInUp delay-1s">Motion Graphics</p>
+                    <p data-aos="fade-up">Motion Graphics</p>
                 </div>
                 <div class="design">
-                    <p class="wow fadeInUp delay-1s">Illustrations</p>
+                    <p data-aos="fade-up">Illustrations</p>
                 </div>
             </div>
             <div class="mywork">
-                <div class="project wow fadeInUp delay-1s"">
+                <div class="project" data-aos="fade-up">
                 </div>
-                <div class="project wow fadeInUp delay-1s"">
+                <div class="project" data-aos="fade-up">
                 </div>
-                <div class="project wow fadeInUp delay-1s"">
+                <div class="project" data-aos="fade-up">
                 </div>
             </div>
         </section>
     </main>
 
     <section id="contact">
-        <div class="header wow fadeInLeftBig delay-1s">
+        <div class="header" data-aos="fade-right">
             <h1>Contact</h1>
         </div>
-        <div class="connect">
+        <div class="connect" data-aos="fade-up">
             <h2>Connect with me</h2>
             <p>Let's talk design!</p>
         </div>
-        <div class="email">
+        <div class="email" data-aos="fade-up">
             <p>daniel.f.escate@gmail.com</p>
         </div>
-        <div class="social">
+        <div class="social" data-aos="fade-up">
             <div class="follow">
             <div class="link">
                 <img src="" alt="icon">
@@ -136,11 +143,14 @@
         <p>Daniel Escate © 2020</p>
     </div>
 
-    <script src="js/wow.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        new WOW().init();
+        AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: 'animated',
+        });
     </script>
-    
+
 </body>
 </html>
