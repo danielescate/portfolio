@@ -184,12 +184,13 @@ section {
     }
 
     .header {
-        margin-bottom: 4em;
+        margin-bottom: 0em;
         top: 4em;
     }
     
     .top {
         padding: 0.5em 0 0 0;
+        background-color: #131313;
     }
 
     .logo img {
@@ -239,8 +240,8 @@ section {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
-        margin-bottom: 2em;
-        margin-top: 0em;
+        margin-bottom: 7em;
+        margin-top: 7em;
     }
 
     .bio img {
@@ -251,8 +252,8 @@ section {
 
     .info {
         display: grid;
-        grid-gap: 1em;
-        grid-template-columns: auto auto auto;
+        grid-gap: 5em;
+        grid-template-columns: auto auto;
         margin-bottom: 2em;
         margin-top: 0.5em;
     }
@@ -275,7 +276,7 @@ section {
         grid-gap: 5em;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
-        margin: 2em 0 2em 0;
+        margin: 5em 0 3em 0;
     }
 
     .mywork {
@@ -369,8 +370,8 @@ section {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
-        margin-bottom: 2em;
-        margin-top: 0em;
+        margin-bottom: 5em;
+        margin-top: 5em;
     }
 
     .bio img {
@@ -455,7 +456,7 @@ section {
     }
     
     h2 {
-        font-size: 2.3em;
+        font-size: 2em;
     }
 
     .header {
@@ -496,10 +497,10 @@ section {
 
     .info {
         display: grid;
-        grid-gap: 2.5em;
-        grid-template-columns: auto auto auto;
-        margin-bottom: 2em;
-        margin-top: 0.5em;
+        grid-gap: 3em;
+        grid-template-columns: auto auto;
+        margin-bottom: 5em;
+        margin-top: 0em;
     }
 
     .textbox h1 {
@@ -514,6 +515,7 @@ section {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: auto auto auto auto;
+        margin: 4em 0 4em 0;
     }
 
     .mywork {
@@ -589,11 +591,11 @@ section {
     .start {
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     #intro img {
-        width: 100%;
+        width: 50%;
         margin-bottom: 3em;
         margin-top: 6em;
         display: block;
@@ -749,7 +751,7 @@ section {
 
     .bio img {
         width: 100%;
-        margin: 2em auto 3em auto;
+        margin: 0em auto 0em auto;
         display: block;
     }
 
@@ -866,12 +868,13 @@ section {
         display: grid;
         grid-gap: 0em;
         grid-template-columns: auto;
-        margin-bottom: 3em;
-        margin-top: 0em;
+        margin-bottom: 5em;
+        margin-top: 5em;
     }
 
     .bio img {
         width: 80%;
+        padding-bottom: 5em;
     }
 
     .item {
@@ -983,7 +986,7 @@ section {
     }
 
     #about {
-        height: 115em;
+        height: 120em;
         margin-bottom: 0em;
     }
 
@@ -1014,16 +1017,16 @@ section {
     }
 
     #work {
-        height: 75em;
+        height: 80em;
         margin-bottom: 0em;
     }
 
     .sort {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto;
-        margin: 1.5em 0 2em 0;
-        justify-content: left;
+        grid-template-columns: auto auto;
+        margin: 4em 0 4em 0;
+        justify-content: center;
     }
 
     .design {
@@ -1032,7 +1035,7 @@ section {
 
     .design p {
         font-size: 1.2em;
-        text-align: left;
+        text-align: center;
     }
 
     .project {
@@ -1133,9 +1136,5 @@ section {
     
     #intro p{
         font-size: 1.3em;
-    }
-
-    #about {
-        height: 115em;
     }
 }
