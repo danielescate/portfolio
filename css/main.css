@@ -1022,6 +1022,7 @@ section {
         grid-gap: 1em;
         grid-template-columns: auto;
         margin: 1.5em 0 2em 0;
+        justify-content: left;
     }
 
     .design {
