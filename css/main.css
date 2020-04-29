@@ -232,7 +232,7 @@ section {
     }
 
     #about {
-        height: 100%;
+        height: 85em;
         margin-bottom: 0em;
     }
 
@@ -263,7 +263,7 @@ section {
     }
 
     #work {
-        height: 100%;
+        height: 60em;
         margin-bottom: 0em;
     }
 
@@ -274,7 +274,7 @@ section {
     .sort {
         display: grid;
         grid-gap: 5em;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto ;
         justify-content: center;
         margin: 5em 0 3em 0;
     }
@@ -306,7 +306,7 @@ section {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
-        justify-content: center;
+        justify-content: left;
     }
 
     .copyright p {
@@ -363,7 +363,8 @@ section {
     }
 
     #about {
-        margin-bottom: 20em;
+        height: 80em;
+        margin-bottom: 0em;
     }
 
     .biobox {
@@ -521,7 +522,7 @@ section {
     .mywork {
         display: grid;
         grid-gap: 1.5em;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
     }
 
     .connect {
@@ -1074,7 +1075,7 @@ section {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
-        justify-content: center;
+        justify-content: left;
     }
 
     .copyright p {
