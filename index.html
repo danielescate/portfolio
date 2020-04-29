@@ -25,10 +25,10 @@
     <main>
         <section id="intro">
             <div class="start">
-                <div class="photo animated fadeInDown">
+                <div class="photo wow fadeInDown">
                     <img src="img/de-logo.png" alt="logo">
                 </div>
-                <div class="name animated fadeInRight">
+                <div class="name wow fadeInRight">
                     <h1>Daniel Escate</h1>
                     <p>Interaction Designer</p>   
                 </div> 
@@ -36,42 +36,42 @@
         </section> 
         
         <section id="about">
-            <div class="header">
+            <div class="header wow slideInLeft">
                 <h1>About Me</h1>
             </div>
             <div class="content">
                 <div class="biobox">
                     <div class="bio">
-                        <img src="img/de.png" alt="Daniel">
+                        <img src="img/de.png" alt="Daniel" class="wow slideInUp">
                     </div>
                     <div class="bio">
-                        <p>I have always been a creative individual with a strong interest in understanding how things work and how they can be improved through innovative design.</p>
-                        <p>My current goal is to create intuitive designs that lead to seamless user experiences, no matter the medium.</p>
-                        <p>I have had the opportunity to work in a variety of different positions which have helped me gain the skills that I confidently possess today and apply in my portfolio work.</p>
+                        <p class="wow slideInUp">I have always been a creative individual with a strong interest in understanding how things work and how they can be improved through innovative design.</p>
+                        <p class="wow slideInUp">My current goal is to create intuitive designs that lead to seamless user experiences, no matter the medium.</p>
+                        <p class="wow slideInUp">I have had the opportunity to work in a variety of different positions which have helped me gain the skills that I confidently possess today and apply in my portfolio work.</p>
                     </div>
                 </div>
                 <div class="info">
                     <div class="item">
                         <div class="textbox">
-                            <h1>Education 🎓</h1>
-                            <h2>I went to...</h2>
-                            <p>George Brown College</p> 
-                            <h2> And studied...</h2>
-                            <p>Interaction Design and Development</p>
+                            <h1 class="wow slideInLeft">Education 🎓</h1>
+                            <h2 class="wow slideInDown">I went to...</h2>
+                            <p class="wow slideInDown">George Brown College</p> 
+                            <h2 class="wow slideInDown"> And studied...</h2>
+                            <p class="wow slideInDown">Interaction Design and Development</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="textbox">
-                            <h1>Computer Skills 🖥</h1>
-                            <h2>I can use...</h2>
-                            <p>Illustrator, Photoshop, After Effects, InDesign, Unity, Vuforia, Maya, html, css, js.</p>
+                            <h1 class="wow slideInLeft">Computer Skills 🖥</h1>
+                            <h2 class="wow slideInDown">I can use...</h2>
+                            <p class="wow slideInDown">Illustrator, Photoshop, After Effects, InDesign, Unity, Vuforia, Maya, html, css, js.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="textbox">
-                            <h1>Design Skills ✏️</h1>
-                            <h2>I can design...</h2>
-                            <p>User interfaces/user experience, vector graphics, branding, flow charts, wireframes, motion graphics, augmented reality.</p>
+                            <h1 class="wow slideInLeft">Design Skills ✏️</h1>
+                            <h2 class="wow slideInDown">I can design...</h2>
+                            <p class="wow slideInDown">User interfaces/user experience, vector graphics, branding, flow charts, wireframes, motion graphics, augmented reality.</p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
         </section>
 
         <section id="work">
-            <div class="header">
+            <div class="header wow slideInLeft">
                 <h1>Work</h1>
             </div>
             <div class="sort">
@@ -108,7 +108,7 @@
     </main>
 
     <section id="contact">
-        <div class="header">
+        <div class="header wow slideInLeft">
             <h1>Contact</h1>
         </div>
         <div class="connect">
@@ -135,6 +135,12 @@
     <div class="copyright">
         <p>Daniel Escate © 2020</p>
     </div>
+
+    <script src="js/wow.min.js"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
     
 </body>
 </html>
