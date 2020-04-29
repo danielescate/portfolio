@@ -36,15 +36,13 @@ h2 {
     margin: 0;
 }
 
-.header {
-    background-color: #131313;
-    position: sticky;
-    top: 5em;
-    z-index: 0;
+.header h1 {
+    border-bottom-color: #F9F7ED;
+    border-bottom-style: solid;
+    border-width: 0.01em;
 }
 
 .top {
-    background-color: #131313;
     overflow: auto;
     position: sticky;
     top: 0;
@@ -117,15 +115,6 @@ section {
     padding: 0;
 }
 
-.content h2 {
-    font-family: sofia-pro, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 7em;
-    color: #F9F7ED;
-    line-height: 1em;
-}
-
 .info {
     display: grid;
     grid-gap: 2em;
@@ -138,8 +127,6 @@ section {
     border-bottom-color: #F9F7ED;
     border-bottom-style: solid;
     border-width: 0.01em;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
 }
 
 .sort {
@@ -165,22 +152,9 @@ section {
     margin: 2em 0 3em 0;
 }
 
-
 .email {
     margin-bottom: 3em;
 }
-
-button {
-    background-color: #F9F7ED;
-    border-radius: 5em;
-    padding: 1em 1em 1em 1em;
-}
-
-button p {
-    font-size: 1.5em;
-    color: #131313;
-}
-
 
 .copyright p {
     font-size: 0.7em;
@@ -274,11 +248,6 @@ button p {
         display: block;
     }
 
-    .bio h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
-    }
-
     .info {
         display: grid;
         grid-gap: 1em;
@@ -330,33 +299,6 @@ button p {
 
     .email {
         margin-bottom: 2em;
-    }
-
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
-    .resume {
-        margin: 0 0 1em 0;
-    }
-
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
     }
 
     .follow {
@@ -437,11 +379,6 @@ button p {
         display: block;
     }
 
-    .bio h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
-    }
-
     .info {
         display: grid;
         grid-gap: 1em;
@@ -486,31 +423,8 @@ button p {
         margin-bottom: 2em;
     }
 
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
     .resume {
         margin: 0 0 1em 0;
-    }
-
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
     }
 
     .follow {
@@ -581,11 +495,6 @@ button p {
         font-size: 2.3em;
     }
 
-    .bio h2 {
-        font-size: 8em;
-        padding: 0 0 0.2em 0;
-    }
-
     .info {
         display: grid;
         grid-gap: 2.5em;
@@ -628,31 +537,8 @@ button p {
         margin-bottom: 2em;
     }
 
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
     .resume {
         margin: 0 0 1em 0;
-    }
-
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
     }
 
     .follow {
@@ -792,32 +678,10 @@ button p {
         margin-bottom: 2em;
     }
 
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
     .resume {
         margin: 0 0 1em 0;
     }
 
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
-    }
 
     .follow {
         display: grid;
@@ -918,14 +782,6 @@ button p {
         margin-bottom: 2em;
     }
 
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
     .resume {
         margin: 0 0 1em 0;
     }
@@ -939,10 +795,6 @@ button p {
 
     button p {
         font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
     }
 
     .follow {
@@ -1053,14 +905,6 @@ button p {
         margin-bottom: 2em;
     }
 
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
     .resume {
         margin: 0 0 1em 0;
     }
@@ -1103,11 +947,11 @@ button p {
     }
     
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
-    .header {
-        top: 3.4em;
+    .header h1{
+        padding-bottom: 0.5em;
     }
     
     .top {
@@ -1137,7 +981,7 @@ button p {
     }
 
     #about {
-        height: 90em;
+        height: 115em;
         margin-bottom: 0em;
     }
 
@@ -1154,9 +998,17 @@ button p {
     }
 
     .textbox h1 {
-        font-size: 1.3em;
-        margin-bottom: 0.7em;
+        font-size: 2em;
+        margin-bottom: 0.5em;
         padding-bottom: 0.5em;
+    }
+
+    .textbox h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .textbox p{
+        margin-bottom: 0.5em;
     }
 
     #work {
@@ -1168,7 +1020,7 @@ button p {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: auto;
-        margin: 2em 0 2em 0;
+        margin: 1.5em 0 2em 0;
     }
 
     .design {
@@ -1191,12 +1043,12 @@ button p {
     }
 
     #contact {
-        height: 40em;
+        height: 35em;
         margin-bottom: 0em;
     }
 
     .connect {
-        margin-top: 10em;
+        margin-top: 5em;
     }
 
     .connect h2 {
@@ -1212,34 +1064,6 @@ button p {
         margin-bottom: 2em;
     }
 
-    .email h2 {
-        margin-bottom: 1em;
-    }
-
-    .email p {
-        text-align: center;
-    }
-
-    .resume {
-        margin: 0 0 1em 0;
-    }
-
-    button {
-        padding: 0.8em 1em 0.8em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border: none;
-    }
-
-    button p {
-        font-size: 1.5em;
-    }
-
-    .social h2 {
-        margin-bottom: 1em;
-    }
-
     .follow {
         display: grid;
         grid-gap: 2em;
@@ -1249,7 +1073,7 @@ button p {
 
     .copyright p {
         font-size: 0.8em;
-        padding: 3em 0 1.3em 0;
+        padding: 0em 0 1.3em 0;
     }
 }
 
@@ -1309,6 +1133,6 @@ button p {
     }
 
     #about {
-        height: 95em;
+        height: 115em;
     }
 }
