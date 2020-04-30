@@ -3,9 +3,8 @@
 
 body {
     background-color: #131313;
-    padding-left: 5%;
-    padding-right: 5%;
     margin: 0;
+    padding: 0;
 }
 
 p {
@@ -43,51 +42,124 @@ h2 {
 }
 
 .top {
-    overflow: auto;
+    background-color: #131313;
     position: sticky;
+    padding: 0.5em 0 0 0;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
     padding: 0;
     overflow: hidden;
-}
-
-li {
-    float: left;
+    background-color: #131313;
 }
 
 li a {
     display: block;
     color: #F9F7ED;
     text-align: center;
-    padding: 2em 0 0 5em;
+    padding: 2em 0 2em 0;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
 }
 
-.navbar {
-    float: right;
-
-}
-
-.current p {
-    color: #87C13F;
+li a:hover,
+.menu-btn:hover {
+  color: #87C13F;
 }
 
 .logo {
     margin: 0;
+    
 }
 
 .logo img {
     float: left;
 }
 
-section {
-    margin-bottom: 0em;
+.menu {
+    background-color: #131313;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 50% 0 50% 0 ;
+    position: fixed;
+    display: none;
+    z-index: -1;
+}
+
+.menu-icon {
+    float: right;
+    padding: 1.3em 0 0 0;
+}
+
+.menu-icon  .navicon {
+  background: #F9F7ED;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 1em;
+}
+
+.menu-icon  .navicon:before,
+.menu-icon  .navicon:after {
+  background: #F9F7ED;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navicon:before {
+  top: 5px;
+}
+
+.navicon:after {
+  top: -5px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+    display: block;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+.current p {
+    color: #87C13F;
+}
+
+main {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #intro {
@@ -573,7 +645,7 @@ section {
     }
     
     .top {
-        padding: 0.5em 0 0 0;
+        padding: 0 0 0 0;
         background-color: transparent;
     }
 
@@ -719,7 +791,7 @@ section {
     }
     
     .top {
-        padding: 0.5em 0 0 0;
+        padding: 0 0 0 0;
     }
 
     .navbar {
@@ -834,7 +906,7 @@ section {
     }
     
     .top {
-        padding: 0.5em 0 0 0;
+        padding: 0 0 0 0;
     }
 
     .logo img {
@@ -1090,10 +1162,6 @@ section {
     .header {
         top: 3em;
     }
-    
-    .top {
-        padding: 0.5em 0 0 0;
-    }
 
     .logo img {
         width: 13%;
@@ -1119,10 +1187,6 @@ section {
     .header {
         top: 2.8em;
     }
-    
-    .top {
-        padding: 0.5em 0 0 0;
-    }
 
     .logo img {
         width: 13%;
@@ -1133,7 +1197,7 @@ section {
     }
 
     #intro h1 {
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     
     #intro p{
