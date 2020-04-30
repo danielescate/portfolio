@@ -13,9 +13,10 @@
 </head>
 <body>
     <div class="top">
-        <a href="" class="logo"><img src="img/de-logo.png" alt="logo" data-aos="fade-right" data-aos-anchor=".bio"></a>
+        <a href="" class="logo"><img src="img/de-logo-light.png" id="main" alt="logo" data-aos="fade-right" data-aos-anchor=".bio"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <img id="toggle" src="img/sun.png" alt="light" onclick="myFunction()">
         <ul class="menu">
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#work">WORK</a></li>
@@ -28,7 +29,7 @@
         <section id="intro">
             <div class="start">
                 <div class="photo">
-                    <img src="img/de-logo.png" alt="logo" data-aos="slide-down">
+                    <img src="img/de-logo-light.png" id="logo" alt="logo" data-aos="slide-down">
                 </div>
                 <div class="name" data-aos="slide-down">
                     <h1>Daniel Escate</h1>
@@ -44,7 +45,7 @@
             <div class="content">
                 <div class="biobox">
                     <div class="bio">
-                        <img src="img/de.png" alt="Daniel" data-aos="fade-up">
+                        <img src="img/de-photo-light.png" id="photo" alt="Daniel" data-aos="fade-up">
                     </div>
                     <div class="bio" data-aos="fade-up">
                         <p>I have always been a creative individual with a strong interest in understanding how things work and how they can be improved through innovative design.</p>
@@ -145,6 +146,50 @@
         initClassName: false,
         animatedClassName: 'animated',
         });
+    </script>
+
+    <script>
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark-mode");
+            
+            let main = document.getElementById('main');
+
+            if (main.getAttribute('src') === "img/de-logo-light.png") {
+                main.setAttribute('src', "img/de-logo-dark.png");
+            }
+            else {
+                main.setAttribute('src', "img/de-logo-light.png");
+            }
+
+            let logo = document.getElementById('logo');
+
+            if (logo.getAttribute('src') === "img/de-logo-light.png") {
+                logo.setAttribute('src', "img/de-logo-dark.png");
+            }
+            else {
+                logo.setAttribute('src', "img/de-logo-light.png");
+            }
+
+            let photo = document.getElementById('photo');
+
+            if (photo.getAttribute('src') === "img/de-photo-light.png") {
+                photo.setAttribute('src', "img/de-photo-dark.png");
+            }
+            else {
+                photo.setAttribute('src', "img/de-photo-light.png");
+            }
+
+            let toggle = document.getElementById('toggle');
+
+            if (toggle.getAttribute('src') === "img/sun.png") {
+                toggle.setAttribute('src', "img/moon.png");
+            }
+            else {
+                toggle.setAttribute('src', "img/sun.png");
+            }
+            
+        }
     </script>
 
 </body>
