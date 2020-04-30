@@ -5,6 +5,8 @@ body {
     background-color: #131313;
     margin: 0;
     padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 p {
@@ -157,10 +159,6 @@ li a:hover,
     color: #87C13F;
 }
 
-main {
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
 #intro {
     margin: 0 0 10em 0;
@@ -173,7 +171,7 @@ main {
 }
 
 #intro h1 {
-    font-size: em;
+    font-size: 2em;
     text-align: right;
 }
 
