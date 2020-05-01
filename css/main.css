@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url("https://use.typekit.net/ddd8vkh.css");
 
+:root {
+    --font-color: #F9F7ED;
+    --bg-color: #131313;
+}
+
 body {
-    background-color: #131313;
-    color: #F9F7ED;
+    background-color: var(--bg-color);
+    color: var(--font-color);
     margin: 0;
     padding: 0;
     padding-left: 5%;
@@ -11,8 +16,8 @@ body {
 }
 
 .dark-mode {
-    background-color: #F9F7ED;
-    color: #131313;   
+    --font-color: #131313;
+    --bg-color: #F9F7ED;
 }
 
 p {
@@ -46,7 +51,7 @@ h2 {
 }
 
 .top {
-    background-color: #131313;
+    background-color: var(--bg-color);
     position: sticky;
     padding: 0.5em 0 0 0;
     top: 0;
@@ -64,7 +69,7 @@ ul {
 
 li a {
     display: block;
-    color: #F9F7ED;
+    color: var(--font-color);
     text-align: center;
     padding: 2em 0 2em 0;
     text-decoration: none;
@@ -90,7 +95,7 @@ li a:hover,
 }
 
 .menu {
-    background-color: #131313;
+    background-color: var(--bg-color);
 }
 
 .menu-icon {
@@ -99,7 +104,7 @@ li a:hover,
 }
 
 .menu-icon  .navicon {
-  background: #F9F7ED;
+  background-color: var(--font-color);
   display: block;
   height: 0.2em;
   position: relative;
@@ -109,7 +114,7 @@ li a:hover,
 
 .menu-icon  .navicon:before,
 .menu-icon  .navicon:after {
-  background: #F9F7ED;
+  background: var(--font-color);
   content: '';
   display: block;
   height: 100%;

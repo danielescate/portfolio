@@ -29,7 +29,7 @@
         <section id="intro">
             <div class="start">
                 <div class="photo">
-                    <img src="img/de-logo-light.png" id="logo" alt="logo" data-aos="slide-down">
+                    <img src="img/de-logo-light.png" id="logo" alt="logo" data-aos="zoom-out">
                 </div>
                 <div class="name" data-aos="slide-down">
                     <h1>Daniel Escate</h1>
@@ -187,6 +187,15 @@
             }
             else {
                 toggle.setAttribute('src', "img/sun.png");
+            }
+
+            let ham = document.getElementById('navicon');
+
+            if (ham.document.style.backgroundColor === "#131313") {
+                ham.document.body.style.backgroundColor = "#F9F7ED";
+            }
+            else {
+                ham.document.body.style.backgroundColor = "#131313";
             }
         }
     </script>
