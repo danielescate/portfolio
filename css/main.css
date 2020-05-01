@@ -1132,7 +1132,7 @@ li a:hover,
     #about {
         height: 120em;
         padding-top: 5em;
-        margin-bottom: 0em;
+        margin-bottom: 7em;
     }
 
     .bio img {
@@ -1141,7 +1141,7 @@ li a:hover,
 
     .info {
         display: grid;
-        grid-gap: 5em;
+        grid-gap: 10em;
         grid-template-columns: auto;
         margin-bottom: 0em;
         margin-top: 0em;
@@ -1149,7 +1149,7 @@ li a:hover,
 
     .textbox h1 {
         font-size: 2em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
         padding-bottom: 0.5em;
     }
 
@@ -1164,7 +1164,7 @@ li a:hover,
     #work {
         height: 80em;
         margin-bottom: 0em;
-        padding-top: 5em;padding-top: 5em;
+        padding-top: 5em;
     }
 
     .sort {

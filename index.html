@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css"> 
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ddd8vkh.css">
     <script src="js/index.js"></script>
@@ -31,15 +32,15 @@
                 <div class="photo">
                     <img src="img/de-logo-light.png" id="logo" alt="logo" data-aos="zoom-out">
                 </div>
-                <div class="name" data-aos="slide-down">
+                <div class="name" data-aos="fade-left">
                     <h1>Daniel Escate</h1>
-                    <p>Interaction Designer</p>   
+                    <p id="title">Interaction Designer</p>  
                 </div> 
             </div>
         </section> 
         
         <section id="about">
-            <div class="header" data-aos="fade-right" data-aos-easing="ease-in">
+            <div class="header">
                 <h1>About Me</h1>
             </div>
             <div class="content">
@@ -57,23 +58,21 @@
                     <div class="item">
                         <div class="textbox">
                             <h1 data-aos="fade-right">Education 🎓</h1>
-                            <h2 data-aos="fade-up">I went to...</h2>
-                            <p data-aos="fade-up">George Brown College</p> 
-                            <h2 data-aos="fade-up">And studied...</h2>
-                            <p data-aos="fade-up">Interaction Design and Development</p>
+                            <h2 data-aos="fade-right">I went to...</h2>
+                            <p data-aos="fade-up">George Brown College and studied Interaction Design and Development</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="textbox">
                             <h1 data-aos="fade-right">Computer Skills 🖥</h1>
-                                <h2 data-aos="fade-up">I can use...</h2>
+                                <h2 data-aos="fade-right">I can use...</h2>
                                 <p data-aos="fade-up">Illustrator, Photoshop, After Effects, InDesign, Unity, Vuforia, Maya, html, css, js.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="textbox">
-                            <h1 data-aos="fade-right"">Design Skills ✏️</h1>
-                                <h2 data-aos="fade-up">I can design...</h2>
+                            <h1 data-aos="fade-right">Design Skills ✏️</h1>
+                                <h2 data-aos="fade-right">I can design...</h2>
                                 <p data-aos="fade-up">User interfaces/user experience, vector graphics, branding, flow charts, wireframes, motion graphics, augmented reality.</p>
                         </div>
                     </div>
@@ -213,6 +212,22 @@
                 toggle.setAttribute('src', "img/sun.png");
             }
         }
+
+        let title = document.getElementById('title');
+
+        let typewriter = new Typewriter(title, {
+            loop: true
+        });
+
+        typewriter.typeString('Interaction Designer')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Creative Thinker')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Meme Lover')
+            .pauseFor(2500)
+            .start();
     </script>
 
 </body>
