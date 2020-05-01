@@ -1164,6 +1164,7 @@ li a:hover,
     #work {
         height: 80em;
         margin-bottom: 0em;
+        padding-top: 5em;padding-top: 5em;
     }
 
     .sort {
