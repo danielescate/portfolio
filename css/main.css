@@ -51,7 +51,7 @@ h2 {
     padding: 0.5em 0 0 0;
     top: 0;
     z-index: 2;
-    display: inline-block;
+    display: block;
 }
 
 ul {
@@ -1097,7 +1097,7 @@ li a:hover,
     
     .top {
         padding: 0.5em 0 0 0;
-        position: sticky;
+        position: -webkit-sticky;
     }
 
     .logo img {
