@@ -14,13 +14,13 @@
 <body>
     <header class="top">
         <a href="" class="logo"><img src="img/de-logo-light.png" id="main" alt="logo" data-aos="fade-right" data-aos-anchor=".bio"></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <input class="menu-btn" type="checkbox" id="menu-btn" onclick="showNav()"/>
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <img id="toggle" src="img/sun.png" alt="light" onclick="myFunction()">
         <ul class="menu">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li onclick="hideNav()"><a href="#about">ABOUT</a></li>
+            <li onclick="hideNav()"><a href="#work">WORK</a></li>
+            <li onclick="hideNav()"><a href="#contact">CONTACT</a></li>
         </ul>
     </header>    
  
@@ -149,6 +149,30 @@
     </script>
 
     <script>
+        function hideNav() {
+        let nav = document.querySelector(".menu");
+        if (nav.style.display === "none") {
+            nav.style.display = "block";
+            } else {
+            nav.style.display = "none" 
+            }
+        document.querySelector(".menu-btn").checked = false;
+        }
+
+        function showNav() {
+        // Get the checkbox
+        let checkBox = document.querySelector(".menu-btn");
+        // Get the output text
+        let menu = document.querySelector(".menu");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+        }
+
         function myFunction() {
             let element = document.body;
             element.classList.toggle("dark-mode");
@@ -187,15 +211,6 @@
             }
             else {
                 toggle.setAttribute('src', "img/sun.png");
-            }
-
-            let ham = document.getElementById('navicon');
-
-            if (ham.document.style.backgroundColor === "#131313") {
-                ham.document.body.style.backgroundColor = "#F9F7ED";
-            }
-            else {
-                ham.document.body.style.backgroundColor = "#131313";
             }
         }
     </script>

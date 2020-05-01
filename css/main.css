@@ -96,6 +96,7 @@ li a:hover,
 
 .menu {
     background-color: var(--bg-color);
+    display: none;
 }
 
 .menu-icon {
@@ -133,10 +134,6 @@ li a:hover,
 
 .menu-btn {
   display: none;
-}
-
-.menu-btn:checked ~ .menu {
-    display: block;
 }
 
 .menu-btn:checked ~ .menu-icon .navicon {
