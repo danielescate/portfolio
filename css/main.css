@@ -60,7 +60,6 @@ ul {
     margin-block-end: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #131313;
 }
 
 li a {
@@ -88,6 +87,10 @@ li a:hover,
 
 #switch {
     float: right;
+}
+
+.menu {
+    background-color: #131313;
 }
 
 .menu-icon {
@@ -677,7 +680,6 @@ li a:hover,
     }
 
     .menu {
-        background-color: #131313;
         height: 100%;
         width: 100%;
         top: 0;
@@ -1095,6 +1097,7 @@ li a:hover,
     
     .top {
         padding: 0.5em 0 0 0;
+        position: sticky;
     }
 
     .logo img {
@@ -1235,7 +1238,7 @@ li a:hover,
 
     #toggle {
         width: 7%;
-        margin: 0.2em 1em 0 0;
+        margin: 0.3em 1em 0 0;
     }
 
     #intro img {
