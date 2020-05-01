@@ -1218,9 +1218,13 @@ li a:hover,
 
     .follow {
         display: grid;
-        grid-gap: 2em;
+        grid-gap: 0em;
         grid-template-columns: auto auto;
         justify-content: left;
+    }
+
+    .link img {
+        width: 30%;
     }
 
     .copyright p {

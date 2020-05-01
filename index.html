@@ -123,12 +123,10 @@
         <div class="social" data-aos="fade-up">
             <div class="follow">
             <div class="link">
-                <img src="" alt="icon">
-                <p>Linkedin</p>
+                <a href="https://www.linkedin.com/in/daniel-escate-172537156/"><img src="img/linkedin-light.png" alt="icon" id="in"></a>
             </div>
             <div class="link">
-                <img src="" alt="icon">
-                <p>Instagram</p>
+                <a href="https://www.instagram.com/danielescatedesign/"><img src="img/ig-light.png" alt="icon" id="ig"></a>
             </div>
             </div>
         </div>
@@ -210,6 +208,24 @@
             }
             else {
                 toggle.setAttribute('src', "img/sun.png");
+            }
+
+            let inSocial = document.getElementById('in');
+
+            if (inSocial.getAttribute('src') === "img/linkedin-light.png") {
+                inSocial.setAttribute('src', "img/linkedin-dark.png");
+            }
+            else {
+                inSocial.setAttribute('src', "img/linkedin-light.png");
+            }
+
+            let igSocial = document.getElementById('ig');
+
+            if (igSocial.getAttribute('src') === "img/ig-light.png") {
+                igSocial.setAttribute('src', "img/ig-dark.png");
+            }
+            else {
+                igSocial.setAttribute('src', "img/ig-light.png");
             }
         }
 
