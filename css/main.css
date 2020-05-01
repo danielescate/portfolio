@@ -47,7 +47,7 @@ h2 {
 
 .header h1 {
     border-bottom-style: solid;
-    border-width: 0.01em;
+    border-width: 0.05em;
 }
 
 .top {
@@ -198,7 +198,7 @@ li a:hover,
 
 .textbox h1 {
     border-bottom-style: solid;
-    border-width: 0.01em;
+    border-width: 0.05em;
 }
 
 .sort {
@@ -693,7 +693,7 @@ li a:hover,
     }
 
     .logo img {
-        width: 10%;
+        width: 8%;
     }
 
     #toggle {
@@ -825,7 +825,11 @@ li a:hover,
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
-        justify-content: center;
+        justify-content: left;
+    }
+
+    .link img {
+        width: 20%;
     }
 }
 
