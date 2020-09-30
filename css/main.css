@@ -782,7 +782,7 @@ li a:hover,
     }
 
     #work {
-        margin-bottom: 0em;
+        height: 80em;
     }
 
     .project {
@@ -896,17 +896,26 @@ li a:hover,
     }
 
     .project {
-        height: 9em;
+        height: 15em;
     }
 
     .design p{
-        font-size: 1em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .sort {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto auto;
+        margin: 4em 0 4em 0;
+        justify-content: center;
     }
 
     .mywork {
         display: grid;
         grid-gap: 1.5em;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     #contact {
@@ -953,7 +962,7 @@ li a:hover,
         padding: 1em 0 1.3em 0;
     }
 }
-
+/*
 @media screen and (max-width: 550px) {
     p {
         font-size: 1.3em;
@@ -1083,8 +1092,9 @@ li a:hover,
         padding: 3em 0 1.3em 0;
     }
 }
+*/
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 550px) {
     p {
         font-size: 1.2em;
     }
@@ -1134,7 +1144,7 @@ li a:hover,
     }
 
     #about {
-        height: 120em;
+        height: 100em;
         padding-top: 5em;
         margin-bottom: 7em;
     }
@@ -1166,7 +1176,7 @@ li a:hover,
     }
 
     #work {
-        height: 80em;
+        height: 190em;
         margin-bottom: 0em;
         padding-top: 5em;
     }
@@ -1245,6 +1255,10 @@ li a:hover,
 
     .logo img {
         width: 10%;
+    }
+
+    #about {
+        height: 120em;
     }
 
     #toggle {
