@@ -398,6 +398,10 @@ li a:hover,
         font-size: 0.8em;
         padding: 1em 0 1.3em 0;
     }
+
+    .link img {
+        width: 10%;
+    }
 }
 
 @media screen and (max-width: 1441px) {
