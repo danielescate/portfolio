@@ -56,7 +56,7 @@ h2 {
     padding: 0.5em 0 0 0;
     top: 0;
     z-index: 2;
-    display: block;
+    display: inline-block;
 }
 
 ul {
@@ -524,6 +524,10 @@ li a:hover,
         font-size: 0.8em;
         padding: 1em 0 1.3em 0;
     }
+
+    .link img {
+        width: 10%;
+    }
 }
 
 @media screen and (max-width: 1440px) {
@@ -804,7 +808,7 @@ li a:hover,
     }
 
     .connect {
-        margin: 0.5em 0 2em 0;
+        margin: 4em 0 2em 0;
     }
 
     .connect p {
@@ -891,7 +895,7 @@ li a:hover,
 
     .bio img {
         width: 100%;
-        margin: 0em auto 0em auto;
+        margin: 0em auto 4em auto;
         display: block;
     }
 
@@ -1144,9 +1148,17 @@ li a:hover,
     }
 
     #about {
-        height: 100em;
+        height: 120em;
         padding-top: 5em;
         margin-bottom: 7em;
+    }
+
+    .biobox {
+        display: grid;
+        grid-gap: 0em;
+        grid-template-columns: auto;
+        margin-bottom: 5em;
+        margin-top: 5em;
     }
 
     .bio img {
