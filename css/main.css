@@ -202,7 +202,7 @@ li a:hover,
 }
 
 .sort {
-    display: grid;
+    display: none;
     grid-gap: 1em;
     grid-template-columns: auto;
     margin-bottom: 1em;
@@ -357,7 +357,7 @@ li a:hover,
     }
 
     .sort {
-        display: grid;
+        display: none;
         grid-gap: 5em;
         grid-template-columns: auto auto auto auto ;
         justify-content: center;
@@ -368,6 +368,7 @@ li a:hover,
         display: grid;
         grid-gap: 1.5em;
         grid-template-columns: auto auto auto;
+        padding-top: 5em;
     }
 
     #contact {
@@ -487,7 +488,7 @@ li a:hover,
     }
 
     .sort {
-        display: grid;
+        display: none;
         grid-gap: 5em;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
@@ -535,7 +536,7 @@ li a:hover,
 }
 
 @media screen and (max-width: 1440px) {
-
+    
     body {
         padding-left: 5%;
         padding-right: 5%;
@@ -562,6 +563,11 @@ li a:hover,
     .top {
         padding: 0.5em 0 0 0;
         background-color: #131313;
+        height: 4em;
+    }
+
+    .menu {
+        display: inline-block;
     }
 
     .menu-icon {
@@ -617,7 +623,7 @@ li a:hover,
     }
 
     .sort {
-        display: grid;
+        display: none;
         grid-gap: 1em;
         grid-template-columns: auto auto auto auto;
         margin: 4em 0 4em 0;
@@ -913,7 +919,7 @@ li a:hover,
     }
 
     .sort {
-        display: grid;
+        display: none;
         grid-gap: 1em;
         grid-template-columns: auto auto;
         margin: 4em 0 4em 0;
@@ -983,7 +989,6 @@ li a:hover,
     h2 {
         font-size: 1.5em;
     }
-
     .header {
         top: 3em;
     }
@@ -991,30 +996,24 @@ li a:hover,
     .top {
         padding: 0.5em 0 0 0;
     }
-
     .logo img {
         width: 10%;
     }
-
     #toggle {
         width: 6%;
         margin: 0.2em 1em 0 0;
     }
-
     .photo {
         display: block;  
     }
-
     #intro img {
         width: 70%;
         margin-bottom: 3em;
         margin-top: 4em;
     }
-
     .name {
         float: right;
     }
-
     #intro h1 {
         font-size: 2.7em;
     }
@@ -1022,7 +1021,6 @@ li a:hover,
     #intro p{
         font-size: 1.4em;
     }
-
     .biobox {
         display: grid;
         grid-gap: 0em;
@@ -1030,16 +1028,13 @@ li a:hover,
         margin-bottom: 5em;
         margin-top: 5em;
     }
-
     .bio img {
         width: 80%;
         padding-bottom: 5em;
     }
-
     .item {
         width: 100%;
     }
-
     .info {
         display: grid;
         grid-gap: 2em;
@@ -1047,54 +1042,43 @@ li a:hover,
         margin-bottom: 2em;
         margin-top: 0em;
     }
-
     .project {
         height: 6em;
     }
-
     #contact {
         margin-bottom: 0em;
     }
-
     .connect {
         margin: 0.5em 0 2em 0;
     }
-
     .connect p {
         font-size: 1.5em;
         padding: 0.5em 0 0 0;
     }
-
     .email {
         margin-bottom: 2em;
     }
-
     .resume {
         margin: 0 0 1em 0;
     }
-
     button {
         padding: 1em 1em 1em 1em;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
     button p {
         font-size: 1.5em;
     }
-
     .social h2 {
         margin-bottom: 1em;
     }
-
     .follow {
         display: grid;
         grid-gap: 2em;
         grid-template-columns: auto auto;
         justify-content: center;
     }
-
     .copyright p {
         font-size: 0.8em;
         padding: 3em 0 1.3em 0;
@@ -1198,7 +1182,7 @@ li a:hover,
     }
 
     .sort {
-        display: grid;
+        display: none;
         grid-gap: 1em;
         grid-template-columns: auto auto;
         margin: 4em 0 4em 0;
