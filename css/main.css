@@ -265,6 +265,14 @@ li a:hover,
         background-color: #131313;
     }
 
+    .menu {
+        display: inline-block;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
     .logo img {
         width: 5%;
     }
@@ -485,6 +493,7 @@ li a:hover,
 
     .project {
         height: 15em;
+        margin-bottom: 1em;
     }
 
     .sort {
@@ -614,12 +623,16 @@ li a:hover,
         margin-top: 0em;
     }
 
+    .bio img{
+        width: 60%;
+    }
+
     .textbox h1 {
         margin-bottom: 0.5em;
     }
 
     .project {
-        height: 9em;
+        height: 15em;
     }
 
     .sort {
