@@ -17,6 +17,10 @@ main {
     font-size: 1em;
 }
 
+.description a {
+    color: #87C13F
+}
+
 .assets h2 {
     margin: 1em 0 0.5em 0;
 }

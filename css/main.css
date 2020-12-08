@@ -218,6 +218,13 @@ li a:hover,
     border-radius: 1em;
     padding: 1.2em 0.8em 1.2em 0.8em;
     height: 6em;
+    
+}
+
+#project1 {
+    background-image: url('../img/bloom-marker.jpg');
+    background-position: center;
+    background-size: 180%;
 }
 
 .connect {
@@ -636,6 +643,14 @@ li a:hover,
         margin-bottom: 0.5em;
     }
 
+    #work {
+        padding-top: 4em;
+    }
+
+    #about {
+        padding-top: 4em;    
+    }
+
     .project {
         height: 15em;
     }
@@ -780,6 +795,7 @@ li a:hover,
     #about {
         height: 90em;
         margin-bottom: 0em;
+        padding-top: 0;
     }
 
     .biobox {
@@ -819,6 +835,7 @@ li a:hover,
 
     #work {
         height: 80em;
+        padding-top: 0;
     }
 
     .project {
