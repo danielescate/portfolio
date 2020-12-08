@@ -21,14 +21,14 @@
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <img id="toggle" src="img/sun.png" alt="light" onclick="myFunction()">
         <ul class="menu">
-            <li onclick="hideNav()"><a href="#work">WORK</a></li>
-            <li onclick="hideNav()"><a href="#about">ABOUT</a></li>
-            <li onclick="hideNav()"><a href="#contact">CONTACT</a></li>
+            <li onclick="hideNav()"><a href="index.html/#work">WORK</a></li>
+            <li onclick="hideNav()"><a href="index.html/#about">ABOUT</a></li>
+            <li onclick="hideNav()"><a href="index.html/#contact">CONTACT</a></li>
         </ul>
         <ul class="menu2">
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="index.html/#work">WORK</a></li>
+            <li><a href="index.html/#about">ABOUT</a></li>
+            <li><a href="index.html/#contact">CONTACT</a></li>
         </ul>
     </header>
 
@@ -81,10 +81,37 @@
         </section>
     </main>
 
+    <div class="copyright">
+        <p>Daniel Escate © 2020</p>
+    </div>
 
 
 
     <script>
+        function hideNav() {
+        let nav = document.querySelector(".menu");
+        if (nav.style.display === "none") {
+            nav.style.display = "block";
+            } else {
+            nav.style.display = "none" 
+            }
+        document.querySelector(".menu-btn").checked = false;
+        }
+
+        function showNav() {
+        // Get the checkbox
+        let checkBox = document.querySelector(".menu-btn");
+        // Get the output text
+        let menu = document.querySelector(".menu");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+        }
+
         function myFunction() {
             let element = document.body;
             element.classList.toggle("dark-mode");
