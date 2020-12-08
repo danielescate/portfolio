@@ -1,5 +1,6 @@
 main {
-    display: grid;   
+    display: grid;
+    padding-bottom: 3em;   
 }
 
 .cont {
