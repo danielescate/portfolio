@@ -35,6 +35,10 @@ main {
     margin: 1em 0 0.5em 0;
 }
 
+.assets img {
+    margin: 0 0 1.5em 0;
+}
+
 
 @media screen and (min-width: 1000px) {
     main {
