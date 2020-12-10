@@ -41,7 +41,15 @@ h2 {
     font-family: 'sofia-pro', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2em;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
     margin: 0;
 }
 
@@ -225,6 +233,14 @@ li a:hover,
     background-image: url('../img/bloom-marker.jpg');
     background-position: center;
     background-size: 180%;
+}
+
+#project2 {
+    background-image: url('../img/alw-logo.png');
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-color: white;
 }
 
 .connect {

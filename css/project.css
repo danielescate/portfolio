@@ -1,3 +1,7 @@
+h3 {
+    margin: 0 0 0.5em 0;
+}
+
 main {
     display: grid;
     padding-bottom: 3em;   
@@ -14,12 +18,17 @@ main {
     margin: 0 0 0.3em 0;
 }
 
+#alw h1{
+    font-size: 2.5em;
+}
+
 .description p {
     font-size: 1em;
 }
 
 .description a {
-    color: #87C13F
+    color: #87C13F;
+    text-decoration: none;
 }
 
 .assets h2 {
@@ -36,6 +45,7 @@ main {
     .description {
         position: fixed;
         margin: 0 52% 0 0;
+        left: 5%;
     }
 
     .assets {
