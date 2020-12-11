@@ -235,12 +235,33 @@ li a:hover,
     background-size: 180%;
 }
 
+.overlay1 {
+    color: #131313;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    backface-visibility: hidden;
+  }
+
+#project1:hover .overlay1 {
+    opacity: 0.3;
+}
+
 #project2 {
     background-image: url('../img/alw-logo.png');
     background-position: center;
-    background-size: 75%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-color: white;
+}
+
+#project3 {
+    background-image: url('../img/bwnn-intro-screen.png');
+    background-position: left;
+    background-size: 150%;
+    background-repeat: no-repeat;
 }
 
 .connect {

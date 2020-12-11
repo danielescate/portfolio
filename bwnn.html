@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ddd8vkh.css">
+    <link rel="icon" type="image/png" src="img/de-favicon.png">
+    <script src="js/index.js"></script>
+    <title>Daniel Escate</title>
+</head>
+<body>
+    <header class="top">
+        <a href="https://danielescate.github.io/portfolio/" class="logo"><img src="img/de-logo-light.png" id="main" alt="logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" onclick="showNav()"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <img id="toggle" src="img/sun.png" alt="light" onclick="myFunction()">
+        <ul class="menu">
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#work">WORK</a></li>
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#about">ABOUT</a></li>
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#contact">CONTACT</a></li>
+        </ul>
+        <ul class="menu2">
+            <li><a href="https://danielescate.github.io/portfolio/#work">WORK</a></li>
+            <li><a href="https://danielescate.github.io/portfolio/#about">ABOUT</a></li>
+            <li><a href="https://danielescate.github.io/portfolio/#contact">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="description" id="bwnn">
+            <h1>Best Worst News Network (BWNN)</h1>
+            <p>An interactive video that is controlled by the viewer. <br/> <br/> In this project, 
+            the viewer will direct the flow of the news broadcast and how well, or poorly, it 
+            is executed. News anchors usually have assistance from other people through 
+            teleprompters or in-ear monitors. <br/> In this scenario, the viewer is that person on the 
+            other side. They control what to cut to next (ex. news story to weather) and how 
+            well that portion goes (ex. sending wrong information to the news anchor. The view 
+            plays a crucial part in the interactive video. While waiting for the viewers 
+            response, the anchor will appear to be clueless, not knowing what to do. <br/> Adding to 
+            this, if the viewer decides to send false information, the anchor will be caught off 
+            guard, again not knowing what to do, but wanting to be professional and progress 
+            the newsbroadcast since they are “LIVE”. It’s entirely up to the viewer if they 
+            want to see a somewhat good or very bad news broadcast
+            </p><br/>
+            <p>Live video can be viewed <a href="https://eko.com/v/zr9OW3?autoplay=true">Here</a></p><br/>
+            <div class="cont">
+                <div class="left">
+                    <h2>Year</h2>
+                    <p>2020</p><br/>
+                    <p>Branding<br/>
+                    Javascript<br/>
+                    UX/UI</p>
+                </div>
+                <div class="right">
+                    <h2>Programs</h2>
+                    <p>Illustrator, Photoshop, Webflow, Memberful, Stripe</p>
+                </div>
+            </div> 
+        </section>
+
+        <section class="assets">
+            <h2>Proposal</h2>
+            <img src="img/bwnn.jpg" alt="proposal">
+            <h2>Storyboard Diagram</h2>
+            <img src="img/bwnn2.jpg" alt="diagram">
+            <h2>Storyboard Screens</h2>
+            <img src="img/bwnn3.jpg" alt="screen">
+            <img src="img/bwnn4.jpg" alt="screen">
+            <h2>Script</h2>
+            <img src="img/bwnn5.jpg" alt="script">
+            <img src="img/bwnn6.jpg" alt="script">
+        </section>
+    </main>
+
+    <div class="copyright">
+        <p>Daniel Escate © 2020</p>
+    </div>
+
+
+
+    <script>
+        function hideNav() {
+        let nav = document.querySelector(".menu");
+        if (nav.style.display === "none") {
+            nav.style.display = "block";
+            } else {
+            nav.style.display = "none" 
+            }
+        document.querySelector(".menu-btn").checked = false;
+        }
+
+        function showNav() {
+        // Get the checkbox
+        let checkBox = document.querySelector(".menu-btn");
+        // Get the output text
+        let menu = document.querySelector(".menu");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+        }
+
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark-mode");
+            
+            let main = document.getElementById('main');
+
+            if (main.getAttribute('src') === "img/de-logo-light.png") {
+                main.setAttribute('src', "img/de-logo-dark.png");
+            }
+            else {
+                main.setAttribute('src', "img/de-logo-light.png");
+            }
+
+            let toggle = document.getElementById('toggle');
+
+            if (toggle.getAttribute('src') === "img/sun.png") {
+                toggle.setAttribute('src', "img/moon.png");
+            }
+            else {
+                toggle.setAttribute('src', "img/sun.png");
+            }
+        }
+    </script>
+    
+</body>
