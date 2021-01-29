@@ -13,6 +13,8 @@ body {
     padding: 0;
     padding-left: 5%;
     padding-right: 5%;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .dark-mode {
@@ -23,9 +25,9 @@ body {
 p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.3em;
     letter-spacing: 0.05em;
-    line-height: 1.2em;
+    line-height: 1.3em;
     margin: 0;
 }
 
@@ -33,7 +35,7 @@ h1 {
     font-family: 'sofia-pro', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3.3em;
+    font-size: 3em;
     margin: 0;
 }
 
@@ -41,7 +43,7 @@ h2 {
     font-family: 'sofia-pro', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.3em;
+    font-size: 2.5em;
     margin: 0;
 }
 
@@ -56,15 +58,17 @@ h3 {
 .header h1 {
     border-bottom-style: solid;
     border-width: 0.05em;
+    margin-bottom: 2em;
 }
 
 .top {
     background-color: var(--bg-color);
     position: sticky;
-    padding: 0.5em 0 0 0;
+    padding: 0 0 0 0;
     top: 0;
     z-index: 2;
     display: block;
+    height: 4em;
 }
 
 ul {
@@ -96,10 +100,17 @@ li a:hover,
 
 .logo img {
     float: left;
+    width: 5%;
 }
 
 #switch {
     float: right;
+}
+
+#toggle {
+    width: 3%;
+    margin: 0.5em 1.5em 0 1em;
+    float: left;
 }
 
 .menu {
@@ -107,9 +118,28 @@ li a:hover,
     display: block;
 }
 
+.top li {
+    float: left;
+}
+  
+.top li a {
+    padding: 20px 30px;
+}
+  
+.top .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+}
+
+.menu2 {
+    display: none;
+}
+
 .menu-icon {
     float: right;
     padding: 1em 0 0 0;
+    display: none;
 }
 
 .menu-icon  .navicon {
@@ -167,12 +197,27 @@ li a:hover,
 }
 
 .start {
-    display: grid;
-    grid-gap: 2em;
+    display: inline-block;
+    grid-template-columns: auto auto;
 }
 
-#intro {
+section {
     margin: 0 0 10em 0;
+}
+
+
+
+
+.photo {
+    float: left;
+    width: 45%; 
+    left: 0;   
+}
+
+.name {
+    float: right;
+    display: block;
+    margin: 12em 0 0 0;
 }
 
 #intro img {
@@ -182,12 +227,12 @@ li a:hover,
 }
 
 #intro h1 {
-    font-size: 2em;
+    font-size: 7em;
     text-align: right;
 }
 
 #intro p{
-    font-size: em;
+    font-size: 2.3em;
     text-align: right;
 }
 
@@ -196,11 +241,29 @@ li a:hover,
     padding: 0;
 }
 
+.biobox {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: auto auto;
+    margin-bottom: 2em;
+    margin-top: 5em;
+}
+
+.bio img {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+
 .info {
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     padding: 2.5em 0 0 0;
+}
+
+.textbox {
+    padding: 5em 0 0 0;
 }
 
 
@@ -218,6 +281,9 @@ li a:hover,
 }
 
 .mywork {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: auto auto auto;
     margin-bottom: 5em;
 }
 
@@ -225,8 +291,7 @@ li a:hover,
     background-color: #F9F7ED;
     border-radius: 1em;
     padding: 1.2em 0.8em 1.2em 0.8em;
-    height: 6em;
-    
+    height: 15em;   
 }
 
 #project1 {
@@ -264,12 +329,30 @@ li a:hover,
     background-repeat: no-repeat;
 }
 
+.item img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .connect {
     margin: 2em 0 3em 0;
 }
 
 .email {
     margin-bottom: 3em;
+}
+
+.follow {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: auto auto;
+    justify-content: left;
+}
+
+.link img {
+    width: 10%;
 }
 
 .copyright p {
@@ -279,322 +362,7 @@ li a:hover,
 }
 
 
-@media screen and (max-width: 1500px) {
-
-    body {
-        padding-left: 7%;
-        padding-right: 7%;
-        margin: 0;
-    }
-
-    p {
-        font-size: 1.3em;
-    }
-    
-    h1 {
-        font-size: 3em;
-    }
-    
-    h2 {
-        font-size: 2.3em;
-    }
-
-    .header {
-        margin-bottom: 0em;
-        top: 4em;
-    }
-    
-    .top {
-        padding: 0.5em 0 0 0;
-       
-    }
-
-    .menu {
-        display: inline-block;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-
-    .logo img {
-        width: 5%;
-    }
-
-    #intro {
-        height: 100%;
-        margin-bottom: 0em;
-    }
-
-    .start {
-        display: inline-block;
-        grid-template-columns: auto auto;
-    }
-
-    .top li {
-        float: left;
-    }
-      
-    .top li a {
-        padding: 20px 30px;
-    }
-      
-    .top .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    #intro img {
-        width: 100%;
-    }
-
-    .photo {
-        float: left;
-        width: 90%;    
-    }
-
-    .name {
-        float: right;
-        display: block;
-        margin: 12em 0 0 0;
-    }
-
-    .name h1 {
-        font-size: 7em;
-    }
-    
-    .name p{
-        font-size: 3.5em;
-    }
-
-    #about {
-        height: 85em;
-        margin-bottom: 0em;
-    }
-
-    .biobox {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        margin-bottom: 7em;
-        margin-top: 7em;
-    }
-
-    .bio img {
-        width: 70%;
-        margin: -3em auto auto auto;
-        display: block;
-    }
-
-    .info {
-        display: grid;
-        grid-gap: 5em;
-        grid-template-columns: auto auto;
-        margin-bottom: 2em;
-        margin-top: 0.5em;
-    }
-
-    .textbox h1 {
-        margin-bottom: 0.5em;
-    }
-
-    #work {
-        height: 35em;
-        margin-bottom: 0em;
-    }
-
-    .project {
-        height: 15em;
-    }
-
-    .sort {
-        display: none;
-        grid-gap: 5em;
-        grid-template-columns: auto auto auto auto ;
-        justify-content: center;
-        margin: 5em 0 3em 0;
-    }
-
-    .mywork {
-        display: grid;
-        grid-gap: 1.5em;
-        grid-template-columns: auto auto auto;
-        padding-top: 5em;
-    }
-
-    #contact {
-        margin-bottom: 15em;
-    }
-
-    .connect {
-        margin: 0.5em 0 2em 0;
-    }
-
-    .connect p {
-        font-size: 1.5em;
-        padding: 0.5em 0 0 0;
-    }
-
-    .email {
-        margin-bottom: 2em;
-    }
-
-    .follow {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        justify-content: left;
-    }
-
-    .copyright p {
-        font-size: 0.8em;
-        padding: 1em 0 1.3em 0;
-    }
-
-    .link img {
-        width: 10%;
-    }
-}
-
-@media screen and (max-width: 1441px) {
-
-    body {
-        padding-left: 7%;
-        padding-right: 7%;
-        margin: 0;
-    }
-
-    /* .header {
-        bottom: 0;
-        writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-        margin: -11%;
-    }
-    */
-    
-    .top {
-        padding: 0.5em 0 0 0;
-    }
-
-    .logo img {
-        width: 5%;
-    }
-
-    #intro {
-        height: 100%;
-        margin-bottom: 0em;
-    }
-
-
-    #intro img {
-        width: 100%;
-    }
-
-    .photo {
-        float: left;
-        width: 90%;    
-    }
-
-    .name h1 {
-        font-size: 7em;
-    }
-    
-    .name p{
-        font-size: 3.5em;
-    }
-
-    #about {
-        height: 80em;
-        margin-bottom: 0em;
-    }
-
-    .biobox {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        margin-bottom: 5em;
-        margin-top: 5em;
-    }
-
-    .bio img {
-        width: 90%;
-        margin: auto;
-        display: block;
-    }
-
-    .info {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 30% auto auto;
-        margin-bottom: 2em;
-        margin-top: 0.5em;
-    }
-
-    .textbox h1 {
-        margin-bottom: 0.5em;
-    }
-
-    .project {
-        height: 15em;
-        margin-bottom: 1em;
-    }
-
-    .sort {
-        display: none;
-        grid-gap: 5em;
-        grid-template-columns: auto auto auto auto;
-        justify-content: center;
-        margin: 2em 0 2em 0;
-    }
-
-    .mywork {
-        display: grid;
-        grid-gap: 1.5em;
-        grid-template-columns: auto auto auto;
-    }
-
-    .connect {
-        margin: 0.5em 0 2em 0;
-    }
-
-    .connect p {
-        font-size: 1.5em;
-        padding: 0.5em 0 0 0;
-    }
-
-    .email {
-        margin-bottom: 2em;
-    }
-
-    .resume {
-        margin: 0 0 1em 0;
-    }
-
-    .follow {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        justify-content: center;
-    }
-
-    .copyright p {
-        font-size: 0.8em;
-        padding: 1em 0 1.3em 0;
-    }
-
-    .link img {
-        width: 10%;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    
-    body {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
+@media screen and (max-width: 1400px) {
     p {
         font-size: 1.3em;
     }
@@ -657,7 +425,7 @@ li a:hover,
 
 
     #intro h1 {
-        font-size: 4.7em;
+        font-size: 5em;
     }
     
     #intro p{
@@ -685,11 +453,15 @@ li a:hover,
     }
 
     #about {
-        padding-top: 4em;    
+        padding-top: 4em;  
+    }
+
+    .item img {
+        width: 100%;
     }
 
     .project {
-        height: 15em;
+        height: 12em;
     }
 
     .sort {
@@ -735,7 +507,7 @@ li a:hover,
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
     p {
         font-size: 1.3em;
     }
@@ -828,11 +600,12 @@ li a:hover,
     #intro p{
         font-size: 2.2em;
     }
-
-    #about {
-        height: 90em;
-        margin-bottom: 0em;
-        padding-top: 0;
+    
+    .item img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     .biobox {
@@ -869,6 +642,7 @@ li a:hover,
     .textbox p {
         margin-bottom: 0.5em;
     }
+
 
     #work {
         height: 80em;
@@ -989,6 +763,13 @@ li a:hover,
         grid-template-columns: auto;
     }
 
+    .item img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .project {
         height: 20em;
     }
@@ -1056,115 +837,6 @@ li a:hover,
         padding: 1em 0 1.3em 0;
     }
 }
-/*
-@media screen and (max-width: 550px) {
-    p {
-        font-size: 1.3em;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
-    .header {
-        top: 3em;
-    }
-    
-    .top {
-        padding: 0.5em 0 0 0;
-    }
-    .logo img {
-        width: 10%;
-    }
-    #toggle {
-        width: 6%;
-        margin: 0.2em 1em 0 0;
-    }
-    .photo {
-        display: block;  
-    }
-    #intro img {
-        width: 70%;
-        margin-bottom: 3em;
-        margin-top: 4em;
-    }
-    .name {
-        float: right;
-    }
-    #intro h1 {
-        font-size: 2.7em;
-    }
-    
-    #intro p{
-        font-size: 1.4em;
-    }
-    .biobox {
-        display: grid;
-        grid-gap: 0em;
-        grid-template-columns: auto;
-        margin-bottom: 5em;
-        margin-top: 5em;
-    }
-    .bio img {
-        width: 80%;
-        padding-bottom: 5em;
-    }
-    .item {
-        width: 100%;
-    }
-    .info {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto;
-        margin-bottom: 2em;
-        margin-top: 0em;
-    }
-    .project {
-        height: 6em;
-    }
-    #contact {
-        margin-bottom: 0em;
-    }
-    .connect {
-        margin: 0.5em 0 2em 0;
-    }
-    .connect p {
-        font-size: 1.5em;
-        padding: 0.5em 0 0 0;
-    }
-    .email {
-        margin-bottom: 2em;
-    }
-    .resume {
-        margin: 0 0 1em 0;
-    }
-    button {
-        padding: 1em 1em 1em 1em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    button p {
-        font-size: 1.5em;
-    }
-    .social h2 {
-        margin-bottom: 1em;
-    }
-    .follow {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-        justify-content: center;
-    }
-    .copyright p {
-        font-size: 0.8em;
-        padding: 3em 0 1.3em 0;
-    }
-}
-*/
 
 @media screen and (max-width: 550px) {
     p {
@@ -1216,7 +888,7 @@ li a:hover,
     }
 
     #about {
-        height: 120em;
+
         padding-top: 5em;
         margin-bottom: 7em;
     }
@@ -1235,7 +907,7 @@ li a:hover,
 
     .info {
         display: grid;
-        grid-gap: 10em;
+        grid-gap: 2em;
         grid-template-columns: auto;
         margin-bottom: 0em;
         margin-top: 0em;
@@ -1335,10 +1007,6 @@ li a:hover,
 
     .logo img {
         width: 10%;
-    }
-
-    #about {
-        height: 120em;
     }
 
     #toggle {
