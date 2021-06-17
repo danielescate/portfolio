@@ -329,6 +329,13 @@ section {
     background-repeat: no-repeat;
 }
 
+#project4 {
+    background-image: url('../img/hestia.png');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
 .item img {
     width: 80%;
     margin-left: auto;
