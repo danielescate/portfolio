@@ -341,6 +341,7 @@ section {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: white;
 }
 
 .item img {
