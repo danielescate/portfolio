@@ -341,7 +341,7 @@ input[type="radio"] {
 .mywork {
     display: grid;
     grid-gap: 1.5em;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     margin-bottom: 5em;
 }
 
@@ -349,7 +349,7 @@ input[type="radio"] {
     background-color: #F9F7ED;
     border-radius: 1em;
     padding: 1.2em 0.8em 1.2em 0.8em;
-    height: 15em;   
+    height: 10em;   
 }
 
 #project1 {
@@ -552,7 +552,7 @@ input[type="radio"] {
     }
 
     .project {
-        height: 12em;
+        height: 7em;
     }
 
     .sort {
@@ -566,7 +566,7 @@ input[type="radio"] {
     .mywork {
         display: grid;
         grid-gap: 1.5em;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto;
     }
 
     .connect {
