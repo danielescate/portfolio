@@ -206,8 +206,6 @@ section {
 }
 
 
-
-
 .photo {
     float: left;
     width: 45%; 
@@ -227,7 +225,7 @@ section {
 }
 
 #intro h1 {
-    font-size: 7em;
+    font-size: 6.7em;
     text-align: right;
 }
 
@@ -271,13 +269,73 @@ section {
     border-width: 0.05em;
     margin-bottom: 0.5em;
 }
+/*FILTER WORK*/
+ol {
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filters * {
+    display: inline-block;
+  }
+  
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  
+  .filters label:hover {
+    background: #87C13F;
+    color: white;
+}
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="UX/UI"]:checked ~ .filters [for="UX/UI"],
+[value="Branding"]:checked ~ .filters [for="Branding"],
+[value="Augmented Reality"]:checked ~ .filters [for="jAugmented Reality"],
+[value="Motion Graphics/Videos"]:checked ~ .filters [for="Motion Graphics/Videos"],
+
+[value="All"]:checked ~ .posts [data-category] {
+    display: block;
+}
+[value="UX/UI"]:checked ~ .posts .post:not([data-category~="UX/UI"]),
+[value="Branding"]:checked ~ .posts .post:not([data-category~="Branding"]),
+[value="Augmented Reality"]:checked ~ .posts .post:not([data-category~="Augmented Reality"]),
+[value="Motion Graphics/Videos"]:checked ~ .posts .post:not([data-category~="Motion Graphics/Videos"])
 
 .sort {
-    display: none;
+    display: grid;
     grid-gap: 1em;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     margin-bottom: 1em;
     margin-top: 0.5em;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+  
+.active {
+    background: #87C13F;
+    color: white;
 }
 
 .mywork {
@@ -298,20 +356,6 @@ section {
     background-image: url('../img/bloom-marker.jpg');
     background-position: center;
     background-size: 180%;
-}
-
-.overlay1 {
-    color: #131313;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .3s ease;
-    backface-visibility: hidden;
-  }
-
-#project1:hover .overlay1 {
-    opacity: 0.3;
 }
 
 #project2 {
@@ -340,6 +384,38 @@ section {
     background-image: url('../img/edcan-backgrnd.png');
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#project6 {
+    background-image: url('../img/weather.png');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#project7 {
+    background-image: url('../img/dans-record.png');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#project8 {
+    background-image: url('../img/arway.png');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#project9 {
+    background-image: url('../img/trans-co.png');
+    background-position: center;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-color: white;
 }
@@ -480,10 +556,11 @@ section {
     }
 
     .sort {
-        display: none;
+        display: grid;
         grid-gap: 1em;
         grid-template-columns: auto auto auto auto;
         margin: 4em 0 4em 0;
+        text-align: center;
     }
 
     .mywork {
@@ -660,12 +737,12 @@ section {
 
 
     #work {
-        height: 120em;
+        height: 60em;
         padding-top: 0;
     }
 
     .project {
-        height: 20em;
+        height: 8em;
     }
 
     .design p{
@@ -675,7 +752,7 @@ section {
     .mywork {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto auto;
     }
 
     #contact {
@@ -786,7 +863,7 @@ section {
     }
 
     .project {
-        height: 20em;
+        height: 8em;
     }
 
     .design p{
@@ -795,17 +872,18 @@ section {
     }
 
     .sort {
-        display: none;
+        display: grid;
         grid-gap: 1em;
         grid-template-columns: auto auto;
         margin: 4em 0 4em 0;
         justify-content: center;
+        text-align: center;
     }
 
     .mywork {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
     }
 
     #contact {
@@ -943,17 +1021,9 @@ section {
     }
 
     #work {
-        height: 105em;
+        height: 60em;
         margin-bottom: 0em;
         padding-top: 5em;
-    }
-
-    .sort {
-        display: none;
-        grid-gap: 1em;
-        grid-template-columns: auto auto;
-        margin: 4em 0 4em 0;
-        justify-content: center;
     }
 
     .design {
@@ -966,13 +1036,13 @@ section {
     }
 
     .project {
-        height: 15em;
+        height: 8em;
     }
 
     .mywork {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
     }
 
     #contact {

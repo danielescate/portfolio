@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ddd8vkh.css">
+    <link rel="icon" type="image/png" src="img/de-favicon.png">
+    <script src="js/index.js"></script>
+    <title>Daniel Escate</title>
+</head>
+<body>
+    <header class="top">
+        <a href="https://danielescate.github.io/portfolio/" class="logo"><img src="img/de-logo-light.png" id="main" alt="logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" onclick="showNav()"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <img id="toggle" src="img/sun.png" alt="light" onclick="myFunction()">
+        <ul class="menu">
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#work">WORK</a></li>
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#about">ABOUT</a></li>
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#contact">CONTACT</a></li>
+        </ul>
+        <ul class="menu2">
+            <li><a href="https://danielescate.github.io/portfolio/#work">WORK</a></li>
+            <li><a href="https://danielescate.github.io/portfolio/#about">ABOUT</a></li>
+            <li><a href="https://danielescate.github.io/portfolio/#contact">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="description">
+            <h1>Weather App</h1>
+            <p>This weather application was a project created for my development class. It uses Open Weather API to display
+                the current weather data based on the city you enter.            It was devloped using React, Javascript, some CSS, and deployed to GitHub Pages.<br/><br/>
+            <a href="https://danielescate.github.io/weather-app/">Try it out</a> and check out some of the code!  
+            </p><br/>
+            <div class="cont">
+                <div class="left">
+                    <h2>Year</h2>
+                    <p>2021</p><br/>
+                    <p>React<br/>
+                    Open Weather Map API<br/>
+                    Javascript<p/>
+                </div>
+                <div class="right">
+                    <h2>Programs</h2>
+                    <p>VS Code</p>
+                </div>
+            </div> 
+        </section>
+
+        <section class="assets">
+            <h2>Final</h2>
+            <iframe style="width: 100%; height: 100vh;border: none;"src="https://danielescate.github.io/weather-app/"></iframe>
+            <h2>Sample Code</h2>
+            <img src="img/code-1.png" alt="Sample Code">
+            <img src="img/code-2.png" alt="Sample Code">
+        </section>
+    </main>
+
+    <div class="copyright">
+        <p>Daniel Escate © 2020</p>
+    </div>
+
+
+
+
+    <script>
+        function hideNav() {
+        let nav = document.querySelector(".menu");
+        if (nav.style.display === "none") {
+            nav.style.display = "block";
+            } else {
+            nav.style.display = "none" 
+            }
+        document.querySelector(".menu-btn").checked = false;
+        }
+
+        function showNav() {
+        // Get the checkbox
+        let checkBox = document.querySelector(".menu-btn");
+        // Get the output text
+        let menu = document.querySelector(".menu");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+        }
+
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark-mode");
+            
+            let main = document.getElementById('main');
+
+            if (main.getAttribute('src') === "img/de-logo-light.png") {
+                main.setAttribute('src', "img/de-logo-dark.png");
+            }
+            else {
+                main.setAttribute('src', "img/de-logo-light.png");
+            }
+
+            let toggle = document.getElementById('toggle');
+
+            if (toggle.getAttribute('src') === "img/sun.png") {
+                toggle.setAttribute('src', "img/moon.png");
+            }
+            else {
+                toggle.setAttribute('src', "img/sun.png");
+            }
+        }
+    </script>
+    
+</body>
