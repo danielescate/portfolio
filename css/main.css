@@ -933,7 +933,7 @@ input[type="radio"] {
 
 @media screen and (max-width: 550px) {
     p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     h1 {
@@ -1021,7 +1021,7 @@ input[type="radio"] {
     }
 
     #work {
-        height: 60em;
+        height: 45em;
         margin-bottom: 0em;
         padding-top: 5em;
     }
@@ -1036,7 +1036,7 @@ input[type="radio"] {
     }
 
     .project {
-        height: 8em;
+        height: 5em;
     }
 
     .mywork {
