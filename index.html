@@ -168,7 +168,9 @@
                                 <p>User Interfaces/User Experience, Graphic Design, Motion Graphics, Branding, Storyboarding, Flow Charts, Wireframes, Personas, Augmented Reality.</p>
                         </div>
                     </div>
-
+                    <div class="item icons" data-aos="fade-up" style="display: inline-block; vertical-align: middle; height: 100%;">
+                        <img id="skill" src="img/design-icon-light.png" style="width: 50%; padding-top: 5%;">
+                    </div>
                 </div>
             </div>
         </section>
@@ -319,6 +321,15 @@
             }
             else {
                 photo.setAttribute('src', "img/de-photo-light.png");
+            }
+
+            let skill = document.getElementById('skill');
+
+            if (skill.getAttribute('src') === "img/design-icon-light.png") {
+                skill.setAttribute('src', "img/design-icon-dark.png");
+            }
+            else {
+                skill.setAttribute('src', "img/design-icon-light.png");
             }
 
             let toggle = document.getElementById('toggle');
