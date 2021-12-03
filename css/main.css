@@ -378,6 +378,7 @@ input[type="radio"] {
     background-position: center;
     background-size: 125%;
     background-repeat: no-repeat;
+    background-color: #404041;
 }
 
 #project5 {
@@ -393,7 +394,7 @@ input[type="radio"] {
     background-position: center;
     background-size: 120%;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #1C76D2;
 }
 
 #project7 {
@@ -417,7 +418,7 @@ input[type="radio"] {
     background-position: center;
     background-size: 120%;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #F5B039;
 }
 
 .item img {
