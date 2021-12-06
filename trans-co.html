@@ -95,8 +95,9 @@
         }
 
         function myFunction() {
-            let element = document.body;
-            element.classList.toggle("dark-mode");
+            var element = document.body;
+            element.classList.toggle("light-mode");
+  
             
             let main = document.getElementById('main');
 
@@ -115,7 +116,27 @@
             else {
                 toggle.setAttribute('src', "img/sun.png");
             }
+
+
+            if (element.classList.contains("light-mode")) {
+            //if class was added to body
+                localStorage.setItem("background", "light-mode");
+            //save information in "background" localStorage variable, use dark-mode class name
+            } else {
+                localStorage.setItem("background", "");
+            //if class was removed set background" localStorage variable to null
+            }
         }
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+        //when loading document
+        var background = localStorage.getItem("background");
+            // get localStorage var background
+            if (background) {
+            // if its not null and empty
+                myFunction()
+            }
+        });
     </script>
     
 </body>

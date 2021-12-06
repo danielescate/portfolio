@@ -17,7 +17,7 @@ body {
     margin: auto;
 }
 
-.dark-mode {
+.light-mode {
     --font-color: #131313;
     --bg-color: #F9F7ED;
 }
@@ -85,7 +85,9 @@ li a {
     text-align: center;
     padding: 2em 0 2em 0;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 li a:hover,
