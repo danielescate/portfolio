@@ -117,7 +117,7 @@ li a:hover,
 
 .menu {
     background-color: var(--bg-color);
-    display: block;
+    display: none;
 }
 
 .top li {
@@ -135,7 +135,8 @@ li a:hover,
 }
 
 .menu2 {
-    display: none;
+    display: block;
+    float: right;
 }
 
 .menu-icon {
