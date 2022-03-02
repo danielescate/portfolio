@@ -25,7 +25,7 @@ body {
 p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.1em;
     letter-spacing: 0.05em;
     line-height: 1.3em;
     margin: 0;
@@ -58,7 +58,7 @@ h3 {
 .header h1 {
     border-bottom-style: solid;
     border-width: 0.05em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .top {
@@ -69,6 +69,11 @@ h3 {
     z-index: 2;
     display: block;
     height: 4em;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
 }
 
 ul {
@@ -341,6 +346,23 @@ input[type="radio"] {
     color: white;
 }
 
+.project-img{
+    width: 15em;
+    height: 10em;
+    border-radius: 10px;
+}
+
+.bio h1 {
+    font-size: 2em;
+}
+
+.preview {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 5em;
+}
+
 .mywork {
     display: grid;
     grid-gap: 1.5em;
@@ -359,6 +381,7 @@ input[type="radio"] {
     background-image: url('../img/bloom-marker.jpg');
     background-position: center;
     background-size: 120%;
+    background-repeat: no-repeat;
 }
 
 #project2 {
@@ -572,6 +595,16 @@ input[type="radio"] {
         grid-gap: 1.5em;
         grid-template-columns: auto auto auto auto;
     }
+    .project-img {
+        height: 15em;
+        width: 20em;
+    }
+
+    .preview {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: auto auto;
+    }
 
     .connect {
         margin: 0.5em 0 2em 0;
@@ -741,7 +774,7 @@ input[type="radio"] {
 
 
     #work {
-        height: 60em;
+        height: 135em;
         padding-top: 0;
     }
 
@@ -757,6 +790,17 @@ input[type="radio"] {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: auto auto auto;
+    }
+
+    .project-img {
+        height: 20em;
+        width: 100%;
+    }
+
+    .preview {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto;
     }
 
     #contact {
@@ -1025,7 +1069,7 @@ input[type="radio"] {
     }
 
     #work {
-        height: 45em;
+        height: 135em;
         margin-bottom: 0em;
         padding-top: 5em;
     }
