@@ -363,8 +363,22 @@ input[type="radio"] {
     margin-bottom: 5em;
 }
 
+.extras {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.extras p{
+    background-color: #87C13F;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 2em;
+}
+
 .mywork {
-    display: grid;
+    display: none;
     grid-gap: 1.5em;
     grid-template-columns: auto auto auto auto;
     margin-bottom: 5em;
@@ -774,7 +788,7 @@ input[type="radio"] {
 
 
     #work {
-        height: 135em;
+        height: 165em;
         padding-top: 0;
     }
 
@@ -1069,7 +1083,7 @@ input[type="radio"] {
     }
 
     #work {
-        height: 135em;
+        height: 155em;
         margin-bottom: 0em;
         padding-top: 5em;
     }

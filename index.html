@@ -125,20 +125,9 @@
                     <p>A simple weather application created with React and Open Weather API. Enter in the city and view the current temperature!</p></a><br/>
                 </div>
             </div>
-           <!--  <div class="mywork">
-                <a href="edcan.html"><div class="project Branding UX/UI" id="project5" data-aos="fade-up" data-category="Branding UX/UI">
-                    <h1></h1>
-                </div></a>
-                <a href="hestia.html"><div class="project Branding" id="project4" data-aos="fade-up" data-category="Branding">
-                    <h1></h1>
-                </div></a>
+            <div class="extras" onclick="extraWork()"><p><strong>Extras!</strong></p></div>
+           <div class="mywork">
                 <a href="arway.html"><div class="project Branding UX/UI" id="project8" data-aos="fade-up" data-category="Branding UX/UI">
-                    <h1></h1>
-                </div></a>
-                <a href="weather.html"><div class="project Branding UX/UI" id="project6" data-aos="fade-up" data-category="Branding UX/UI">
-                    <h1></h1>
-                </div></a>
-                <a href="bloom.html"><div class="project Branding Augmented Reality" id="project1" data-aos="fade-up" data-category="Branding Augmented Reality">
                     <h1></h1>
                 </div></a>
                 <a href="trans-co.html"><div class="project Branding UX/UI" id="project9" data-aos="fade-up"  data-category="Branding UX/UI">
@@ -150,7 +139,7 @@
                 <a href="bwnn.html"><div class="project Motion Graphics/Videos" id="project3" data-aos="fade-up"  data-category="Motion Graphics/Videos">
                     <h1></h1>
                 </div></a>
-            </div> -->
+            </div>
         </section>
 
         <section id="about">
@@ -322,6 +311,17 @@
         } else {
             menu.style.display = "none";
         }
+        }
+        //Extra Projects
+        let btn = document.querySelector(".extras");
+            let work = document.querySelector(".mywork");
+        btn.onclick = function extraWork() {
+            // If the checkbox is checked, display the output text
+            if (work.style.display !== "grid"){
+                work.style.display = "grid";
+            } else {
+                work.style.display = "none";
+            }
         }
         // DARK MODE
          function myFunction() {
