@@ -605,7 +605,7 @@ input[type="radio"] {
     }
 
     .mywork {
-        display: grid;
+        display: none;
         grid-gap: 1.5em;
         grid-template-columns: auto auto auto auto;
     }
@@ -788,7 +788,7 @@ input[type="radio"] {
 
 
     #work {
-        height: 165em;
+        height: 170em;
         padding-top: 0;
     }
 
@@ -801,7 +801,7 @@ input[type="radio"] {
     }
 
     .mywork {
-        display: grid;
+        display: none;
         grid-gap: 1em;
         grid-template-columns: auto auto auto;
     }
@@ -943,7 +943,7 @@ input[type="radio"] {
     }
 
     .mywork {
-        display: grid;
+        display: none;
         grid-gap: 1em;
         grid-template-columns: auto auto;
     }
@@ -1102,7 +1102,7 @@ input[type="radio"] {
     }
 
     .mywork {
-        display: grid;
+        display: none;
         grid-gap: 1em;
         grid-template-columns: auto auto;
     }
