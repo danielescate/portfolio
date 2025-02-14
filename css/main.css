@@ -466,7 +466,7 @@ input[type="radio"] {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #522a44;
 }
 
 #projectB {
@@ -474,7 +474,7 @@ input[type="radio"] {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: #F5B039;
+    background-color: white;
 }
 
 .item img {
