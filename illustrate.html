@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ddd8vkh.css">
+    <link rel="icon" type="image/png" src="img/de-favicon.png">
+    <script src="js/index.js"></script>
+    <title>Daniel Escate</title>
+</head>
+<body>
+    <header class="top">
+        <a href="https://danielescate.github.io/portfolio/" class="logo"><img src="img/de-logo-light.png" id="main" alt="logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" onclick="showNav()"/>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <img id="toggle" src="img/sun.png" alt="light" onclick="myFunction()">
+        <ul class="menu">
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#work">WORK</a></li>
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#about">ABOUT</a></li>
+            <li onclick="hideNav()"><a href="https://danielescate.github.io/portfolio/#contact">CONTACT</a></li>
+        </ul>
+        <ul class="menu2">
+            <li><a href="https://danielescate.github.io/portfolio/#work">WORK</a></li>
+            <li><a href="https://danielescate.github.io/portfolio/#about">ABOUT</a></li>
+            <li><a href="https://danielescate.github.io/portfolio/#contact">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="description" id="bwnn">
+            <h1>illustrate inc</h1>
+            <p><strong>Graphic Designer</strong><br/><br/>
+                After <a href="/thinktum.html" target="_blank">thinktum</a>’s acquisition and rebranding to illustrate inc, I spearheaded the redesign and creative direction. 
+                Working directly with the President and a small, agile team, I led the development of a new website, customizing it 
+                using HTML and CSS to achieve a visually cohesive and user-friendly experience. Additionally, I designed new branded 
+                templates and visuals for social, web, and email marketing. As a key driver of creative strategy and design innovation, 
+                I am proud of the work I’ve accomplished and the growth I’ve experienced. From conceptualizing ideas to developing 
+                prototypes and final products, my passion for design continues to evolve.</p>
+                <br>
+            <h3>Sites</h3>
+            <p><a href="https://illustrateinc.com" target="_blank">illustrate inc</a></p><br/>
+            <div class="cont">
+                <div class="left">
+                    <h2>Year</h2>
+                    <p>2022-Present</p><br/>
+                    <p>Web, Graphic, and Motion Design, Branding, Social, Email, UX/UI</p>
+                </div>
+                <div class="right">
+                    <h2>Programs</h2>
+                    <p>WordPress, Mailchimp, Hootsuite, Illustrator, Photoshop, After Effects, GoDaddy</p>
+                </div>
+            </div> 
+        </section>
+
+        <section class="assets">
+            <h3>Old Logo</h3>
+            <a href="https://illustrateinc.com/" target="_blank"><img src="img/illustrate-inc-logo-old.png" alt="Previous illustrate inc logo"></a>
+            <h3>New Logo</h3>
+            <a href="https://illustrateinc.com/" target="_blank"><img src="img/illustrate-inc-logo-new.png" alt="New and current illustrate inc logo"></a>
+            <h3>Home Page Preview</h3>
+            <a href="https://illustrateinc.com/" target="_blank"><img src="img/illustrate-inc-home-page.png" alt="illustrate inc home page preview"></a>
+            <h3>Launch Coming Soon!</h3>
+        </section>
+    </main>
+
+    <div class="copyright">
+        <p>Daniel Escate © 2025</p>
+    </div>
+
+
+
+
+    <script>
+        function hideNav() {
+        let nav = document.querySelector(".menu");
+        if (nav.style.display === "none") {
+            nav.style.display = "block";
+            } else {
+            nav.style.display = "none" 
+            }
+        document.querySelector(".menu-btn").checked = false;
+        }
+
+        function showNav() {
+        // Get the checkbox
+        let checkBox = document.querySelector(".menu-btn");
+        // Get the output text
+        let menu = document.querySelector(".menu");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+        }
+
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+  
+            
+            let main = document.getElementById('main');
+
+            if (main.getAttribute('src') === "img/de-logo-light.png") {
+                main.setAttribute('src', "img/de-logo-dark.png");
+            }
+            else {
+                main.setAttribute('src', "img/de-logo-light.png");
+            }
+
+            let toggle = document.getElementById('toggle');
+
+            if (toggle.getAttribute('src') === "img/sun.png") {
+                toggle.setAttribute('src', "img/moon.png");
+            }
+            else {
+                toggle.setAttribute('src', "img/sun.png");
+            }
+
+
+            if (element.classList.contains("light-mode")) {
+            //if class was added to body
+                localStorage.setItem("background", "light-mode");
+            //save information in "background" localStorage variable, use dark-mode class name
+            } else {
+                localStorage.setItem("background", "");
+            //if class was removed set background" localStorage variable to null
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+        //when loading document
+        var background = localStorage.getItem("background");
+            // get localStorage var background
+            if (background) {
+            // if its not null and empty
+                myFunction()
+            }
+        });
+
+        
+    </script>
+    
+</body>

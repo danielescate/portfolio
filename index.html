@@ -97,6 +97,20 @@
             </article> -->
             <div class="preview">
                 <div class="thumb">
+                    <a href="illustrate.html"><div class="project-img Branding UX/UI" id="project11" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                </div>
+                <div class="bio">
+                    <a href="illustrate.html" style="text-decoration: none; color: --font-color;"><h1>illustrate inc</h1>
+                    <p>Lead the rebranding of illustrate inc. Used HTML and CSS to customize and design new website. Drove lead generation through promotional materials including interactive videos, social media content, email campaigns.</p></a><br/><br/>
+                </div>
+                <div class="thumb">
+                    <a href="thinktum.html"><div class="project-img Branding UX/UI" id="project10" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                </div>
+                <div class="bio">
+                    <a href="thinktum.html" style="text-decoration: none; color: --font-color;"><h1>thinktum</h1>
+                    <p>Designed splash pages for interim site and assisted with rebranding. Worked with UX/UI Designer. Created enaging booths showcased at insurance conferences across North America.</p></a><br/><br/>
+                </div>
+                <div class="thumb">
                     <a href="edcan.html"><div class="project-img Branding UX/UI" id="project5" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
                 </div>
                 <div class="bio">
@@ -152,9 +166,11 @@
                         <img src="img/de-photo-light.png" id="photo" alt="Daniel" data-aos="fade-up">
                     </div>
                     <div class="bio">
-                        <p>I have always been a creative individual with a strong interest in creating unique solutions to problems with a user-centered design approach. My goal is to create intuitive designs that lead to seamless user experiences, no matter the medium.</p><br/>
-                        <p>I have had the opportunity to work on a variety of different projects which have helped  brands establish their identity, enhance their brand, and expand their network.</p><br/>
-                        <p>I am always looking for new and exciting opportunities where I can be a part of a supportive team, learn from leaders in the industry, and grow.</p>
+                        <p>As an experienced and results-driven designer, I am eager to leverage my extensive skills and expertise to contribute to a creative vision. I’ve had the opportunity to lead creative projects that enhance brand presence, drive engagement, and deliver results. </p><br/>
+                        <p>From social and email campaigns to website redesigns, I thrive in environments where I can combine design, strategy, and experience to make an impact.</p><br/>
+                        <p>I’m always looking to expand my skills and stay current with design trends and tools. I’m excited about opportunities to share my creativity, experience and contribute to your success.</p>
+                        <br><br><br>
+                        <p><strong><i>Fun Fact:</i></strong> I have a love for film photography 📷 🎞️ (<a href="https://www.instagram.com/film_frog/" target="_blank"  style="color: #87C13F; text-decoration: none;">check out my photos</a>) and collecting vinyl records! 🎶</p>
                     </div>
                 </div>
                 <div class="info">
@@ -172,7 +188,7 @@
                         <div class="textbox">
                             <h1>Computer Skills 🖥</h1>
                                 <h2>I can use...</h2>
-                                <p>Illustrator, Photoshop, After Effects, InDesign, Adobe XD, HTML, CSS, JS, React, GitHub, Figma, WordPress, Squarespace, Webflow, Mailchimp, Maya</p>
+                                <p>Adobe Creative Cloud: Illustrator, After Effects, Photoshop, Premier Pro, InDesign, Adobe XD, GitHub, Figma, WordPress, Squarespace, Webflow, GoDaddy, Visual Studio Code, HTML, CSS, Javascript, React, Mindstamp, DALL-E, Mailchimp, Jira, Miro, Canva, Maya, Unity, Microsoft 365: PowerPoint, Word, Excel.</p>
                         </div>
                     </div>
                     <div class="item icons" data-aos="fade-up">
@@ -184,7 +200,7 @@
                         <div class="textbox">
                             <h1>Design Skills ✏️</h1>
                                 <h2>I can do...</h2>
-                                <p>UX/UI Design, Illustrations and Graphics, Personas, Wireframes and Mockups, Branding, Data Visualization, Motion Design, Concept Videos, User Journey Maps, Storyboarding, Video/Photo Editing, Augmented Reality, 3D Modeling</p>
+                                <p>UX/UI Design, Generative AI, Interactive Videos, Graphics, Branding, Wireframes, Prototyping, Motion Design, Rebranding, Typography, Accessibility, Data Visualization, User Journeys, Concept Videos, Sound, Storyboarding, Video and Photo Editing, Augmented Reality Experiences, 3D Modeling.</p>
                         </div>
                     </div>
                     <div class="item icons" data-aos="fade-up" style="display: inline-block; vertical-align: middle; height: 100%;">
@@ -206,10 +222,10 @@
             <p></p>
         </div>
         <div class="email" data-aos="fade-up">
-            <p><a href="mailto:daniel.f.escate@gmail.com" style="color: #87C13F; text-decoration: none;">daniel.f.escate@gmail.com</a></p>
+            <p><a id="link" href="mailto:daniel.f.escate@gmail.com" style="color: #87C13F; text-decoration: none;">daniel.f.escate@gmail.com</a></p>
         </div>
         <div class="email" data-aos="fade-up">
-            <p><a href="https://www.linkedin.com/in/daniel-escate-172537156/" style="color: #87C13F; text-decoration: none;">LinkedIn</a> | <a href="https://www.instagram.com/danielescatedesign/" style="color: #87C13F; text-decoration: none;">Instagram</a></p>
+            <p><a id="link" href="https://www.linkedin.com/in/daniel-escate/" target="_blank" style="color: #87C13F; text-decoration: none;">LinkedIn</a> | <a href="https://www.instagram.com/danielescatedesign/" style="color: #87C13F; text-decoration: none;">Instagram</a></p>
         </div>
         <!-- <div class="social" data-aos="fade-up">
             <div class="follow">
@@ -228,7 +244,7 @@
     </section> 
     
     <div class="copyright">
-        <p>Daniel Escate © 2021</p>
+        <p>Daniel Escate © 2025</p>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -397,6 +413,14 @@
             }
             else {
                 igSocial.setAttribute('src', "img/ig-light.png");
+            }
+
+            let links = document.getElementsByTagName("a");
+
+            if (links.style.color === "#87C13F") {
+            links.style.color = "#007acb ";
+            } else {
+            links.style.color = "#87C13F" 
             }
         }
 
