@@ -497,10 +497,11 @@ input[type="radio"] {
     grid-gap: 2em;
     grid-template-columns: auto auto;
     justify-content: left;
+    width:200px;
 }
 
 .link img {
-    width: 10%;
+    width: 45%;
 }
 
 .copyright p {
