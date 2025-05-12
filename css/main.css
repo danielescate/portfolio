@@ -263,8 +263,8 @@ section {
 
 .info {
     display: grid;
-    grid-gap: 7em;
-    grid-template-columns: auto auto;
+    grid-gap: 2em;
+    grid-template-columns: auto 50%;
     padding: 2.5em 0 0 0;
 }
 
@@ -579,14 +579,6 @@ input[type="radio"] {
     
     #intro p{
         font-size: 1.5em;
-    }
-
-    .info {
-        display: grid;
-        grid-gap: 3em;
-        grid-template-columns: auto auto;
-        margin-bottom: 5em;
-        margin-top: 0em;
     }
 
     .bio img{
