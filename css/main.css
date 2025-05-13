@@ -618,22 +618,6 @@ input[type="radio"] {
         text-align: center;
     }
 
-    .mywork {
-        display: none;
-        grid-gap: 1.5em;
-        grid-template-columns: auto auto auto auto;
-    }
-    .project-img {
-        height: 15em;
-        width: 20em;
-    }
-
-    .preview {
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: auto auto;
-    }
-
     .connect {
         margin: 0.5em 0 2em 0;
     }
