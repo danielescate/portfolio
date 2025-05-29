@@ -769,7 +769,7 @@ input[type="radio"] {
     }
     
     .item img {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -940,6 +940,14 @@ input[type="radio"] {
 
     .project {
         height: 8em;
+    }
+
+    .project-grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid-3{
+        grid-template-columns: 1fr 1fr;
     }
 
     .design p{
