@@ -412,8 +412,8 @@ input[type="radio"] {
 
 .mywork {
     display: none;
-    grid-gap: 4em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 5em;
 }
 
@@ -509,6 +509,23 @@ input[type="radio"] {
     background-size: 75%;
     background-repeat: no-repeat;
     background-color: white;
+}
+
+#mariane {
+    background-image: url('../img/Mariane-thumbnail.png');
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-color: white;
+    object-fit: fill;
+}
+
+#oxford {
+    background-image: url('../img/oxford-logo.jpg');
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-color: #364A5A;
 }
 
 .item img {
