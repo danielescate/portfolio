@@ -100,9 +100,8 @@ li a {
     font-style: normal;
 }
 
-li a:hover,
-.menu-btn:hover {
-  color: #87C13F;
+li a:hover {
+  color: #1670CB;
 }
 
 .logo {
@@ -160,7 +159,7 @@ li a:hover,
   display: block;
   height: 0.2em;
   position: relative;
-  transition: background .2s ease-out;
+  transition: .2s ease-out;
   width: 1em;
 }
 
@@ -206,7 +205,7 @@ li a:hover,
 
 
 .current p {
-    color: #87C13F;
+    color: #1670CB;
 }
 
 .start {
@@ -420,7 +419,7 @@ input[type="radio"] {
 }
 
 .extras p{
-    background-color: #87C13F;
+    background-color: #1670CB;
     border-radius: 10px;
     display: inline-block;
     padding: 15px;
