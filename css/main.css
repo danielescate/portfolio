@@ -1204,14 +1204,12 @@ input[type="radio"] {
         font-size: 2em;
     }
 
- 
-
     .quotes {
         grid-gap: 3em;
     }
 
     .author {
-        grid-template-columns: 15% 80%;
+        grid-template-columns: 25% 70%;
     }
 
     .headshot img {
