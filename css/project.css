@@ -26,13 +26,10 @@ main {
     font-size: 3em;
 }
 
-.description p {
-    font-size: 1em;
-}
 
 .description a {
     color: #87C13F;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .assets h2 {

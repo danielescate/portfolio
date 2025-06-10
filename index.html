@@ -11,14 +11,25 @@
     <link rel="stylesheet" href="https://use.typekit.net/ddd8vkh.css">
     <link rel="shortcut icon" type="image/jpg" href="/img/de-favicon.png"/>
     <script src="js/index.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KDL5CLXR');</script>
+    <!-- End Google Tag Manager -->
     <title>Daniel Escate</title>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDL5CLXR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="top">
-        <a href="https://danielescate.github.io/portfolio/" class="logo"><img src="img/de-logo.svg" id="main" alt="logo" data-aos="fade-right" data-aos-anchor="#work"></a>
+        <a href="https://danielescate.github.io/portfolio/" class="logo"><img src="img/de-logo-dark.png" id="main" alt="logo" data-aos="fade-right" data-aos-anchor="#work"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" onclick="showNav()"/>
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <input type="image" id="toggle" src="img/sun.png" alt="light" onclick="myFunction()"> 
+       <!-- <input type="image" id="toggle" src="img/sun.png" alt="light" onclick="myFunction()"> -->
         <ul class="menu">
             <li onclick="hideNav()"><a href="#work">WORK</a></li>
             <li onclick="hideNav()"><a href="#about">ABOUT</a></li>
@@ -36,12 +47,11 @@
         <section id="intro">
             <div class="start">
                 <div class="photo">
-                    <img src="img/de-logo-light.png" id="logo" alt="logo" data-aos="zoom-out">
+                    <img src="img/de-logo-dark.png" id="logo" alt="logo" data-aos="zoom-out">
                 </div>
                 <div class="name" data-aos="fade-left">
                     <h1>Daniel Escate</h1>
-                    <p>Interaction Designer & Developer</p>
-                    <!-- <p id="title">Interaction Designer</p> -->
+                    <p id="title">Interaction Designer</p>
                 </div> 
             </div>
         </section> 
@@ -51,7 +61,7 @@
             <div class="header">
                 <h1>Work</h1>
             </div>
-            <!-- <div class="sort">
+            <div class="sort">
                     <input type="radio" id="All" name="categories" value="All" checked>
                     <input type="radio" id="UX/UI" name="categories" value="UX/UI">
                     <input type="radio" id="Branding" name="categories" value="Branding">
@@ -60,24 +70,27 @@
             
                     <ol class="filters">
                             <li>
-                              <label for="All active" onclick="filterSelection('All')">All</label>
+                              <label class="tablinks active" onclick="openRecent(event, 'recent')">Recent</label>
                             </li>
                             <li>
-                              <label for="UX/UI" onclick="filterSelection('UX/UI')">UX/UI</label>
+                              <label class="tablinks" onclick="openRecent(event, 'ux')">UX/UI</label>
                             </li>
                             <li>
-                              <label for="Branding" onclick="filterSelection('Branding')">Branding</label>
+                              <label class="tablinks" onclick="openRecent(event, 'branding')">Branding</label>
                             </li>
                             <li>
-                              <label for="Augmented Reality" onclick="filterSelection('Augmented Reality')">Augmented Reality</label>
+                              <label class="tablinks" onclick="openRecent(event, 'video')">Animation/Video</label>
                             </li>
                             <li>
-                              <label for="Motion Graphics/Videos" onclick="filterSelection('Motion Graphics/Videos')">Motion Graphics/Videos</label>
+                              <label class="tablinks" onclick="openRecent(event, 'ai')">Generative AI</label>
+                            </li>
+                            <li>
+                              <label class="tablinks" onclick="openRecent(event, 'dev')">Development</label>
                             </li>
                           </ol>
             </div>
 
-            <ol class="posts">
+           <!--  <ol class="posts">
                 <li class="post" data-category="Branding UX/UI"><div class="project" id="project5" data-aos="fade-up" data-category="Branding UX/UI">
                     <h1></h1>
                     </div>
@@ -95,42 +108,78 @@
                   </a>
                 </figure>
             </article> -->
-            <div class="preview">
-                <div class="item">
+            <div class="preview" id="recent">
+                <div class="item" data-aos="fade-up">
                     <div class="thumb">
-                        <a href="illustrate.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="illustrate" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                        <a href="illustrate.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="illustrate" data-category="Branding UX/UI"></div></a>
                     </div>
                     <div class="bio">
-                        <a href="illustrate.html" style="text-decoration: none; color: --font-color;"><h1>illustrate inc</h1>
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>UX/UI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>Dev</p>
+                        </div>
+                        <h1>illustrate inc</h1>
                             <p>Lead the revamp of illustrate inc’s identity. Createing a new logo, color pallete, typography, and customizing the website using HTML/CSS, while following accessibility standards.<br><br>
-                                Assisted the senior UX/UI designer with creating responsive screen for an insurance web app, providing branded visuals/icons and animations for loading screens.
-                            </p>
+                                Supported the UX/UI Designer in developing responsive mockups, enhancing the overall user experience and ensuring a cohesive system, while also providing custom visuals and animations.
+                            </p><br/>
+                        <a href="illustrate.html" style="text-decoration: underline; color: --font-color;">
+                                <p>View more →</p>
                         </a>
                     </div>
                 </div>
                 
-                <div class="item">
+                <div class="item" data-aos="fade-up">
                     <div class="thumb">
-                        <a href="thinktum.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="thinktum" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                        <a href="thinktum.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="thinktum" data-category="Branding UX/UI"></div></a>
                     </div>
                     <div class="bio">
-                        <a href="thinktum.html" style="text-decoration: none; color: --font-color;"><h1>thinktum</h1>
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>GenAI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Video</p>
+                        </div>
+                        <h1>thinktum</h1>
                             <p><i>thinktum merged with illustrate inc. </i>At thinktum, I assisted with a rebranding, created inteactive videos, launched social and email campaigns that drove interest and lead to discovery calls. <br><br>
                                 Created engaging booths showcased at insurance conferences across North America where we gained exposure though interactive videos and giveaways.
-                            </p>    
+                            </p> <br/>
+                        <a href="thinktum.html" style="text-decoration: underline; color: --font-color;">
+                            <p>View more →</p>  
                         </a>
                     </div>
                 </div>
                 
-                <div class="item">
+                <div class="item" data-aos="fade-up">
                     <div class="thumb">
-                        <a href="edcan.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="project5" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                        <a href="edcan.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="project5" data-category="Branding UX/UI"></div></a>
                     </div>
                     <div class="bio">
-                        <a href="edcan.html" style="text-decoration: none; color: --font-color;"><h1>EdCan Network</h1>
+                        <div class="tag">
+                        <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>UX/UI</p>
+                        </div>
+                        <h1>EdCan Network</h1>
                             <p>Managed the design and launch of 4 websites in English and French. Used to successfully process payments, register event participants, host articles/resources, and online courses.<br><br>
                                 Designed visuals for social, web and email, managed monthly newsletters, publishing articles, and created advertisements featured in <i>Education Canada</i> Magazine.
-                            </p>
+                            </p><br/>
+                        <a href="edcan.html" style="text-decoration: underline; color: --font-color;">
+                            <p>View more →</p>  
                         </a>
                     </div>
                 </div>
@@ -147,50 +196,405 @@
                 
             </div>
 
-            <div class="extras" onclick="extraWork()"><p style="color: #F9F7ED;"><strong>Extras!</strong></p></div>
-            <div class="mywork">
-                <div class="item"><a href="oxford.html">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="Oxford" data-aos="fade-up" data-category="Branding UX/UI"></div>
-                    <h3>Oxford Properties Group</h3>
-                    <p>T-Shirt design of properties owned as part of a team offsite trip in Austin and Dallas, Texas.</p></a>
-                </div>
-                <div class="item"><a href="https://www.marianelefebvre.ca/en/mariane-lefebvre" target="_blank">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="mariane" data-aos="fade-up" data-category="Branding UX/UI"></div>
+            <div class="preview" id="ux">
+                 <div class="item" data-aos="fade-up">
+                    <div class="thumb"><a href="https://www.marianelefebvre.ca/en/mariane-lefebvre" target="_blank">
+                    <div class="project-img Branding UX/UI show aos-init aos-animate" id="mariane"  data-category="Branding UX/UI"></div></a></div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
                     <h3>Portfolio Design</h3>
-                    <p>Online portfolio for a Marketing Manager. Full branded package included logo, colour, icons, etc. </p></a>
+                    <p>Online portfolio for a Marketing Manager. Full branded package included logo, colour, icons, etc. </p> <br>
+                   <a href="https://www.marianelefebvre.ca/en/mariane-lefebvre" target="_blank" style="text-decoration: underline;">
+                        <p>View more →</p>  
+                    </a>
                 </div>
-                <div class="item"><a href="bloom.html">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="project1" data-aos="fade-up" data-category="Branding UX/UI"></div>
-                    <h3>Bloom</h3>
-                    <p>AR restaurant menu that shows information about items and where ingredients are sourced.</p></a>
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="illustrate.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="illustrate" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>UX/UI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>Dev</p>
+                        </div>
+                        <h1>illustrate inc</h1>
+                        <p>Customized the website using HTML, CSS, and JS while following accessibility standards.</p><br>
+                        <a href="illustrate.html" style="text-decoration: underline; color: --font-color;">
+                        <p>View more →</p>  
+                        </a>
+                    </div>
                 </div>
-                <div class="item"><a href="weather.html">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="project6" data-aos="fade-up" data-category="Branding UX/UI"></div>
-                    <h3>Weather App</h3>
-                    <p>Weather app created with React and Open Weather API. Enter a city and get the forecast.</p></a>
-                </div>
-                <div class="item"> <a href="arway.html">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="project8" data-aos="fade-up" data-category="Branding UX/UI"></div>
+                <div class="item"> 
+                    <div class="thumb"><a href="arway.html">
+                        <div class="project-img Branding UX/UI show aos-init aos-animate" id="project8" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <div class="tag">
+                        <p>Video</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
                     <h3>ARWAY</h3>
-                    <p>Concept app and video for an AR way finder app.</p></a>
+                    <p>Concept app and video for an AR way finder app.</p><br>
+                    <a href="arway.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
                 </div>
-                <div class="item"> <a href="bwnn.html">
-                    <div class="project Motion Graphics/Videos show aos-init aos-animate" id="project3" data-aos="fade-up" data-category="Motion Graphics/Videos"></div>
-                    <h3>Best Worst News Network</h3>
-                    <p>An interacive video where you're in charge of the new broadcast. Make it the best... or not!</p></a>
+                <div class="item" data-aos="fade-up"><a href="bloom.html">
+                    <div class="thumb"><div class="project-img Branding UX/UI show aos-init aos-animate" id="project1" data-category="Branding UX/UI"></div></a></div>
+                    <div class="tag">
+                        <p>Video</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>Bloom</h3>
+                    <p>AR restaurant menu that shows information about items and where ingredients are sourced.</p><br>
+                <a href="bloom.html" style="text-decoration: underline;">
+                    <p>View more →</p>
+                </a>
                 </div>
-                <div class="item"> <a href="trans-co.html">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="project9" data-aos="fade-up" data-category="Branding UX/UI"></div>
-                    <h3>Trans-Co</h3>
-                    <p>Animated video for a concept app to help with transit overcrowding during COVID.</p></a>
-                </div>
-                <div class="item"> <a href="store.html">
-                    <div class="project Branding UX/UI show aos-init aos-animate" id="project7" data-aos="fade-up" data-category="Branding UX/UI"></div>
+                <div class="item" data-aos="fade-up"> <a href="store.html">
+                    <div class="thumb"><div class="project-img Branding UX/UI show aos-init aos-animate" id="project7" data-category="Branding UX/UI"></div></div>
+                    <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
                     <h3>Dan's Record Collection</h3>
-                    <p>Web store created with React showcasing a record collection.</p></a>
+                    <p>Web store created with React showcasing a record collection.</p><br>
+                <a href="store.html" style="text-decoration: underline;">
+                    <p>View more →</p>
+                </a>
                 </div>
-                
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="edcan.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="project5" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                        <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>UX/UI</p>
+                        </div>
+                        <h1>EdCan Network</h1>
+                        <p>Managed the design and launch of 4 websites in English and French.</p><br>
+                        <a href="edcan.html" style="text-decoration: underline;">
+                            <p>View more →</p>  
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <div class="preview" id="branding">
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb"><a href="oxford.html">
+                    <div class="project-img Branding UX/UI aos-init show" id="Oxford"  data-category="Branding UX/UI"></div></a></div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <h3>Oxford Properties Group</h3>
+                    <p>T-Shirt design of properties owned as part of a team offsite trip in Austin and Dallas, Texas.</p><br>
+                    <a href="oxford.html" style="text-decoration: underline;">   
+                        <p>View more →</p>
+                    </a>
+                </div>
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="thinktum.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="thinktum" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>GenAI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Video</p>
+                        </div>
+                        <h1>thinktum</h1>
+                            <p>Assisted with rebranding, creating assets for social, email and web campaigns. Designed engaging booths showcased at insurance conferencesa.</p> <br>   
+                        <a href="thinktum.html" style="text-decoration: underline; color: --font-color;">
+                            <p>View more →</p>  
+                        </a>
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="illustrate.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="illustrate" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>UX/UI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>Dev</p>
+                        </div>
+                        <h1>illustrate inc</h1>
+                        <p>Led the creative direction of the new illustrate inc. Createing a new logo, color pallete, typography, etc.</p><br>
+                        <a href="illustrate.html" style="text-decoration: underline; color: --font-color;">
+                        <p>View more →</p>  
+                        </a>
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="edcan.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="project5" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                        <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>UX/UI</p>
+                        </div>
+                        <h1>EdCan Network</h1>
+                        <p>Ensured a cohesive visual identity across primary and sub-brands while developing branded assets and marketing materials.</p><br>
+                        <a href="edcan.html" style="text-decoration: underline;">
+                            <p>View more →</p>  
+                        </a>
+                    </div>
+                </div>
+                 <div class="item" data-aos="fade-up">
+                    <div class="thumb"><a href="https://www.marianelefebvre.ca/en/mariane-lefebvre" target="_blank">
+                    <div class="project-img Branding UX/UI show aos-init aos-animate" id="mariane"  data-category="Branding UX/UI"></div></a></div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>Portfolio Design</h3>
+                    <p>Online portfolio for a Marketing Manager. Full branded package included logo, colour, icons, etc. </p><br>
+                    <a href="https://www.marianelefebvre.ca/en/mariane-lefebvre" target="_blank" style="text-decoration: underline;">
+                        <p>View more →</p>  
+                    </a>
+                </div>
+                <div class="item"> 
+                    <div class="thumb"><a href="arway.html">
+                        <div class="project-img Branding UX/UI show aos-init aos-animate" id="project8" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <div class="tag">
+                        <p>Video</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>ARWAY</h3>
+                    <p>Concept app and video for an AR way finder app.</p><br>
+                    <a href="arway.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="preview" id="video">
+                <div class="item"> 
+                    <div class="thumb"><a href="bwnn.html">
+                    <div class="project-img Motion Graphics/Videos show aos-init aos-animate" id="project3" data-aos="fade-up" data-category="Motion Graphics/Videos"></div></a>
+                </div>
+                    <div class="tag">
+                        <p>Animation</p>
+                    </div>
+                    <h3>Best Worst News Network</h3>
+                    <p>An interacive video where you're in charge of the new broadcast. Make it the best... or not!</p><br>
+                    <a href="bwnn.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
+                </div>
+                <div class="item"> 
+                    <div class="thumb"><a href="trans-co.html">
+                        <div class="project-img Branding UX/UI show aos-init aos-animate" id="project9" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Animation</p>
+                    </div>
+                    <h3>Trans-Co</h3>
+                    <p>Animated video for a concept app to help with transit overcrowding during COVID.</p><br>
+                    <a href="trans-co.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
+                </div>
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="thinktum.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="thinktum" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>GenAI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Video</p>
+                        </div>
+                        <h1>thinktum</h1>
+                        <p>Created inteactive videos and animated AI generated images.</p> <br>
+                         <a href="thinktum.html" style="text-decoration: underline; color: --font-color;">
+                            <p>View more →</p>  
+                        </a> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="thumb"><a href="bloom.html">
+                        <div class="project-img Branding UX/UI show aos-init aos-animate" id="project1" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Video</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>Bloom</h3>
+                    <p>AR restaurant menu that shows information about items and where ingredients are sourced.</p><br>
+                    <a href="bloom.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
+                </div>
+                <div class="item"> 
+                    <div class="thumb"><a href="arway.html">
+                        <div class="project-img Branding UX/UI show aos-init aos-animate" id="project8" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <div class="tag">
+                        <p>Video</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>ARWAY</h3>
+                    <p>Concept app and video for an AR way finder app.</p><br>
+                    <a href="arway.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
+                </div>
+            </div>
+            <div class="preview" id="ai">
+                <div class="item" data-aos="fade-up">
+                    <div class="thumb">
+                        <a href="thinktum.html"><div class="project-img Branding UX/UI aos-init aos-animate" id="thinktum" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="bio">
+                        <div class="tag">
+                            <p>Branding</p>
+                        </div>
+                        <div class="tag">
+                            <p>Animation</p>
+                        </div>
+                        <div class="tag">
+                            <p>GenAI</p>
+                        </div>
+                        <div class="tag">
+                            <p>Video</p>
+                        </div>
+                        <h1>thinktum</h1>
+                        <p>Used AI generated images for an article series and animated the images for promotion on social.</p><br>
+                        <a href="thinktum.html" style="text-decoration: underline; color: --font-color;">
+                            <p>View more →</p>  
+                        </a>   
+                    </div>
+                </div>
+            </div>
+            <div class="preview" id="dev">
+                <div class="item">
+                    <div class="thumb"><a href="weather.html">
+                    <div class="project-img Branding UX/UI show aos-init aos-animate" id="project6" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <h3>Weather App</h3>
+                    <p>Weather app created with React and Open Weather API. Enter a city and get the forecast.</p><br>
+                    <a href="weather.html" style="text-decoration: underline;">
+                    <p>View more →</p> 
+                    </a>
+                </div>
+                <div class="item"> 
+                    <div class="thumb"><a href="store.html">
+                        <div class="project-img Branding UX/UI show aos-init aos-animate" id="project7" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                    <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>Dan's Record Collection</h3>
+                    <p>Web store created with React showcasing a record collection.</p><br>
+                    <a href="store.html" style="text-decoration: underline;">
+                        <p>View more →</p>
+                    </a>
+                </div>
+                <div class="item"> 
+                    <div class="thumb"><a href="arway.html">
+                    <div class="project-img Branding UX/UI show aos-init aos-animate" id="project8" data-aos="fade-up" data-category="Branding UX/UI"></div></a>
+                    </div>
+                   <div class="tag">
+                        <p>Dev</p>
+                    </div>
+                    <div class="tag">
+                        <p>Branding</p>
+                    </div>
+                    <div class="tag">
+                        <p>Video</p>
+                    </div>
+                    <div class="tag">
+                        <p>UX/UI</p>
+                    </div>
+                    <h3>ARWAY</h3>
+                    <p>Concept app and video for an AR way finder app.</p><br>
+                    <a href="arway.html" style="text-decoration: underline;">
+                    <p>View more →</p>
+                    </a>
+                </div> 
+            </div>
+                
+        </div>
         </section>
 
         <section id="about">
@@ -203,39 +607,123 @@
                         <img src="img/de-photo-monkey.png" id="photo" alt="Daniel" data-aos="fade-up">
                     </div>
                     <div class="bio">
-                        <p>As an experienced and results-driven designer, I am eager to leverage my extensive skills and expertise to contribute to a creative vision. I’ve had the opportunity to lead creative projects that enhance brand presence, drive engagement, and deliver results. </p><br/>
-                        <p>From social and email campaigns to website redesigns, I thrive in environments where I can combine design, strategy, and experience to make an impact.</p><br/>
-                        <p>I’m always looking to expand my skills and stay current with design trends and tools. I’m excited about opportunities to share my creativity, experience and contribute to your success.</p>
-                        <br><br><br>
-                        <p><strong><i>Fun Fact:</i></strong> I have a love for film photography 📷 🎞️ (<a href="https://www.instagram.com/film_frog/" target="_blank"  style="color: #87C13F; text-decoration: none;">check out my photos</a>) and collecting vinyl records! 🎶</p>
+                        <p>Experienced designer with a strong ability to simplify complex ideas and transform them into engaging, visually compelling solutions. Proven track record of helping brands build their identity, grow their presence, and connect with wider audiences. </p><br/>
+                        <p>Skilled in creating user-focused designs that boost social performance, enhance user journeys, and drive engagement, while leveraging GenAI for rapid ideation, image creation, and streamlined creative workflows. </p><br/>
+                        <p>Passionate about collaborative, growth-driven environments and eager to contribute to impactful design initiatives while continuously expanding as a multidisciplinary creative.</p><br/>
+                        <p><strong><i>Fun Fact:</i></strong> I have a love for film photography 📷 🎞️ (<a href="https://www.instagram.com/film_frog/" target="_blank"  style="color: #87C13F; text-decoration: none;">check out my photos</a>) and collecting vinyl records! 🎶 And the monkey's name is Pancho!</p><br/>
                     </div>
                 </div>
+                <h2 style="padding-top:2em; text-align: center;">What's in my tool box</h2>
                 <div class="info">
                     <div class="item">
-                        <div class="textbox">
-                            <h1>Computer Skills 🖥</h1>
+                        <div class="textbox aos-init aos-animate" data-aos="fade-up">
+                            <h3>Design Tools 🧰</h3>
+                            <p>Some programs im familiar with:</p><br/>
+                            <div class="tools">
+                                <div class="item">
+                                    <p>Illustrator</p>
+                                    <p>After Effects</p>
+                                    <p>Photoshop</p>
+                                    <p>Premier Pro</p>
+                                    <p>InDesign</p>
+                                </div>
+                                <div class="item">
+                                    <p>GitHub</p>
+                                    <p>Figma</p>
+                                    <p>WordPress</p>
+                                    <p>GoDaddy</p>
+                                    <p>Squarespace</p>
+                                </div>
+                                <div class="item">
+                                    <p>Mailchimp</p>
+                                    <p>Jira</p>
+                                    <p>Miro</p>
+                                    <p>Canva</p>
+                                    <p>MS Office</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="textbox aos-init aos-animate" data-aos="fade-up">
+                            <h3>UX/UI Design 💻</h3>
+                            <p>Knowledgable in developing responsive mockups in Figma, enhancing the overall user experience and ensuring a cohesive system.</p>
+                            <ul>
+                                <li>User Journeys, Personas, </li>
+                                <li>Wireframes, Prototyping, and Development</li>
+                                <li>Augmented Reality Experiences</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="textbox aos-init aos-animate" data-aos="fade-up">
+                            <h3>Branding ✏️</h3>
+                            <p>Skilled with helping brands build their identity, grow their presence, and connect to audiences. Whether starting from the ground up or needing a revamp.</p>
+                            <ul>
+                                <li>Brand Identity and Rebranding</li>
+                                <li>Logo, Typography, Icons, and Visuals</li>
+                                <li>T-shirts, posters, ads, etc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="textbox aos-init aos-animate" data-aos="fade-up">
+                            <h3>Motion Design 🎥</h3>
+                            <p>From drafting storyboards, creating scripts, to editing and animating. I've created personialzed interactive videos, 30-second ads, and fun animations.</p>
+                            <ul>
+                                <li>Interactive Videos</li>
+                                <li>Animations and GIFS</li>
+                                <li>Video Editing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="textbox aos-init aos-animate" data-aos="fade-up">
+                            <h3>Generative AI 🤖</h3>
+                            <p>Leveraging AI, I can brainstorm and ideate quickly, create truly unique images, and streamline my creative workflow. Some Gen AI tools I've used:</p>
+                            <ul>
+                                <li>DALL-E</li>
+                                <li>Adobe Firefly</li>
+                                <li>ChatGPT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="textbox aos-init aos-animate" data-aos="fade-up">
+                            <h3>Development 🚧</h3>
+                            <p>Proficient with front-end devlopment to create, customize, or prototype responsive webpages and unique email newsletters. Tools I've used:</p>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>
+                   <!--  <div class="item">
+                        <div class="textbox" data-aos="fade-up">
+                            <h2>Computer Skills 🖥</h2>
                             
                                 <p>Illustrator, After Effects, Photoshop, Premier Pro, InDesign, Adobe XD, GitHub, Figma, WordPress, Squarespace, Webflow, GoDaddy, Visual Studio Code, HTML, CSS, Javascript, React, Mindstamp, DALL-E, Mailchimp, Jira, Miro, Canva, Maya, Unity, PowerPoint, Word, Excel.</p>
                         </div>
                     </div>
-                  <!--   <div class="item icons" data-aos="fade-up">
+                    <div class="item icons" data-aos="fade-up">
                         <img src="img/portolio-icons-1.png">
                         <img src="img/portolio-icons-2.png">
                         <img src="img/portolio-icons-3.png">
                     </div> -->
-                    <div class="item">
-                        <div class="textbox">
-                            <h1>Design Skills ✏️</h1>
+                  <!--   <div class="item">
+                        <div class="textbox" data-aos="fade-up">
+                            <h2>Design Skills ✏️</h2>
                                
                                 <p>UX/UI Design, Generative AI, Interactive Videos, Graphics, Branding, Wireframes, Prototyping, Motion Design, Rebranding, Typography, Accessibility, Data Visualization, User Journeys, Concept Videos, Sound, Storyboarding, Video and Photo Editing, Augmented Reality Experiences, 3D Modeling.</p>
                         </div>
                     </div>
-                    <!--  <div class="item icons" data-aos="fade-up" style="display: inline-block; vertical-align: middle; height: 100%;">
+                     <div class="item icons" data-aos="fade-up" style="display: inline-block; vertical-align: middle; height: 100%;">
                         <img id="skill" src="img/design-icon-light.png" style="width: 50%; padding-top: 5%;">
                     </div> -->
-                    <div class="item">   
-                        <div class="textbox">
-                            <h1>Accomplishments 🏆</h1>
+                   <!-- <div class="item">   
+                        <div class="textbox" data-aos="fade-up">
+                            <h2>Accomplishments 🏆</h2>
                             
                             <p>⭐ Leading the redesign and creative direction of an established InsurTech.
                             <br>⭐ Designing interactive booths shown at North American conferences.
@@ -244,53 +732,168 @@
                         </div>
                     </div>
                     <div class="item">   
-                        <div class="textbox">
-                            <h1>Education 🎓</h1>
+                        <div class="textbox" data-aos="fade-up">
+                            <h2>Education 🎓</h2>
                            
                             <p>George Brown College, Toronto, ON <br/> Interaction Design and Development <br/> Advanced Diploma - 2021</p>
                         </div>
                     </div>
-                    <!--  <div class="item emoji">
+                      <div class="item emoji">
                         <img src="img/de-emoji.PNG" data-aos="fade-up">
                     </div> -->
                 </div>
             </div>
         </section>
 
-        
-    </main>
+        <section id="contact">
+            <div class="header">
+                    <h1>Contact</h1>
+            </div>
+            <div class="two-col">
+                 <div class="left">
+                <div class="connect">
+                    <h2>Let's talk design!</h2>
+                    <p></p>
+                </div>
+                <div class="email" data-aos="fade-up">
+                    <p><a id="link" href="mailto:daniel.f.escate@gmail.com" style="text-decoration:underline;">daniel.f.escate@gmail.com</a></p>
+                </div>
+                <div class="email" data-aos="fade-up">
+                    <p><a id="link" href="/pdf/Daniel-Escate-Resume-June-2025.pdf" target="_blank" style="text-decoration: underline;">Resume</a></p>
+                </div>
+                <div class="social" data-aos="fade-up">
+                    <div class="follow">
+                        <div class="link">
+                            <a href="https://www.linkedin.com/in/daniel-escate-172537156/"><img src="img/linkedin-dark.png" alt="icon" id="in"></a>
+                        </div>
+                        <div class="link">
+                            <a href="https://www.instagram.com/danielescatedesign/"><img src="img/ig-dark.png" alt="icon" id="ig"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section id="contact">
-        <div class="header">
-            <h1>Contact</h1>
-        </div>
-        <div class="connect">
-            <h2>Connect with me and let's talk design!</h2>
-            <p></p>
-        </div>
-        <div class="email" data-aos="fade-up">
-            <p><a id="link" href="mailto:daniel.f.escate@gmail.com" style="color: #87C13F; text-decoration: none;">daniel.f.escate@gmail.com</a></p>
-        </div>
-        <div class="email" data-aos="fade-up">
-            <p><a id="link" href="/pdf/Daniel-Escate-Resume-June-2025.pdf" target="_blank" style="color: #87C13F; text-decoration: none;">Resume</a></p>
-        </div>
-        <div class="social" data-aos="fade-up">
-            <div class="follow">
-            <div class="link">
-                <a href="https://www.linkedin.com/in/daniel-escate-172537156/"><img src="img/linkedin-light.png" alt="icon" id="in"></a>
+            <div class="right">
+                <div class="connect">
+                    <h2>What colleagues have to say</h2>
+                    <p></p>
+                </div>
+                <div class="quotes">
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>
+                        Daniel is a true professional—always a pleasure to work with, consistently bringing creativity, thoughtful ideas, and practical options to the table, leading to his ability to follow through with high-quality execution.
+                        <br><br>
+                        I’m proud to provide my full recommendation and reference for Daniel.
+                        </p>
+                    </div>
+                    <div class="author">
+                        <div class="headshot"><img src="https://media.licdn.com/dms/image/v2/D5603AQGc3588NFhMVQ/profile-displayphoto-shrink_100_100/B56ZRiceA7HQAY-/0/1736818418106?e=1755129600&v=beta&t=_eSujCTzKVSDSOQQc4ScojqCuQ-zoxSGCLxV-ZT35ik" alt="Photo of Lyndon"></div>
+                        <p><strong>Lyndon Edwards</strong><br><i>President</i><br>illustrate inc</p>
+                    </div>
+                </div>
+                            
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>Daniel's work shows strong visual fundamentals, a clean and modern aesthetic, and a good understanding of how design fits into broader product and marketing goals. He’s reliable, open to feedback, and brings a calm, focused energy to the team.
+                        <br><br>
+                        I’d confidently recommend Daniel to any design team.</p>
+                    </div>
+                    <div class="author">
+                        <div class="headshot"><img src="https://media.licdn.com/dms/image/v2/D5603AQGDE1tuwbgrlg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1684962285325?e=1755129600&v=beta&t=-WVrmuyNIXOABi16Urm5azWP_VmEiAoRZn1SOjRNvXA" alt="Photo of Krishna"></div>
+                        <p><strong>Krishna Khatri</strong><br><i>UX/UI Designer</i><br>illustrate inc</p>
+                    </div>
+                </div>
+                            
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>Daniel brought not only exceptional creative talent but also a strong sense of ownership and collaboration. His ability to translate complex ideas into clean, engaging visuals made a huge impact on the final product. 
+                        <br><br>
+                        Daniel was a joy to work with. He was always positive, responsive, and solution-oriented.
+                        </p>
+                    </div>
+                    <div class="author">
+                        <div class="headshot"><img src="https://media.licdn.com/dms/image/v2/C4E03AQETJD51EFT2RA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1613964080753?e=1755129600&v=beta&t=bBn7e-mC2p2abWMT2hAgpc4ybV2dHUSmIY1f3q_tk8Y" alt="Photo of Courtney"></div>
+                        <p><strong>Courtney Coon</strong><br><i>Executive Assistant</i><br>illustrate inc</p>
+                    </div>
+                </div>
+                            
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>Daniel was an indispensable part of our creative team and I wholeheartedly recommend him. His multidimensional skills consistently delivered high-quality outputs that conveyed our brand's essence and engaged our audience effectively. 
+                        <br><br>
+                        I thoroughly enjoyed working with him and would gladly do so again.</p>
+                    </div>
+                    <div class="author">
+                        <div class="headshot"><img src="https://media.licdn.com/dms/image/v2/D4E03AQHp7L-8e7pIqA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1714149912726?e=1755129600&v=beta&t=fceYIrdbQEqRjtQMWKPHqFIFuJZ6ELuc9Qp7oblfTT4" alt="Photo of Mariane"></div>
+                        <p><strong>Mariane Lefebvre</strong><br><i>Marketing Director</i><br>thinktum</p>
+                    </div>
+                </div>
             </div>
-            <div class="link">
-                <a href="https://www.instagram.com/danielescatedesign/"><img src="img/ig-light.png" alt="icon" id="ig"></a>
             </div>
-        </div>
-        <!-- <div class="email" data-aos="fade-up">
-                <p><a id="link" href="https://www.linkedin.com/in/daniel-escate/" target="_blank" style="color: #87C13F; text-decoration: none;">LinkedIn</a> | <a href="https://www.instagram.com/danielescatedesign/" style="color: #87C13F; text-decoration: none;">Instagram</a></p>
-            </div> -->
-    </section> 
+
+        </section> 
+
+       <!-- <section id="testimonials">
+            <div class="header">
+                <h1>Testimonials</h1>
+            </div>
+
+            <div class="quotes">
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>
+                        Daniel is a true professional—always a pleasure to work with, consistently bringing creativity, thoughtful ideas, and practical options to the table, leading to his ability to follow through with high-quality execution.
+                        <br><br>
+                        I’m proud to provide my full recommendation and reference for Daniel.
+                        </p>
+                    </div>
+                    <div class="author">
+                        <p><strong>Lyndon Edwards</strong><br><i>President</i><br>illustrate inc</p>
+                    </div>
+                </div>
+                            
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>Daniel's work shows strong visual fundamentals, a clean and modern aesthetic, and a good understanding of how design fits into broader product and marketing goals. He’s reliable, open to feedback, and brings a calm, focused energy to the team.
+                        <br><br>
+                        I’d confidently recommend Daniel to any design team.</p>
+                    </div>
+                    <div class="author">
+                        <p><strong>Krishna Khatri</strong><br><i>UX/UI Designer</i><br>illustrate inc</p>
+                    </div>
+                </div>
+                            
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>Daniel brought not only exceptional creative talent but also a strong sense of ownership and collaboration. His ability to translate complex ideas into clean, engaging visuals made a huge impact on the final product. 
+                        <br><br>
+                        Daniel was a joy to work with. He was always positive, responsive, and solution-oriented.
+                        </p>
+                    </div>
+                    <div class="author">
+                        <p><strong>Courtney Coon</strong><br><i>Executive Assistant</i><br>illustrate inc</p>
+                    </div>
+                </div>
+                            
+                <div class="item" data-aos="fade-up">
+                    <div class="bio">
+                        <p>Daniel was an indispensable part of our creative team and I wholeheartedly recommend him. His multidimensional skills consistently delivered high-quality outputs that conveyed our brand's essence and engaged our audience effectively. 
+                        <br><br>
+                        I thoroughly enjoyed working with him and would gladly do so again.</p>
+                    </div>
+                    <div class="author">
+                        <p><strong>Mariane Lefebvre</strong><br><i>Marketing Director</i><br>thinktum</p>
+                    </div>
+                </div>
+            </div>
+        </section>-->
     
     <div class="copyright">
         <p>Daniel Escate © 2025</p>
     </div>
+
+    </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -305,6 +908,21 @@
         //REMOVE .html
 
         //WORK SORT SECTION
+        function openRecent(evt, cityName) {
+        var i, preview, tablinks;
+        preview = document.getElementsByClassName("preview");
+        for (i = 0; i < preview.length; i++) {
+            preview[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "grid";
+        evt.currentTarget.className += " active";
+        }
+
+        //WORK SORT SECTION - NOT IN USE
         filterSelection("all")
         function filterSelection(c) {
         var x, i;
@@ -484,6 +1102,9 @@
             }
         });
 
+    </script>
+
+    <script>
         let title = document.getElementById('title');
 
         let typewriter = new Typewriter(title, {
@@ -496,7 +1117,7 @@
             .typeString('Graphic Designer')
             .pauseFor(2500)
             .deleteAll()
-            .typeString('Meme Lover')
+            .typeString('Monkey Lover')
             .pauseFor(2500)
             .start();
     </script>
