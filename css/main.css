@@ -362,6 +362,7 @@ input[type="radio"] {
     border: 1px solid #1670CB;
     border-radius: 20px;
     font-weight: 400;
+    pointer-events: none;
 }
 
 
@@ -939,7 +940,7 @@ img {
     }
     
     p {
-        font-style: 0.938em;
+        font-size: 0.938em;
     }
 
     ul {
