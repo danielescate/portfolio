@@ -23,7 +23,7 @@ body {
 }
 
 p {
-    font-family: 'quicksand', sans-serif;
+    font-family: 'indivisible', sans-serif;
     font-weight: 400;
     font-size: 1em;
     line-height: 1.5em;
@@ -31,7 +31,7 @@ p {
 }
 
 h1 {
-    font-family: 'sofia-pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3em;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'sofia-pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2em;
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'sofia-pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.5em;
@@ -84,7 +84,8 @@ header ul  {
 }
 
 ul {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'indivisible', sans-serif;
+    line-height: 1.5em;
     padding-left: 20px;
 }
 
@@ -237,7 +238,7 @@ section {
 }
 
 #intro h1 {
-    font-size: 6.7em;
+    font-size: 5.8em;
     text-align: right;
 }
 
@@ -290,9 +291,9 @@ section {
 /*FILTER WORK*/
 ol {
     list-style: none;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'indivisible', sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 input[type="radio"] {
@@ -315,9 +316,12 @@ input[type="radio"] {
     display: inline-block;
 }
   
-.filters label {
+.tablinks {
+    color: rgb(0 0 0 / 50%);
+    border: 1px solid rgb(0 0 0 / 50%);
+    border-radius: 20px;
     padding: 0.5rem 1rem;
-    margin-bottom: 0.25rem;
+    margin: 0.25rem 0.125rem;
     min-width: 50px;
     line-height: normal;
     cursor: pointer;
@@ -327,6 +331,7 @@ input[type="radio"] {
 .filters label:hover {
     background: transparent;
     color: #1670CB;
+    border: 1px solid #1670CB;
 }
 
 
@@ -352,10 +357,11 @@ input[type="radio"] {
 }
   
 .active {
-    background: transparent;
-    color: #1670CB;
-    border-bottom: 1px solid #1670CB;
-    font-weight: 600;
+    background: #1670CB;
+    color: #fff;
+    border: 1px solid #1670CB;
+    border-radius: 20px;
+    font-weight: 400;
 }
 
 .project-img{
@@ -365,12 +371,12 @@ input[type="radio"] {
 }
 
 .bio h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .preview {
     display: none;
-    grid-gap: 3em; 
+    grid-gap: 2em; 
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 5em;
 }
@@ -560,7 +566,7 @@ img {
 }
 
 .quotes .item {
-    border: 1px solid;
+    border: 1px solid rgb(0 0 0 / 25%);
     border-radius: 10px;
     padding: 20px;
 }
@@ -931,6 +937,10 @@ img {
     }
 
     p {
+        font-size: 0.938em;
+    }
+
+    ul {
         font-size: 0.938em;
     }
 
