@@ -61,13 +61,18 @@ h3 {
 }
 
 .top {
-    background-color: var(--bg-color);
+    /*background-color: var(--bg-color);*/
     position: sticky;
-    padding: 0 0 0 0;
-    top: 0;
+    padding: 10px 20px 10px;
+    top: 10px;
     z-index: 2;
     display: block;
-    height: 4em;
+    height: 3em;
+    background: rgb(245 245 245 / 80%);
+    border-radius: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(245, 245, 245, 0.3);
 }
 
 a, a:hover, a:visited, a:active {
@@ -112,7 +117,7 @@ li a:hover {
 
 .logo img {
     float: left;
-    width: 5%;
+    width: 50px;
 }
 
 #switch {
@@ -135,7 +140,7 @@ li a:hover {
 }
   
 .top li a {
-    padding: 20px 30px;
+    padding: 10px 20px;
 }
   
 .top .menu {
@@ -640,11 +645,10 @@ img {
         margin: 0;
     }
     
-    .top {
+   /* .top {
         padding: 0.5em 0 0 0;
-       
         height: 4em;
-    }
+    }*/
 
     .menu {
         display: none;
@@ -657,10 +661,6 @@ img {
 
     .menu-icon {
         display: none;
-    }
-
-    .logo img {
-        width: 5%;
     }
 
     .photo {
@@ -758,7 +758,7 @@ img {
         top: 4em;
     }
     
-    .top {
+    /*.top {
         padding: 0.5em 0 0 0;
         background-color: transparent;
     }
@@ -771,7 +771,7 @@ img {
         display: block;
     }
 
-    .menu {
+   /* .menu {
         height: 100%;
         width: 100%;
         top: 0;
@@ -784,11 +784,7 @@ img {
 
     .menu2 {
         display: none;
-    }
-
-    .logo img {
-        width: 8%;
-    }
+    }*/
 
     #toggle {
         float: right;
@@ -929,7 +925,7 @@ img {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     
     h1 {
         font-size: 2em;
@@ -952,7 +948,7 @@ img {
     }
     
     .top {
-        padding: 0.5em 0 0 0;
+        padding: 10px 15px 10px;
     }
 
     .navbar {
@@ -960,7 +956,16 @@ img {
     }
 
     .logo img {
-        width: 10%;
+        width: 35px;
+    }
+
+    .top {
+        height: 2em;
+    }
+    
+    .top li a {
+        padding: 5px 15px;
+        font-size: 14px;
     }
 
     #toggle {
@@ -1108,14 +1113,14 @@ img {
         padding-bottom: 0.5em;
     }
     
-    .top {
+   /* .top {
         padding: 0.5em 0 0 0;
         position: sticky;
     }
 
     .logo img {
         width: 10%;
-    }
+    }*/
 
     #toggle {
         width: 7%;
@@ -1256,9 +1261,6 @@ img {
         top: 3em;
     }
 
-    .logo img {
-        width: 10%;
-    }
 
     #toggle {
         width: 7%;
@@ -1281,14 +1283,19 @@ img {
     
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 320px) {
 
     .header {
         top: 2.8em;
     }
 
     .logo img {
-        width: 11%;
+        width: 30px;
+    }
+
+    .top li a {
+        padding: 5px 8px;
+        font-size: 12px;
     }
 
     #toggle {
