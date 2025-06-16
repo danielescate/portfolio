@@ -781,50 +781,52 @@
                     <p></p>
                 </div>
                 <div class="quotes">
-                <div class="item" data-aos="fade-up">
-                    <div class="bio">
-                        <p>
-                        Daniel is a true professional—always a pleasure to work with, consistently bringing creativity, thoughtful ideas, and practical options to the table, leading to his ability to follow through with high-quality execution.
-                        <br><br>
-                        I’m proud to provide my full recommendation and reference for Daniel.
-                        </p><br>
-                        <p><strong>Lyndon Edwards</strong><br><i>President</i><br>illustrate inc</p>
+                    <div class="splide" id="slider1" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="bio">
+                                            <p>
+                                            Daniel has been instrumental in providing hands-on design expertise across a range of projects, most notably our recent website rebuild. In addition to leading the design, Daniel also managed the technical implementation required to successfully launch the site.
+                                            <br><br>
+                                            Daniel is a true professional—always a pleasure to work with, consistently bringing creativity, thoughtful ideas, and practical options to the table, leading to his ability to follow through with high-quality execution.
+                                            </p><br>
+                                            <p><strong>Lyndon Edwards</strong><br><i>President</i><br>illustrate inc</p>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="bio">
+                                            <p>Daniel's work shows strong visual fundamentals, a clean and modern aesthetic, and a good understanding of how design fits into broader product and marketing goals. He’s reliable, open to feedback, and brings a calm, focused energy to the team.
+                                            <br><br>
+                                            His work shows strong visual fundamentals, a clean and modern aesthetic, and a good understanding of how design fits into broader product and marketing goals. I’d confidently recommend Daniel to any design team.</p><br>
+                                            <p><strong>Krishna Khatri</strong><br><i>UX/UI Designer</i><br>illustrate inc</p>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="bio">
+                                            <p>I had the pleasure of working with Daniel on our website redesign project, and I can confidently say he was instrumental to its success. Daniel brought not only exceptional creative talent but also a strong sense of ownership and collaboration. His ability to translate complex ideas into clean, engaging visuals made a huge impact on the final product. 
+                                            <br><br>
+                                            I highly recommend him to any team looking for a creative partner who delivers with both professionalism and heart.
+                                            </p><br>
+                                            <p><strong>Courtney Coon</strong><br><i>Executive Assistant</i><br>illustrate inc</p>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="bio">
+                                            <p>Daniel was an indispensable part of our creative team and I wholeheartedly recommend him. His multidimensional skills consistently delivered high-quality outputs that conveyed our brand's essence and engaged our audience effectively. His commitment to excellence, proactive approach, and adaptability were key to our projects.
+                                            <br><br>
+                                            Daniel collaborated seamlessly with all teams while meeting deadlines, showing attention to detail and a strong spirit of teamwork. I thoroughly enjoyed working with him.</p>
+                                            <br>
+                                            <p><strong>Mariane Lefebvre</strong><br><i>Marketing Director</i><br>thinktum</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
                     </div>
-                </div>
-                            
-                <div class="item" data-aos="fade-up">
-                    <div class="bio">
-                        <p>Daniel's work shows strong visual fundamentals, a clean and modern aesthetic, and a good understanding of how design fits into broader product and marketing goals. He’s reliable, open to feedback, and brings a calm, focused energy to the team.
-                        <br><br>
-                        I’d confidently recommend Daniel to any design team.</p><br>
-                        <p><strong>Krishna Khatri</strong><br><i>UX/UI Designer</i><br>illustrate inc</p>
-                    </div>
-                </div>
-                            
-                <div class="item" data-aos="fade-up">
-                    <div class="bio">
-                        <p>Daniel brought not only exceptional creative talent but also a strong sense of ownership and collaboration. His ability to translate complex ideas into clean, engaging visuals made a huge impact on the final product. 
-                        <br><br>
-                        Daniel was a joy to work with. He was always positive, responsive, and solution-oriented. I highly recommend him to any team looking for a creative partner who delivers with both professionalism and heart.
-                        </p><br>
-                        <p><strong>Courtney Coon</strong><br><i>Executive Assistant</i><br>illustrate inc</p>
-                    </div>
-                </div>
-                            
-                <div class="item" data-aos="fade-up">
-                    <div class="bio">
-                        <p>Daniel was an indispensable part of our creative team and I wholeheartedly recommend him. His multidimensional skills consistently delivered high-quality outputs that conveyed our brand's essence and engaged our audience effectively. 
-                        <br><br>
-                         Daniel collaborated seamlessly with all teams while meeting deadlines, showing attention to detail and a strong spirit of teamwork.</p>
-                        <br>
-                        <p><strong>Mariane Lefebvre</strong><br><i>Marketing Director</i><br>thinktum</p>
-                    </div>
-                </div>
-            </div>
+                </div>     
             </div>
         </section>
         
-
        <!-- <section id="testimonials">
             <div class="header">
                 <h1>Testimonials</h1>
@@ -1114,19 +1116,27 @@
     </script>
 
     <script>
-    new Splide( '.splide' ).mount();
+    new Splide( '.splide',{
+        type : 'slide', 
+        rewind: 'true',
+        perPage: 2, 
+        padding: '50', 
+        gap:'1em',
+        wheel: 'true',
+        wheelSleep: '1000',
+        arrows: false,
+        width: '100vw',
+        breakpoints: {
+		768: {
+			perPage: 1, 
+            width: '95vw',
+            padding: '20',
+		},
+        }
+    }).mount();
     </script>
 
-    <script>
-    document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
-        perPage: 2,
-        rewind : true,
-    } );
-
-    splide.mount();
-    } );
-</script>
+    
 
 </body>
 </html>
