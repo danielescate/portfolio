@@ -257,6 +257,11 @@ section {
     padding: 0;
 }
 
+.grid-1-2-1 {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+}
+
 .biobox {
     display: grid;
     grid-gap: 2em;
@@ -702,7 +707,7 @@ img {
     }
 
     .bio img{
-        width: 75%;
+        width: 100%;
     }
 
     .textbox h1 {
@@ -856,7 +861,7 @@ img {
 
     .bio img {
         width: 100%;
-        margin: 1em 2em 0em 0em;
+        
         display: block;
     }
 
@@ -1064,10 +1069,7 @@ img {
     margin-bottom: 4em;
     }
 
-    .splide__list {
-        height: 90% !important;
-    }
-
+  
     .quotes {
         margin-bottom: 2em;
     }
