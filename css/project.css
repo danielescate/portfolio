@@ -6,6 +6,10 @@ h3 {
     margin: 0 0 0.25em 0;
 }
 
+p {
+    padding-bottom: 1em;
+}
+
 .large {
     font-weight: 400;
     font-size: 1.25em;
@@ -62,7 +66,7 @@ main {
 
 
 .banner {
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -73,15 +77,26 @@ main {
 
 .banner img{
     object-fit: contain;
+    width: 80% !important;
+    display: block;
+    margin: auto;
 }
 
 .banner video {
     width: 80% !important;
-
+    display: block;
+    margin: auto;
 }
 
 .assets video {
     width: 100% !important;
+}
+
+iframe {
+    object-fit: contain;
+    width: 80% !important;
+    display: block;
+    margin: auto;
 }
 
 .job {
@@ -90,8 +105,8 @@ main {
     grid-template-columns: 1.4fr 1fr;
 }
 
-.overview p {
-    padding-bottom: 1em;
+.tag p {
+    padding: 0;
 }
 
 .description h1 {
@@ -208,7 +223,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     main {
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
         grid-gap: 2em;
@@ -224,7 +239,11 @@ main {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    #spacer {        
+        margin-bottom: 2em;
+    }
+
     .banner video {
         width: 100%;
     }
