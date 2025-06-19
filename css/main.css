@@ -79,9 +79,14 @@ h3 {
 }
 
 a, a:hover, a:visited, a:active {
-    color: inherit;
+    color: #1670CB;
     text-decoration: none;
 }
+
+.menu2 a {
+    color: inherit;
+}
+
 
 header ul  {
     list-style-type: none;
