@@ -184,6 +184,14 @@ iframe {
 }
 
 @media screen and (max-width: 750px) {
+    .banner{
+        margin-bottom: 2em;
+    }
+
+    .banner img{
+        width: 100% !important;
+    }
+
     .job {
         grid-gap: 1em;
         grid-template-columns: 1fr;
