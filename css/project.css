@@ -258,6 +258,10 @@ iframe {
         margin-bottom: 2em;
     }
 
+    iframe {
+    width: 100% !important;
+}
+
     .banner video {
         width: 100%;
     }
