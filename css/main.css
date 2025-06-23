@@ -504,7 +504,7 @@ img {
 #project5 {
     background-image: url('../img/edcan-backgrnd.png');
     background-position: center;
-    background-size: 60%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
 }
@@ -542,9 +542,9 @@ img {
 }
 
 #thinktum {
-    background-image: url('../img/thinktum-backgrnd.png');
+    background-image: url('../img/thinktum-banner.png');
     background-position: center;
-    background-size: 75%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: #522a44;
 }
@@ -912,7 +912,7 @@ img {
 
     .preview {
         display: none;
-        grid-gap: 1em;
+        grid-gap: 2em;
         grid-template-columns: 1fr 1fr;
     }
     
