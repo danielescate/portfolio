@@ -112,7 +112,7 @@ iframe {
 .description h1 {
     border-bottom-style: solid;
     border-width: 0.03em;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
 }
 
 .description {
@@ -121,6 +121,10 @@ iframe {
     padding-bottom: 2em;
     margin-bottom: 3em;
     margin-top: 2em;
+}
+
+.bio h1 {
+    border-bottom-style: none;
 }
 
 
