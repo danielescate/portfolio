@@ -7,6 +7,11 @@ h3 {
 }
 
 p {
+    font-family: 'indivisible', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
     padding-bottom: 1em;
 }
 
@@ -258,6 +263,10 @@ iframe {
 
 
 @media screen and (max-width: 768px) {
+    .title {
+            font-size: 1.5em;
+    }
+
     #spacer {        
         margin-bottom: 2em;
     }

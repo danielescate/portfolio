@@ -293,12 +293,12 @@ section {
 }
 
 #intro #title{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
 #summary {
-    width: 90%;
+    width: 95%;
 }
 
 .content {

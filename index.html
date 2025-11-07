@@ -26,7 +26,7 @@
   gtag('config', 'G-TZ024CHVQ5');
 </script>
 <body>
-    <header class="top">
+    <header class="top" id="navbar">
         <a href="https://danielescate.github.io/portfolio/" class="logo"><img src="img/de-logo-dark.png" id="main" alt="logo"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" onclick="showNav()"/>
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -53,7 +53,7 @@
                 <div class="name" data-aos="fade-left">
                     <h1>Daniel Escate</h1>
                     <p id="title">Interaction Designer</p>
-                    <p id="summary">Designer with over five years of experience in simplifying complex ideas and bringing them to life through engaging designs that leave an impact.</p>
+                    <p id="summary">Toronto based designer with over five years of experience in simplifying complex ideas and bringing them to life through engaging designs that leave an impact.</p>
                     <a href="#work"><div class="button"><p>View Work</p></div></a>
                     <a href="#contact"><div class="button-sec"><p>Contact</p></div></a>
                 </div> 
@@ -867,6 +867,20 @@
         animatedClassName: 'animated',
         });
     </script>
+
+   <!-- <script>
+    //Hide nav on scroll down
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function(x) {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "10px";
+    } else {
+        document.getElementById("navbar").style.top = "-70px";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+    </script> -->
 
     <script>
         //REMOVE .html
