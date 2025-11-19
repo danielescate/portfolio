@@ -1057,10 +1057,28 @@ footer a:visited {
         
         display: block;
     }
+    
+    .flex-2 {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .flex-2 .thumb{
+        width: 100%;
+    }
+
+    .flex-2 .bio{
+        width: 100%;
+    }
+
+    .three-col {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
 
    .four-col {
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
     }
 
     .info {
@@ -1202,19 +1220,6 @@ footer a:visited {
         margin-left: auto;
         margin-right: auto;
         display: block;
-    }
-
-    .flex-2 {
-        flex-direction: column;
-        gap: 0px;
-    }
-
-    .flex-2 .thumb{
-        width: 100%;
-    }
-
-    .flex-2 .bio{
-        width: 100%;
     }
 
     .preview {
