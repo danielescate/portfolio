@@ -36,7 +36,6 @@ h1 {
     font-style: normal;
     font-size: 48px;
     margin: 0;
-    line-height: 1.5em;
 }
 
 h2 {
@@ -126,7 +125,7 @@ h3 {
 .header h1 {
     border-bottom-style: solid;
     border-width: 0.03em;
-    margin-bottom: 1em;
+    margin-bottom: 60px;
 }
 
 .top {
@@ -422,8 +421,7 @@ input[type="radio"] {
 
 .filters {
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 0;
+    margin: 0 20px 60px 20px;
     padding: 5px 10px;
     display: inline-flex;
     border-radius: 50px;
@@ -1242,9 +1240,10 @@ footer a:visited {
         text-align: center;
     }
 
-    /*.sort {
-        box-shadow: inset -10px 0px 5px #f5f5f5, inset 10px 0px 5px #888; 
-    }*/
+    .sort {
+        mask-image: linear-gradient(to right, black 95%, transparent 100%), linear-gradient(to left, black 95%, transparent 100%);
+        mask-composite: intersect;
+    }
     
     .mywork {
         display: none;
@@ -1335,10 +1334,6 @@ footer a:visited {
 }
 
 @media screen and (max-width: 550px) {
-
-    .header h1{
-        padding-bottom: 0.5em;
-    }
     
    /* .top {
         padding: 0.5em 0 0 0;
