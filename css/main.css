@@ -521,9 +521,7 @@ input[type="radio"] {
 }
 
 .icon {
-    background-image: url(/img/de-favicon.png);
-    color: var(--font-color);
-    width: 32px;
+    width: 50px;
 }
 
 .three-ul {
