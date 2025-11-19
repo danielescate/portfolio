@@ -833,6 +833,7 @@ img {
     justify-content: left;
     width: 200px;
     margin: auto;
+    padding-top: 20px;
 }
 
 .link img {
