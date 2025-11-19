@@ -1253,7 +1253,7 @@ footer a:visited {
     }
 
     .three-ul {
-    font-size: 14px;
+    font-size: 16px;
     column-count: 1;
     gap: 0px;
     }
@@ -1266,6 +1266,10 @@ footer a:visited {
     #about .two-col {
     grid-template-columns: auto;
     gap: 0px;
+    }
+
+    #skills p {
+        font-size: 14px;
     }
 
     .contact-col {
