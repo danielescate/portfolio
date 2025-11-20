@@ -44,6 +44,7 @@ h2 {
     font-style: normal;
     font-size: 32px;
     margin: 0;
+    line-height: 40px;
 }
 
 h3 {
@@ -64,7 +65,7 @@ h3 {
 }
 
 .header h2 {
-    margin: -10px 0 10px 0;
+    margin: 0px 0 10px 0;
 }
 
 .subheading {
@@ -1143,9 +1144,15 @@ footer a:visited {
     }
     
     
-    p {
-        font-size: 16px;
+    h1 {
+        font-size: 40px;
     }
+
+    h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
 
     ul {
         font-size: 14px;
@@ -1154,6 +1161,11 @@ footer a:visited {
     .header {
         top: 3.5em;
     }
+
+    .header h2 {
+        margin: -5px 0 10px 0;
+    }
+
     
     .top {
         padding: 10px 15px 10px;
