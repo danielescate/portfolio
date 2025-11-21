@@ -1272,8 +1272,14 @@ footer a:visited {
     }
 
     .sort {
-        mask-image: linear-gradient(to right, black 95%, transparent 100%), linear-gradient(to left, black 95%, transparent 100%);
-        mask-composite: intersect;
+       /* mask-image: linear-gradient(to right, black 95%, transparent 100%), linear-gradient(to left, black 95%, transparent 100%);
+        mask-composite: intersect; */
+        padding-right: 11.55%;
+        margin-left: -6%;
+    }
+
+    .filters {
+        margin: 0 0px 60px 6%;
     }
     
     .mywork {
