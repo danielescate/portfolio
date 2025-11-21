@@ -536,6 +536,9 @@ input[type="radio"] {
 
 .icon {
     width: 50px;
+}
+
+.icon img {
     pointer-events: none;
 }
 
