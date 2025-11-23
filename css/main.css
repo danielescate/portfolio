@@ -1065,12 +1065,6 @@ footer a:visited {
         grid-gap: 3em;
         grid-template-columns: 1fr 1fr;
     }
-
-    .bio img {
-        width: 100%;
-        
-        display: block;
-    }
     
     .flex-2 {
         flex-direction: column;
@@ -1239,7 +1233,7 @@ footer a:visited {
 
     .bio img {
         width: 75%;
-        margin: 0em auto 4em auto;
+        margin: 0em auto 60px auto;
         display: block;
     }
 
@@ -1345,6 +1339,14 @@ footer a:visited {
         margin-bottom: 2em;
     }
 
+    .headshot img {
+        border-radius: 80px;
+        width: 50px;
+        display: inline-block;
+        margin-bottom: 0 !important;
+        margin-right: 10px;
+    }
+
 
     .email {
         margin-bottom: 2em;
@@ -1418,9 +1420,6 @@ footer a:visited {
         margin-top: 5em;
     }
 
-    .bio img {
-        width: 80%;
-    }
 
     .four-col {
     grid-template-columns: 1fr 1fr;
@@ -1476,14 +1475,6 @@ footer a:visited {
 
     .connect h2 {
         font-size: 2em;
-    }
-
-    .author {
-        grid-template-columns: 25% 70%;
-    }
-
-    .headshot img {
-        width: 60px;
     }
 
     .email {
