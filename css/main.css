@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url("https://use.typekit.net/ddd8vkh.css");
 
+
 :root {
     --font-color: #131313;
     --bg-color: #F5F5F5;
@@ -185,6 +186,38 @@ li a:hover {
   color: #1670CB;
 }
 
+.timeline {
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 1fr 0.5fr;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
+}
+
+.timeline a {
+    font-size: 14px;
+}
+
+.year {
+    font-size: 14px;
+}
+
+.job-title {
+    font-size: 14px;
+    display: block;
+}
+
+.company {
+    font-family: 'sofia-pro', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.timeline .link {
+        text-align: right;
+}
+
 .logo {
     margin: 0; 
 }
@@ -348,6 +381,25 @@ section {
     margin-bottom: 0;
 }
 
+#certifications {
+    padding-top: 100px;
+}
+
+#certifications .item {
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#certifications p {
+    font-size: 14px;
+}
+
+#certifications .bodytext {
+    margin-bottom: 0;
+}
+
 .content {
     margin: 0;
     padding: 0;
@@ -359,7 +411,7 @@ section {
 }
 
 #about {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #about .two-col {
@@ -385,9 +437,28 @@ section {
 }
 
 #skills {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+#skills .item {
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+#skills p {
+    font-size: 14px;
+}
+
+#skills .bodytext {
+    margin-bottom: 0;
+}
+
+#solutions {
+    padding-top: 100px;
+    width: 95%;
+    margin: 0 auto 100px;
 }
 
 .info {
@@ -834,7 +905,7 @@ img {
 }
 
 #contact {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 #contact .center {
@@ -858,6 +929,10 @@ img {
     width: 200px;
     margin: auto;
     padding-top: 20px;
+}
+
+#references {
+    padding-top: 100px;
 }
 
 .link img {
@@ -924,11 +999,6 @@ footer a:visited {
         display: none;
     }
 
-    .photo {
-        float: left;
-        width: 45%;
-        left: 0;
-    }
 
     #intro img {
         width: 100%;
@@ -964,7 +1034,9 @@ footer a:visited {
         height: 7em;
     }
 
-   
+    #solutions {
+        width: 100%;
+    }
 
     .email {
         margin-bottom: 2em;
@@ -1068,7 +1140,7 @@ footer a:visited {
     .biobox {
         display: grid;
         grid-gap: 3em;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     
     .flex-2 {
@@ -1097,6 +1169,30 @@ footer a:visited {
     }
 
     #summary .item {
+        width: 57vw;
+    }
+
+    #certifications .three-col {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 50px;
+        overflow: scroll;
+        margin-right: -5.5%;
+        margin-left: -5.5%;
+    }
+
+    #certifications .item {
+        width: 57vw;
+    }
+
+    #skills .three-col {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 50px;
+        overflow: scroll;
+        margin-right: -5.5%;
+        margin-left: -5.5%;
+    }
+
+    #skills .item {
         width: 57vw;
     }
 
@@ -1314,6 +1410,18 @@ footer a:visited {
         margin-left: -5.5%;
     }
 
+    #certifications .three-col {
+        padding: 10px 5.5%;
+        margin-right: -5.5%;
+        margin-left: -5.5%;
+    }
+
+    #skills .three-col {
+        padding: 10px 5.5%;
+        margin-right: -5.5%;
+        margin-left: -5.5%;
+    }
+
     .three-col {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1435,6 +1543,13 @@ footer a:visited {
         margin-top: 5em;
     }
 
+    .timeline {
+        grid-template-columns: 0.6fr 1fr 0.5fr;
+    }
+
+    .job-title {
+        display: none;
+    }
 
     .four-col {
     grid-template-columns: 1fr 1fr;
