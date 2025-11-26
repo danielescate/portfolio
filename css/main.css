@@ -618,7 +618,7 @@ input[type="radio"] {
 
 .three-ul {
     font-size: 14px;
-    column-count: 3;
+    column-count: 1;
     gap: 20px;
 }
 
@@ -843,7 +843,7 @@ img {
     font-size: 14px;
 }
 
-splide {
+.splide {
     max-width: 70vw !important;
     margin: auto;
 }
