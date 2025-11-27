@@ -616,6 +616,30 @@ input[type="radio"] {
     pointer-events: none;
 }
 
+
+.label {
+    display: inline-block;
+    padding: 5px 20px;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    border-radius: 0 30px 0 30px;
+}
+
+.label p {
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+.com {
+    background-color: #99c365;
+}
+
+.incom {
+    background-color: rgb(22 112 203 / 50%);
+}
+
+
 .three-ul {
     font-size: 14px;
     column-count: 1;
