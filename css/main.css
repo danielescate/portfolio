@@ -948,7 +948,7 @@ img {
     font-size: 14px;
 }
 
-.splide #splide2 {
+#splide2 {
     max-width: 70vw !important;
     margin: auto;
 }
@@ -1573,7 +1573,7 @@ footer a:visited {
     }
     
 
-    #splide2 .splide {
+    #splide2 {
     max-width: 92vw !important;
     }
   
