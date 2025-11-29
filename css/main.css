@@ -669,6 +669,7 @@ input[type="radio"] {
     padding: 3px;
     transform: rotate(45deg);
     margin: 0 5px 2px 5px;
+    transition: rotate 3s;
 }
 
 .dropdown-content {
@@ -689,6 +690,21 @@ input[type="radio"] {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(225deg);
+    margin: 0 5px 0px 5px;
+    animation: spin 0.1s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
 }
 
 .com {
